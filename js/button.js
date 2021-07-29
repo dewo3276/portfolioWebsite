@@ -10,7 +10,7 @@ function enlarge(className, type, index) {
     .to(className, {scaleX: "150%", scaleY: "150%", zIndex: 1, duration: 1})
     .to(className, {opacity: 0},'-=10%')
     .to(window, {scrollTo: pos, duration:.5})
-    .to('#WorkContent' + (index + 1), {display: "grid", opacity: 1, duration: 1},'-=5%');
+    .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=5%');
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if (i != index) {
