@@ -1,0 +1,110 @@
+#workSection {
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  font-family: mostra-nuova;
+
+  .workDiv {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+
+    div {
+      padding-left: 40px;
+      padding-top: 190px;
+      padding-bottom: 30px;
+      font-size: 2em;
+
+      h5 {
+        margin: 0;
+        padding: 0;
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  .project1 {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/skm/dragon demo.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .project1:hover {
+    background-image: url("../img/skm/dragon demo.gif");
+  }
+
+  .project2 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/pdtLetters/finished.jpg");
+  }
+
+  .project2:hover {
+    background-image: url("../img/pdtLetters/finished.jpg");
+  }
+
+  .project3 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/penguinDevice/penguinFinal.jpg");
+  }
+
+  .project3:hover {
+    background-image: url("../img/penguinDevice/penguinFinal.jpg");
+  }
+
+  .project4 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/hideAwayStairs/design3.png");
+  }
+
+  .project4:hover {
+    background-image: url("../img/hideAwayStairs/design3.png");
+  }
+
+  .project5 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/capstoneClock/final1.jpg");
+  }
+
+  .project5:hover {
+    background-image: url("../img/capstoneClock/final1.jpg");
+  }
+
+  .project6 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/skm/dragon demo.gif");
+  }
+
+  .project6:hover {
+    background-image: url("../img/skm/dragon demo.gif");
+  }
+
+  .project7 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)),url("../img/skm/dragon demo.gif");
+  }
+
+  .project7:hover {
+    background-image: url("../img/skm/dragon demo.gif");
+  }
+
+  .project8 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)),url("../img/customCoffeTable/final1.jpg");
+  }
+
+  .project8:hover {
+    background-image: url("../img/customCoffeTable/final1.jpg");
+  }
+
+  .project9 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/skm/dragon demo.gif");
+  }
+
+  .project9:hover {
+    background-image: url("../img/skm/dragon demo.gif");
+  }
+}

@@ -1,0 +1,93 @@
+.main {
+  max-height: 100vh;
+  padding-bottom: 12%;
+  display: grid;
+  grid-template-rows: repeat(4,200px);
+  grid-template-columns: repeat(4,1fr);
+
+  label {
+    font-family: mostra-nuova;
+    background: $labelBackground;
+    border-radius: 1.5em;
+    padding: 10px;
+    font-size: 2em;
+    color: $textLabel;
+    position: relative;
+  }
+}
+$baseGearWidth: 245px;
+
+.main {
+  div:hover {
+    transform: scale(1.02);
+
+    label {
+      background-color: rgba(147, 149, 152, 1);
+    }
+  }
+}
+
+.aboutMeGear {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  max-height: $baseGearWidth;
+  position: relative;
+  left: -193px;
+  top: 25px;
+
+  img {
+    width: $baseGearWidth;
+  }
+
+  label {
+    bottom: -$baseGearWidth/20;
+    left: -$baseGearWidth/1.25;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.workGear {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  max-height: $baseGearWidth*2.16;
+
+  img {
+    width: $baseGearWidth*2.16;
+  }
+
+  label {
+    font-size: 5em;
+    bottom: ($baseGearWidth*2.16)/1.65;
+    left: ($baseGearWidth*2.16)/3.9;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.contactGear {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  max-height: $baseGearWidth*1.7;
+  position: relative;
+  left: -40px;
+  top: 205px;
+
+  img {
+    width: $baseGearWidth*1.7;
+  }
+
+  label {
+    font-size: 3em;
+    bottom: ($baseGearWidth*1.7)/1.75;
+    left: ($baseGearWidth*1.7)/3.25;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+}

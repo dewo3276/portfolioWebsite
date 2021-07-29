@@ -1,0 +1,303 @@
+@font-face {
+  font-family: mostra-nuova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  background: #38404F;
+  font-family: monstra-nuova;
+}
+
+.main {
+  max-height: 100vh;
+  padding-bottom: 12%;
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(4, 1fr);
+}
+.main label {
+  font-family: mostra-nuova;
+  background: rgba(147, 149, 152, 0.75);
+  border-radius: 1.5em;
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  position: relative;
+}
+
+.main div:hover {
+  transform: scale(1.02);
+}
+.main div:hover label {
+  background-color: #939598;
+}
+
+.aboutMeGear {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  max-height: 245px;
+  position: relative;
+  left: -193px;
+  top: 25px;
+}
+.aboutMeGear img {
+  width: 245px;
+}
+.aboutMeGear label {
+  bottom: -12.25px;
+  left: -196px;
+}
+.aboutMeGear :hover {
+  cursor: pointer;
+}
+
+.workGear {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  max-height: 529.2px;
+}
+.workGear img {
+  width: 529.2px;
+}
+.workGear label {
+  font-size: 5em;
+  bottom: 320.7272727273px;
+  left: 135.6923076923px;
+}
+.workGear :hover {
+  cursor: pointer;
+}
+
+.contactGear {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  max-height: 416.5px;
+  position: relative;
+  left: -40px;
+  top: 205px;
+}
+.contactGear img {
+  width: 416.5px;
+}
+.contactGear label {
+  font-size: 3em;
+  bottom: 238px;
+  left: 128.1538461538px;
+}
+.contactGear :hover {
+  cursor: pointer;
+}
+
+#workSection {
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: mostra-nuova;
+}
+#workSection .workDiv {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#workSection .workDiv div {
+  padding-left: 40px;
+  padding-top: 190px;
+  padding-bottom: 30px;
+  font-size: 2em;
+}
+#workSection .workDiv div h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75em;
+}
+#workSection .project1, #workSection .project9, #workSection .project8, #workSection .project7, #workSection .project6, #workSection .project5, #workSection .project4, #workSection .project3, #workSection .project2 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#workSection .project1:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
+  background-image: url("../img/skm/dragon demo.gif");
+}
+#workSection .project2 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/pdtLetters/finished.jpg");
+}
+#workSection .project2:hover {
+  background-image: url("../img/pdtLetters/finished.jpg");
+}
+#workSection .project3 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/penguinDevice/penguinFinal.jpg");
+}
+#workSection .project3:hover {
+  background-image: url("../img/penguinDevice/penguinFinal.jpg");
+}
+#workSection .project4 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hideAwayStairs/design3.png");
+}
+#workSection .project4:hover {
+  background-image: url("../img/hideAwayStairs/design3.png");
+}
+#workSection .project5 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/capstoneClock/final1.jpg");
+}
+#workSection .project5:hover {
+  background-image: url("../img/capstoneClock/final1.jpg");
+}
+#workSection .project6 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
+}
+#workSection .project6:hover {
+  background-image: url("../img/skm/dragon demo.gif");
+}
+#workSection .project7 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
+}
+#workSection .project7:hover {
+  background-image: url("../img/skm/dragon demo.gif");
+}
+#workSection .project8 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/customCoffeTable/final1.jpg");
+}
+#workSection .project8:hover {
+  background-image: url("../img/customCoffeTable/final1.jpg");
+}
+#workSection .project9 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
+}
+#workSection .project9:hover {
+  background-image: url("../img/skm/dragon demo.gif");
+}
+
+.transitionalContent {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: none;
+  opacity: 0;
+  z-index: 2;
+}
+.transitionalContent .titleBlock {
+  background-image: url("../img/skm/dragon demo.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 85vh;
+  grid-column: 1/4;
+}
+.transitionalContent .titleBlock .closingTime {
+  margin-left: 95%;
+  font-size: 2em;
+  background-color: grey;
+  padding: 5px;
+  top: 10px;
+  right: 15px;
+  border-radius: 15px;
+  color: #d6d6d6;
+  position: relative;
+}
+.transitionalContent .titleBlock .closingTime:hover {
+  background-color: black;
+  color: white;
+}
+.transitionalContent .titleBlock div {
+  position: relative;
+  bottom: -30%;
+  left: 3%;
+}
+.transitionalContent .titleBlock h1 {
+  font-size: 3em;
+}
+.transitionalContent .imageColection {
+  display: grid;
+  grid-gap: 2%;
+  grid-row: 3/5;
+  grid-column: 1/4;
+}
+.transitionalContent .imageColection img {
+  max-width: 100%;
+}
+.transitionalContent p {
+  text-align: center;
+  grid-column: 1/4;
+  margin: 5% 0 0;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+#WorkContent2 .titleBlock {
+  background-image: url("../img/pdtLetters/finished.jpg");
+  background-position: center;
+}
+#WorkContent2 img:nth-child(even) {
+  grid-row-start: 2;
+}
+#WorkContent2 img:nth-child(odd) {
+  grid-row-start: 3;
+}
+
+#WorkContent3 .titleBlock {
+  max-width: 87vw;
+  background-image: url("../img/penguinDevice/penguinFinal.jpg");
+  background-position: center;
+}
+#WorkContent3 .imageColection {
+  grid-row-start: 2;
+}
+#WorkContent3 .imageColection p {
+  max-width: 87vw;
+}
+#WorkContent3 img:nth-child(even) {
+  grid-row-start: 2;
+}
+#WorkContent3 img:nth-child(odd) {
+  grid-row-start: 3;
+}
+
+#WorkContent4 .titleBlock {
+  background-image: url("../img/hideAwayStairs/bccTable.gif");
+  color: black;
+}
+#WorkContent4 img:nth-child(even) {
+  grid-row-start: 2;
+}
+#WorkContent4 img:nth-child(odd) {
+  grid-row-start: 3;
+}
+#WorkContent4 div:nth-child(3) {
+  display: grid;
+  grid-row-start: 5;
+  margin-left: 1%;
+  grid-template-rows: 2;
+  grid-template-columns: 2;
+  grid-gap: 2%;
+}
+#WorkContent4 div:nth-child(3) img {
+  width: 40vw;
+  height: 50vh;
+}
+#WorkContent4 div:nth-child(4) {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-rows: 2;
+  grid-template-columns: 3;
+  grid-row-start: 6;
+}
+#WorkContent4 div:nth-child(4) img {
+  width: 27vw;
+}
+
+#WorkContent5 .titleBlock {
+  background-image: url("../img/capstoneClock/final1.JPG");
+}
+#WorkContent5 .imageColection {
+  grid-template-columns: 2;
+}
+#WorkContent5 div:nth-child(3) {
+  display: grid;
+  grid-row-start: 5;
+  margin-left: 1%;
+  grid-template-rows: 3;
+  grid-template-columns: 2;
+  grid-gap: 2%;
+}

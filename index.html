@@ -1,0 +1,297 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://use.typekit.net/mkr4eeq.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js" integrity="sha512-1OG9UO4krPizjtz/c9iDbjCqtXznBYdJeD4ccPaYfJHzC6F1qoQ3P1bgQ3J8lgCoK5qGVCqsY4+/RKjLDzITVQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js" integrity="sha512-yVNhaX0I/lk5GtKya9lE27DopFWV791zsCnMpztLnGJgWESdN825wbH0/I1HfwdNgAKFsq9pXv5vpXjTAU7h3A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <section class="panel main">
+    <div class="contactGear" onclick="contactGearSpin()">
+      <img class="gearC" src="img/contactGear.png" alt="">
+      <label>Contact</label>
+    </div>
+
+    <div class="workGear" onclick="workGearSpin()">
+      <a href="#workSection"><img class="gearW" src="img/workGear.png" alt=""></a>
+      <label>My work</label>
+    </div>
+
+    <div class="aboutMeGear" onclick="aboutMeGearSpin()">
+      <img class="gearA" src="img/aboutMeGear.png" alt="">
+      <label>About me</label>
+    </div>
+  </section>
+
+  <section class="panel" id="workSection">
+    <h1 style="text-align: center; font-size: 3em;">My Work</h1>
+
+    <div id="WorkContent1" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project1',0)">close</label>
+        <div>
+          <h1>She Kills Monsters</h1>
+          <h3>Dragon Head</h3>
+          <span>A mechanical design overview of a dragon skull creation for University Theater and Dance</span>
+        </div>
+      </div>
+      <div class="imageColection">
+        <p>This project was designed by myself and coworker Hannah Male for the play "She Kills Monsters". It was designed with the intention of being on a green screen and edited for film during the COVID-19 pandemic. The whole head was painted
+          white to allow for the lighting crew to add different colors to it during filming to produce the five headed hydra so five different heads didn't need to be created. The mechanical requirements for the show was for it to have pitch in one
+          direction and yaw at the base of the neck and connection point behind the green screen via a custom built mounting device. The skull also had to have a movable jaw for line delivery which was operated by a pulley system and lizard frills
+          also operated by a pulley system. </p>
+        <img src="img/skm/dragon1.jpg" alt="">
+        <img src="img/skm/dragon2.jpg" alt="">
+        <img src="img/skm/dragon3.jpg" alt="">
+        <img src="img/skm/dragon4.jpg" alt="">
+        <img src="img/skm/dragon5.jpg" alt="">
+        <img src="img/skm/dragon10.jpg" alt="">
+        <img src="img/skm/dragon6.jpg" alt="">
+        <img src="img/skm/dragon7.jpg" alt="">
+        <img src="img/skm/dragon8.jpg" alt="">
+      </div>
+    </div>
+    <div id="WorkContent2" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project2',1)">close</label>
+        <div>
+          <h1>Phi Delta Theta Letters</h1>
+          <h3>Steel lettering created and installed</h3>
+        </div>
+      </div>
+      <div class="imageColection">
+        <p>These letters were created for the Phi Delta Theta Colorado Alpha chapter and were installed as of 9/5/2020. This was a commissioned project from the Alumni Bill Mark. As one of the last re-founding fathers still in the Colorado Alpha
+          chapter, this project meant a lot to me and my brothers.
+          The letters themselves were cut from 16 gauge steel sheets using a plasma cutter. To achieve precise shapes, I cut out stencils I designed in Rhino on the laser cutter using plywood. Once the stencils were cut, they were placed on the sheet
+          metal and clamped securely in place so I could use them as a guide for the plasma cutting tool. Anchors were added to the back of the letters, spray painted, placed into pre-drilled holes in the house, and secured with construction
+          adhesive.</p>
+        <img src="img/pdtLetters/inProgress1.jpg" alt="">
+        <img src="img/pdtLetters/inProgress2.jpg" alt="">
+        <img src="img/pdtLetters/inProgress3.jpg" alt="">
+        <img src="img/pdtLetters/inProgress4.jpg" alt="">
+      </div>
+    </div>
+    <div id="WorkContent3" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project3',2)">close</label>
+        <div>
+          <h1>Penguin I/O Box</h1>
+          <h3>A physical computing object</h3>
+        </div>
+      </div>
+      <div class="imageColection">
+        <p>This was a physical computing object created as a midterm for a class. It demonstrated mastery of 3D printing, electrical wiring, and coding in arduino IDE. The penguin is meant to get mad when you bend his arm and this is shown by the
+          angry
+          eye glow from blue to red and the frowning from the eyebrow servo motors. The potentiometer provides a way to turn the brightness of the Neopixel strips down.</p>
+        <img src="img/penguinDevice/penguin1InProgress.jpg" alt="">
+        <img src="img/penguinDevice/penguinDesign1.jpg" alt="">
+        <img src="img/penguinDevice/penguinDesign2.jpg" alt="">
+        <img src="img/penguinDevice/penguinDesign3.jpg" alt="">
+      </div>
+      <div>
+        <p>internal wiring schematic</p>
+        <img src="img/penguinDevice/penguin_schem.jpg" alt="">
+        <p>Code to operate penguin within Arduino IDE</p>
+        <img style="margin-left: 20%" src="img/penguinDevice/penguinCode.jpg" alt="">
+      </div>
+
+    </div>
+    <div id="WorkContent4" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project4',3)">close</label>
+        <div>
+          <h1>Broadway Christmas Carol</h1>
+          <h3>Scenic elements created for Broadway Christmas Carol</h3>
+        </div>
+      </div>
+      <div class="imageColection">
+        <p>These hide away stairs provided an ease of access for actors in the production of Broadway Christmas Carol to dance on the tables for multiple musical numbers. These tables also functioned as many different set pieces as they were designed to be mobile with a functioning wheel lift system. Trim was added after the initial construction was done and tests were conducted to ensure safety as well as functionality by the actors. To better conceal the ladder, a hinged door held by magnets was added. After some failures with this system, these magnets were replaced as the tap dances that occurred on that table cause the doors to swing open at random intervals. There was also a problem with the trim interfering with the rotation of the wheels, so cuts were made to allow for full spin of the wheels.</p>
+        <img src="img/hideAwayStairs/BroadwayChristmasCarol-8.jpg" alt="">
+        <img src="img/hideAwayStairs/BroadwayChristmasCarol-15.jpg" alt="">
+        <img src="img/hideAwayStairs/BroadwayChristmasCarol-59.jpg" alt="">
+        <img src="img/hideAwayStairs/BroadwayChristmasCarol-146.jpg" alt="">
+      </div>
+      <div>
+        <p>Design Photos</p>
+        <img src="img/hideAwayStairs/design12.jpg" alt="">
+        <img src="img/hideAwayStairs/design2.png" alt="">
+        <img src="img/hideAwayStairs/design3.png" alt="">
+        <img src="img/hideAwayStairs/design14.jpg" alt="">
+      </div>
+      <div>
+        <p>In Progress Welding Photos</p>
+        <img src="img/hideAwayStairs/inProgress1.jpg" alt="">
+        <img src="img/hideAwayStairs/inProgress2.jpg" alt="">
+        <img src="img/hideAwayStairs/inProgress3.jpg" alt="">
+        <img src="img/hideAwayStairs/inProgress4.jpg" alt="">
+        <img src="img/hideAwayStairs/inProgress5.jpg" alt="">
+        <img src="img/hideAwayStairs/inProgress6.jpg" alt="">
+      </div>
+    </div>
+    <div id="WorkContent5" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project5',4)">close</label>
+        <div>
+          <h1>Self Destructing Clock</h1>
+          <h3>Capstone project</h3>
+        </div>
+      </div>
+      <div class="imageColection">
+        <p>This project was created as my Capstone within the CTD program. The clock was a self-destructing art piece meant to give a qualitative aspect to time via quantitative means.<br>Through a google chrome extension that tracks zoom time and a wifi connected door monitoring system, the clock tracked when people left the virtual world for the real one and vice versa.</p>
+        <img src="img/capstoneClock/final2.JPG" alt="">
+        <img src="img/capstoneClock/final3.JPG" alt="">
+      </div>
+
+      <div>
+        <p>Design itterations</p>
+        <img src="img/capstoneClock/File_000.jpg" alt="">
+        <img src="img/capstoneClock/File_003.jpg" alt="">
+        <img src="img/capstoneClock/File_006.jpg" alt="">
+        <img src="img/capstoneClock/middleGearItterations.jpg" alt="">
+        <img src="img/capstoneClock/middleGearItterations2.jpg" alt="">
+      </div>
+      <!--
+      <div>
+        <p>Wiring Diagrams</p>
+        <img src="img/capstoneClock/uploadButtonDiagram_bb.jpg" alt="">
+        <img src="img/capstoneClock/wiringDiagram_bb.jpg" alt="">
+      </div>-->
+    </div>
+    <div id="WorkContent6" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project6',5)">close</label>
+        <div>
+          <h1>She Kills Monsters</h1>
+          <h3>Dragon Head</h3>
+          <p>A mechanical design overview of a dragon skull creation for University Theater and Dance</p>
+        </div>
+      </div>
+    </div>
+    <div id="WorkContent7" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project7',6)">close</label>
+        <div>
+          <h1>She Kills Monsters</h1>
+          <h3>Dragon Head</h3>
+          <p>A mechanical design overview of a dragon skull creation for University Theater and Dance</p>
+        </div>
+      </div>
+    </div>
+    <div id="WorkContent8" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project8',7)">close</label>
+        <div>
+          <h1>She Kills Monsters</h1>
+          <h3>Dragon Head</h3>
+          <p>A mechanical design overview of a dragon skull creation for University Theater and Dance</p>
+        </div>
+      </div>
+    </div>
+    <div id="WorkContent9" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project9',8)">close</label>
+        <div>
+          <h1>She Kills Monsters</h1>
+          <h3>Dragon Head</h3>
+          <p>A mechanical design overview of a dragon skull creation for University Theater and Dance</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="workDiv">
+      <div class="project1">
+        <label onclick="enlarge('.project1',0,0)">
+          She Kills Monsters
+          <h5>Dragon Head</h5>
+        </label>
+      </div>
+      <div class="project2">
+
+        <label onclick="enlarge('.project2',1,1)">
+          Phi Delta Theta Letters
+        </label>
+      </div>
+      <div class="project3">
+        <label onclick="enlarge('.project3',2,2)">Penguin I/O Box</label>
+      </div>
+      <div class="project4">
+        <label onclick="enlarge('.project4',0,3)">Broadway Christmas Carol</label>
+      </div>
+      <div class="project5">
+        <label onclick="enlarge('.project5',1,4)">Self Destructing Clock</label>
+      </div>
+      <div class="project6">
+        <label onclick="enlarge('.project6',2,5)">Creepy Creature</label>
+      </div>
+      <div class="project7">
+        <label onclick="enlarge('.project7',0,6)">Sherlock Holmes renderings</label>
+      </div>
+      <div class="project8">
+        <label onclick="enlarge('.project8',1,7)">Coffee Table</label>
+      </div>
+      <div class="project9">
+        <label onclick="enlarge('.project9',2,8)">hello</label>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="aboutMeSetion">
+    <h1>create thing here</h1>
+  </section>
+
+  <section class="panel" id="contacSection">
+    <h1>create thing here</h1>
+  </section>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/gearSpinner.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "portfoliowebsite",
+  "version": "0.0.1",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "parcel-bundler": "^1.9.4"
+  },
+  "dependencies": {
+    "gsap": "^3.7.0",
+    "sass": "^1.35.2"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "description": ""
+}
