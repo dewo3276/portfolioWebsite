@@ -58,7 +58,7 @@
 
   <section class="panel" id="workSection">
     <h1 style="text-align: center; font-size: 3em;">My Work</h1>
-
+{
     <div id="WorkContent1" class="transitionalContent">
       <div class="titleBlock">
         <label class="closingTime" onclick="shrink('.project1',0)">close</label>
@@ -170,11 +170,15 @@
         </div>
       </div>
       <div class="imageColection">
-        <p>This project was created as my Capstone within the CTD program. The clock was a self-destructing art piece meant to give a qualitative aspect to time via quantitative means.<br>Through a google chrome extension that tracks zoom time and a wifi connected door monitoring system, the clock tracked when people left the virtual world for the real one and vice versa.</p>
+        <p>This project was created as my Capstone within the CTD program. The clock was a self-destructing art piece meant to give a qualitative aspect to time via quantitative means.<br>Through a google chrome extension that tracks zoom time and a wifi connected door monitoring system, the clock tracked when people left the virtual world for the real one and vice versa. The clock had two main functions: to spray paint itself any time the door tracker was pushed and to hit itself in 30 minute increments based on how long users stayed on zoom.</p>
         <img src="img/capstoneClock/final2.JPG" alt="">
         <img src="img/capstoneClock/final3.JPG" alt="">
       </div>
-
+      <div>
+        <p>Clock Functions</p>
+        <img src="img/capstoneClock/hammerFunction.gif" alt="">
+        <img src="img/capstoneClock/sprayPaintFunction.gif" alt="">
+      </div>
       <div>
         <p>Design itterations</p>
         <img src="img/capstoneClock/File_000.jpg" alt="">
@@ -183,20 +187,18 @@
         <img src="img/capstoneClock/middleGearItterations.jpg" alt="">
         <img src="img/capstoneClock/middleGearItterations2.jpg" alt="">
       </div>
-      <!--
       <div>
         <p>Wiring Diagrams</p>
         <img src="img/capstoneClock/uploadButtonDiagram_bb.jpg" alt="">
         <img src="img/capstoneClock/wiringDiagram_bb.jpg" alt="">
-      </div>-->
+      </div>
     </div>
     <div id="WorkContent6" class="transitionalContent">
       <div class="titleBlock">
         <label class="closingTime" onclick="shrink('.project6',5)">close</label>
         <div>
-          <h1>She Kills Monsters</h1>
-          <h3>Dragon Head</h3>
-          <p>A mechanical design overview of a dragon skull creation for University Theater and Dance</p>
+          <h1>Creepy Creature</h1>
+          <h3>creepy creature crafted in Blender</h3>
         </div>
       </div>
     </div>
@@ -230,8 +232,8 @@
         </div>
       </div>
     </div>
-
-    <div class="workDiv">
+}
+    <div id="workDiv">
       <div class="project1">
         <label onclick="enlarge('.project1',0,0)">
           She Kills Monsters
@@ -239,7 +241,6 @@
         </label>
       </div>
       <div class="project2">
-
         <label onclick="enlarge('.project2',1,1)">
           Phi Delta Theta Letters
         </label>
@@ -263,7 +264,7 @@
         <label onclick="enlarge('.project8',1,7)">Coffee Table</label>
       </div>
       <div class="project9">
-        <label onclick="enlarge('.project9',2,8)">hello</label>
+        <label onclick="enlarge('.project9',2,8)">3D visualizer</label>
       </div>
     </div>
   </section>
