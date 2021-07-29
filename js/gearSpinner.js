@@ -39,6 +39,9 @@ function contactGearSpin() {
     rotation: 180,
     ease: "back"
   });
+
+  var pos = document.getElementById('aboutMeSetion').offsetTop;
+  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
 
 function aboutMeGearSpin() {
@@ -57,4 +60,7 @@ function aboutMeGearSpin() {
     rotation: 180,
     ease: "back"
   });
+
+  var pos = document.getElementById('contactSection').offsetTop;
+  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }

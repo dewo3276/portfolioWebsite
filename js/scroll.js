@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
   trigger:".main",
   start: "5%",
-  markers: true,
+  end: "bottom+=10%",
   onToggle: function () {
     gsap.to(".gearA, .gearC", {
       duration: 1.5,

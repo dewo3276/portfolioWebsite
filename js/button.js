@@ -1,4 +1,5 @@
 var projectsInFile = ['.project1', '.project2', '.project3', '.project4', '.project5', '.project6', '.project7', '.project8', '.project9'];
+var pos = document.getElementById("workSection").offsetTop;
 
 function enlarge(className, type, index) {
   switch (type) {
@@ -23,6 +24,7 @@ function enlarge(className, type, index) {
       });
   }
   gsap.timeline()
+    .to(window, {scrollTo: pos, duration:.5})
     .to(className, {scaleX: "313%", scaleY: "265%", zIndex: 1, duration: 1})
     .to(className, {opacity: 0},'-=10%')
     .to('#WorkContent' + (index + 1), {display: "inline-grid", opacity: 1, duration: 1},'-=5%');
@@ -36,6 +38,7 @@ function enlarge(className, type, index) {
 
 function shrink(className, index) {
   gsap.timeline()
+    .to(window, {scrollTo: pos, duration:.5})
     .to('#WorkContent' + (index + 1), {opacity: 0, display: "none"})
     .to(className, {opacity: 1},'-=20%')
     .to(className, {scaleX: "100%", scaleY: "100%", x: "0", backgroundColor: "none", zIndex: 0, duration: 1});
