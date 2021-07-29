@@ -19,6 +19,8 @@ function workGearSpin() {
     rotation: -180,
     ease: "back"
   });
+  var pos = document.getElementById('workSection').offsetTop;
+  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
 
 function contactGearSpin() {

@@ -23,9 +23,9 @@ function enlarge(className, type, index) {
       });
   }
   gsap.timeline()
-    .to(className, {scaleX: "313%", scaleY: "265%", zIndex: 1, duration: 1.5})
+    .to(className, {scaleX: "313%", scaleY: "265%", zIndex: 1, duration: 1})
     .to(className, {opacity: 0},'-=10%')
-    .to('#WorkContent' + (index + 1), {display: "grid", opacity: 1, duration: 1.5},'-=5%');
+    .to('#WorkContent' + (index + 1), {display: "inline-grid", opacity: 1, duration: 1},'-=5%');
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if (i != index) {
@@ -36,17 +36,16 @@ function enlarge(className, type, index) {
 
 function shrink(className, index) {
   gsap.timeline()
-    .to('#WorkContent' + (index + 1), {opacity: 0, display: "none", duration:1})
-    .to(className, {opacity: 1, duration: 1.5},'-=20%')
-    .to(className, {scaleX: "100%", scaleY: "100%", x: "0", backgroundColor: "none", duration: 1.5})
-    .to(className, {zIndex: 0});
+    .to('#WorkContent' + (index + 1), {opacity: 0, display: "none"})
+    .to(className, {opacity: 1},'-=20%')
+    .to(className, {scaleX: "100%", scaleY: "100%", x: "0", backgroundColor: "none", zIndex: 0, duration: 1});
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if(index!=i)
     {
       gsap.to(projectsInFile[i], {
         opacity: 1,
-        delay: 2,
+        delay: 1,
         duration: 2
       });
     }

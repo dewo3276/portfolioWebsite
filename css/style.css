@@ -3,7 +3,7 @@
   font-weight: 400;
   font-style: normal;
 }
-html {
+body {
   background: #38404F;
   font-family: monstra-nuova;
 }
@@ -23,6 +23,7 @@ html {
   font-size: 2em;
   color: white;
   position: relative;
+  text-decoration: none;
 }
 
 .main div:hover {
@@ -207,7 +208,7 @@ html {
   font-size: 3em;
 }
 .transitionalContent .imageColection {
-  display: grid;
+  display: inline-grid;
   grid-gap: 2%;
   grid-row: 3/5;
   grid-column: 1/4;
@@ -300,4 +301,27 @@ label:hover {
   grid-template-rows: 3;
   grid-template-columns: 2;
   grid-gap: 2%;
+}
+
+@font-face {
+  font-family: mostra-nuova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+  font-family: mostra-nuova;
+  background-color: #282d38;
+  display: none;
+  opacity: 0;
+  justify-content: space-around;
+  font-size: 3em;
+  min-width: 100vw;
+  position: fixed;
+  z-index: 1;
+}
+nav :hover {
+  transition-property: transform;
+  transition-delay: 0.5;
+  transition-duration: 0.75;
+  transform: scale(1.2);
 }
