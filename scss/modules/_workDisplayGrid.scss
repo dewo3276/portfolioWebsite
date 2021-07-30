@@ -113,6 +113,14 @@
     justify-content: space-between;
     text-align: center;
   }
+
+  .video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+  }
 }
 
 label:hover {
@@ -156,5 +164,59 @@ label:hover {
 #WorkContent6 {
   .titleBlock {
     background-image: url("../img/creepyCreature/caught 4.png");
+  }
+}
+
+#WorkContent7 {
+  .titleBlock {
+    background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.jpg");
+  }
+}
+
+#WorkContent8 {
+  .titleBlock {
+    background-image: url("../img/customCoffeTable/final1.JPG");
+  }
+}
+
+#WorkContent9{
+  .titleBlock{
+    background-image: url("../img/3dVisualizer/backgroundFrame.jpg");
+  }
+}
+
+#WorkContent10{
+  .titleBlock{
+    background-image: url("../img/fusionInfoGraphic/iteration4.jpg");
+    div{
+      color: black;
+      h1, h3{
+        background-color: grey;
+        max-width: 50%;
+        border-radius: 15px;
+        opacity: .75;
+      }
+    }
+  }
+}
+
+#WorkContent11{
+  .titleBlock{
+    background-image: url("../img/spiceItUp/spice if up final.jpg");
+  }
+  .oneAndone{
+    img{
+      width: 50%;
+      align-self: center;
+    }
+  }
+}
+
+#WorkContent12{
+  .titleBlock{
+    background-image: url("../img/courageTheCowardlyDog/courage final 2.png");
+  }
+  .threeXthree:nth-child(3){
+    margin-top: -15%;
   }
 }

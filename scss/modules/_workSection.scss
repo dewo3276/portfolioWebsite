@@ -87,11 +87,11 @@
 
   .project7 {
     @extend .project1;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)),url("../img/skm/dragon demo.gif");
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)),url("../img/sherlockHolmesRenderings/stag 1 behind bar still.jpg");
   }
 
   .project7:hover {
-    background-image: url("../img/skm/dragon demo.gif");
+    background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.jpg");
   }
 
   .project8 {
@@ -105,10 +105,37 @@
 
   .project9 {
     @extend .project1;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/skm/dragon demo.gif");
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/3dVisualizer/Evisualizer.gif");
   }
 
   .project9:hover {
-    background-image: url("../img/skm/dragon demo.gif");
+    background-image: url("../img/3dVisualizer/Evisualizer.gif");
+  }
+
+  .project10 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/fusionInfoGraphic/iteration4.jpg");
+  }
+
+  .project10:hover {
+    background-image: url("../img/fusionInfoGraphic/iteration4.jpg");
+  }
+
+  .project11 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/spiceItUp/spice if up final.jpg");
+  }
+
+  .project11:hover {
+    background-image: url("../img/spiceItUp/spice if up final.jpg");
+  }
+
+  .project12 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/courageTheCowardlyDog/courage final 2.png");
+  }
+
+  .project12:hover {
+    background-image: url("../img/courageTheCowardlyDog/courage final 2.png");
   }
 }
