@@ -15,6 +15,10 @@ body {
   display: grid;
   grid-template-rows: repeat(4, 200px);
   grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  left: 20%;
+  background-image: url("../img/coverImage.jpg");
+  background-repeat: no-repeat;
 }
 .main label {
   font-family: mostra-nuova;
@@ -117,13 +121,13 @@ body {
 #workSection #workDiv div label {
   transform: none;
 }
-#workSection .project1, #workSection .project12, #workSection .project11, #workSection .project10, #workSection .project9, #workSection .project8, #workSection .project7, #workSection .project6, #workSection .project5, #workSection .project4, #workSection .project3, #workSection .project2 {
+#workSection .project1, #workSection .project14, #workSection .project13, #workSection .project12, #workSection .project11, #workSection .project10, #workSection .project9, #workSection .project8, #workSection .project7, #workSection .project6, #workSection .project5, #workSection .project4, #workSection .project3, #workSection .project2 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-#workSection .project1:hover, #workSection .project12:hover, #workSection .project11:hover, #workSection .project10:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
+#workSection .project1:hover, #workSection .project14:hover, #workSection .project13:hover, #workSection .project12:hover, #workSection .project11:hover, #workSection .project10:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
   background-image: url("../img/skm/dragon demo.gif");
 }
 #workSection .project2 {
@@ -191,6 +195,18 @@ body {
 }
 #workSection .project12:hover {
   background-image: url("../img/courageTheCowardlyDog/courage final 2.png");
+}
+#workSection .project13 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/zurgeCoin/final-zurge.png");
+}
+#workSection .project13:hover {
+  background-image: url("../img/zurgeCoin/final-zurge.png");
+}
+#workSection .project14 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/peculiarParticles/final1.PNG");
+}
+#workSection .project14:hover {
+  background-image: url("../img/peculiarParticles/final1.PNG");
 }
 
 .transitionalContent {
@@ -372,6 +388,18 @@ label:hover {
 }
 #WorkContent12 .threeXthree:nth-child(3) {
   margin-top: -15%;
+}
+
+#WorkContent13 .titleBlock {
+  background-image: url("../img/zurgeCoin/final-zurge.png");
+}
+#WorkContent13 div:nth-child(4) {
+  position: relative;
+  margin-top: -50%;
+}
+
+#WorkContent14 .titleBlock {
+  background-image: url("../img/peculiarParticles/final1.PNG");
 }
 
 @font-face {

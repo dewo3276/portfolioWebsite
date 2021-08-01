@@ -4,6 +4,10 @@
   display: grid;
   grid-template-rows: repeat(4,200px);
   grid-template-columns: repeat(4,1fr);
+  position: relative;
+  left: 20%;
+  background-image: url("../img/coverImage.jpg");
+  background-repeat: no-repeat;
 
   label {
     font-family: mostra-nuova;

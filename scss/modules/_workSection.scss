@@ -138,4 +138,23 @@
   .project12:hover {
     background-image: url("../img/courageTheCowardlyDog/courage final 2.png");
   }
+
+  .project13 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/zurgeCoin/final-zurge.png");
+  }
+
+  .project13:hover {
+    background-image: url("../img/zurgeCoin/final-zurge.png");
+  }
+
+  .project14 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/peculiarParticles/final1.PNG");
+  }
+
+  .project14:hover {
+    background-image: url("../img/peculiarParticles/final1.PNG");
+  }
+
 }
