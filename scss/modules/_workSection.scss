@@ -157,4 +157,22 @@
     background-image: url("../img/peculiarParticles/final1.PNG");
   }
 
+  .project15 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/cannonFodder/cannon (15).jpg");
+  }
+
+  .project15:hover {
+    background-image: url("../img/cannonFodder/cannon (15).jpg");
+  }
+
+  .project16 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/babyYoda/babyYoda1.PNG");
+  }
+
+  .project16:hover {
+    background-image: url("../img/babyYoda/babyYoda1.PNG");
+  }
+
 }

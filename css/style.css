@@ -125,13 +125,13 @@ body {
 #workSection #workDiv div label {
   transform: none;
 }
-#workSection .project1, #workSection .project14, #workSection .project13, #workSection .project12, #workSection .project11, #workSection .project10, #workSection .project9, #workSection .project8, #workSection .project7, #workSection .project6, #workSection .project5, #workSection .project4, #workSection .project3, #workSection .project2 {
+#workSection .project1, #workSection .project16, #workSection .project15, #workSection .project14, #workSection .project13, #workSection .project12, #workSection .project11, #workSection .project10, #workSection .project9, #workSection .project8, #workSection .project7, #workSection .project6, #workSection .project5, #workSection .project4, #workSection .project3, #workSection .project2 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-#workSection .project1:hover, #workSection .project14:hover, #workSection .project13:hover, #workSection .project12:hover, #workSection .project11:hover, #workSection .project10:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
+#workSection .project1:hover, #workSection .project16:hover, #workSection .project15:hover, #workSection .project14:hover, #workSection .project13:hover, #workSection .project12:hover, #workSection .project11:hover, #workSection .project10:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
   background-image: url("../img/skm/dragon demo.gif");
 }
 #workSection .project2 {
@@ -211,6 +211,18 @@ body {
 }
 #workSection .project14:hover {
   background-image: url("../img/peculiarParticles/final1.PNG");
+}
+#workSection .project15 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/cannonFodder/cannon (15).jpg");
+}
+#workSection .project15:hover {
+  background-image: url("../img/cannonFodder/cannon (15).jpg");
+}
+#workSection .project16 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.PNG");
+}
+#workSection .project16:hover {
+  background-image: url("../img/babyYoda/babyYoda1.PNG");
 }
 
 .transitionalContent {
@@ -406,6 +418,14 @@ label:hover {
   background-image: url("../img/peculiarParticles/final1.PNG");
 }
 
+#WorkContent15 .titleBlock {
+  background-image: url("../img/peculiarParticles/final1.PNG");
+}
+
+#WorkContent16 .titleBlock {
+  background-image: url("../img/babyYoda/babyYoda1.PNG");
+}
+
 @font-face {
   font-family: mostra-nuova, sans-serif;
   font-weight: 400;
@@ -433,7 +453,6 @@ nav :hover {
 #aboutMeSection {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 13%;
 }
 #aboutMeSection h1 {
   text-align: center;

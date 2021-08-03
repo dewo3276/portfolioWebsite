@@ -40,7 +40,7 @@ function contactGearSpin() {
     ease: "back"
   });
 
-  var pos = document.getElementById('aboutMeSection').offsetTop;
+  var pos = document.getElementById('contactSection').offsetTop;
   gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
 
@@ -61,6 +61,6 @@ function aboutMeGearSpin() {
     ease: "back"
   });
 
-  var pos = document.getElementById('contactSection').offsetTop;
+  var pos = document.getElementById('aboutMeSection').offsetTop;
   gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
