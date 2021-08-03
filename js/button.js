@@ -4,7 +4,15 @@ var pos = document.getElementById("workSection").offsetTop;
 function enlarge(className, type, index) {
   var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop-(window.innerHeight*.1);
 
-  gsap.set(className, {transformOrigin:"0 50"});
+  switch (type) {
+    case 0:
+      gsap.set(className, {transformOrigin: "0% 0%"});
+      break;
+    case 1:
+      gsap.set(className, {transformOrigin: "100% 0%"});
+      break;
+  }
+
   gsap.timeline()
     .to(window, {scrollTo: pos2, duration:.25})
     .to(className, {scaleX: "150%", scaleY: "150%", zIndex: 1, duration: 1})
@@ -20,10 +28,11 @@ function enlarge(className, type, index) {
 }
 
 function shrink(className, index) {
-  var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop;
+  var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop-(window.innerHeight*.1);
 
   gsap.timeline()
-    .to('#WorkContent' + (index + 1), {opacity: 0, display: "none"})
+    .to(window, {scrollTo: pos2, duration:.5})
+    .to('#WorkContent' + (index + 1), {opacity: 0, display: "none"},'-=10%')
     .to(className, {opacity: 1},'-=20%')
     .to(className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
     .to(window, {scrollTo: pos, duration:.5})
