@@ -31,17 +31,3 @@ ScrollTrigger.create({
       gsap.to(element,{opacity: 1, delay: .25 ,duration: .5})
 }
 });
-
-/*
-let sections = gsap.utils.toArray(".panel");
-
-sections.forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top",
-    scrub: 1,
-    pinSpacing: false,
-    snap: 1 / (sections.length - 1)
-  });
-});
-*/

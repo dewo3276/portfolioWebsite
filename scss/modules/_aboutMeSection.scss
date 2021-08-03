@@ -1,0 +1,76 @@
+#aboutMeSection {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 13%;
+
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    grid-column: span 5;
+    height: min-content;
+    margin: 0;
+    background-color: grey;
+    border-radius: 15px;
+  }
+
+  p {
+    grid-column: span 5;
+    background-color: grey;
+    border-radius: 15px;
+    padding: 0.5% 5%;
+    height: min-content;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 5% 12% repeat(6,1fr);
+    grid-gap: 20px;
+
+    div {
+      background-size: cover;
+    }
+
+    .medium {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .one {
+      background-image: url("../img/aboutMeSection/aboutMe1.png");
+      background-position: center;
+    }
+
+    .two {
+      background-image: url("../img/aboutMeSection/aboutMe3.png");
+    }
+
+    .tall {
+      grid-column: span 2;
+      grid-row: span 3;
+      background-image: url("../img/aboutMeSection/aboutMe4.gif");
+      background-position: top;
+    }
+
+    .large {
+      grid-row: span 3;
+      grid-column: span 3;
+      background-image: url("../img/aboutMeSection/aboutMe2.jpg");
+    }
+
+    .wide {
+      grid-column: span 3;
+      grid-row: span 2;
+      background-image: url("../img/aboutMeSection/aboutMe5.jpg");
+      background-position: center;
+    }
+
+    .small {
+      grid-column: span 1;
+      grid-row: span 1;
+      background-image: url("../img/aboutMeSection/aboutMe6.JPG");
+      background-position: 0% 25% ;
+    }
+  }
+}

@@ -40,7 +40,7 @@ function contactGearSpin() {
     ease: "back"
   });
 
-  var pos = document.getElementById('aboutMeSetion').offsetTop;
+  var pos = document.getElementById('aboutMeSection').offsetTop;
   gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
 

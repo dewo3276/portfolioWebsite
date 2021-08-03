@@ -1,12 +1,16 @@
+.backgroundPhoto{
+  width: 200%;
+  height: auto;
+}
+
 .main {
   max-height: 100vh;
   padding-bottom: 12%;
   display: grid;
-  grid-template-rows: repeat(4,200px);
-  grid-template-columns: repeat(4,1fr);
   position: relative;
-  left: 20%;
-  background-image: url("../img/coverImage.jpg");
+  grid-template-rows: repeat(4,200px);
+  grid-template-columns: 35% repeat(4,1fr);
+  z-index: 2;
   background-repeat: no-repeat;
 
   label {

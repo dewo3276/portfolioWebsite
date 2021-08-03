@@ -9,15 +9,19 @@ body {
   overflow-x: hidden;
 }
 
+.backgroundPhoto {
+  width: 200%;
+  height: auto;
+}
+
 .main {
   max-height: 100vh;
   padding-bottom: 12%;
   display: grid;
-  grid-template-rows: repeat(4, 200px);
-  grid-template-columns: repeat(4, 1fr);
   position: relative;
-  left: 20%;
-  background-image: url("../img/coverImage.jpg");
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: 35% repeat(4, 1fr);
+  z-index: 2;
   background-repeat: no-repeat;
 }
 .main label {
@@ -424,4 +428,70 @@ nav :hover {
   transition-delay: 0.5;
   transition-duration: 0.75;
   transform: scale(1.2);
+}
+
+#aboutMeSection {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 13%;
+}
+#aboutMeSection h1 {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  grid-column: span 5;
+  height: min-content;
+  margin: 0;
+  background-color: grey;
+  border-radius: 15px;
+}
+#aboutMeSection p {
+  grid-column: span 5;
+  background-color: grey;
+  border-radius: 15px;
+  padding: 0.5% 5%;
+  height: min-content;
+}
+#aboutMeSection div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 5% 12% repeat(6, 1fr);
+  grid-gap: 20px;
+}
+#aboutMeSection div div {
+  background-size: cover;
+}
+#aboutMeSection div .medium {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#aboutMeSection div .one {
+  background-image: url("../img/aboutMeSection/aboutMe1.png");
+  background-position: center;
+}
+#aboutMeSection div .two {
+  background-image: url("../img/aboutMeSection/aboutMe3.png");
+}
+#aboutMeSection div .tall {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url("../img/aboutMeSection/aboutMe4.gif");
+  background-position: top;
+}
+#aboutMeSection div .large {
+  grid-row: span 3;
+  grid-column: span 3;
+  background-image: url("../img/aboutMeSection/aboutMe2.jpg");
+}
+#aboutMeSection div .wide {
+  grid-column: span 3;
+  grid-row: span 2;
+  background-image: url("../img/aboutMeSection/aboutMe5.jpg");
+  background-position: center;
+}
+#aboutMeSection div .small {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-image: url("../img/aboutMeSection/aboutMe6.JPG");
+  background-position: 0% 25%;
 }
