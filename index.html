@@ -12,8 +12,10 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -425,24 +427,44 @@
         <img src="img/peculiarParticles/glasses repair 2.jpg" alt="">
       </div>
     </div>
-    <!--
     <div id="WorkContent15" class="transitionalContent">
       <div class="titleBlock">
-        <label class="closingTime">close</label>
+        <label class="closingTime" onclick="shrink('.project15',14)">close</label>
         <div>
           <h1>Cannon Fodder</h1>
           <h3>A physical computing game</h3>
         </div>
       </div>
-      <div class="video">
+      <div class="twoXone">
+        <p class="description">Cannon Fodder was created as a midterm project to demonstrate mastery over circuitry and coding within the arduino IDE. This project consisted of 2 potentiometers, 2 servo motors, 2 dc motors, a solenoid, neopixel strips, and 4 limit swithces. The cannon itself was a movable piece that was able to tilt up and down and rotat side to side as well as fire a ping pong ball from it. The goal of the game was to land as many ping pong balls into the score board and get the most points. The scoreboard had a few functions that kept track of score as well as let the user know what their current score was.</p>
+        <img src="img/cannonFodder/cannonDemo.gif" alt="">
+        <img src="img/cannonFodder/scoreBoardDemo.gif" alt="">
       </div>
-
+      <div class="video">
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/44vkpGx1s74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/CM2g_zZeBps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="twoXone">
+        <p>cannon and score board</p>
+        <img src="img/cannonFodder/cannonStill1.jpg" alt="">
+        <img src="img/cannonFodder/cannon (16).jpg" alt="">
+      </div>
+      <div class="twoXone">
+        <p>circuit diagram</p>
+        <img src="img/cannonFodder/cannon movement_schem.jpg" alt="">
+        <img src="img/cannonFodder/score board_schem.jpg" alt="">
+      </div>
+      <div class="threeXthree">
+        <p>functional renderings</p>
+        <img src="img/cannonFodder/stuff-2.0.JPG.jpg" alt="">
+        <img src="img/cannonFodder/stuff.JPG.jpg" alt="">
+        <img src="img/cannonFodder/box.jpg" alt="">
+      </div>
     </div>
-    -->
 
     <div id="WorkContent16" class="transitionalContent">
       <div class="titleBlock">
-        <label class="closingTime">close</label>
+        <label class="closingTime" onclick="shrink('.project16',15)">close</label>
         <div>
           <h1>Baby Yoda</h1>
           <h3>An exercise in sculpting and replication</h3>
@@ -501,13 +523,11 @@
       <div class="project14">
         <label onclick="enlarge('.project14',1,13)">Peculiar Partciles</label>
       </div>
-      <!--
       <div class="project15">
         <label onclick="enlarge('.project15',0,14)">Cannon Fodder</label>
       </div>
-    -->
       <div class="project16">
-        <label onclick="enlarge('.project16',0,15)">Baby Yoda</label>
+        <label onclick="enlarge('.project16',1,15)">Baby Yoda</label>
       </div>
     </div>
 
@@ -515,7 +535,12 @@
 
 
   <section id="contactSection">
-    <h1>create thing here</h1>
+    <div>
+      <h1>Contact</h1>
+      <h2>Destin Woods</h2>
+      <h3>Phone (mobile): 618-795-0531</h3>
+      <h3>email: destin.woods42@gmail.com</h3>
+    </div>
   </section>
 
 

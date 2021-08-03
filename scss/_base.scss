@@ -9,3 +9,11 @@ body{
   font-family: monstra-nuova;
   overflow-x: hidden;
 }
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  background: grey;
+}

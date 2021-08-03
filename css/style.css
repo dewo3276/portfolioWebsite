@@ -9,6 +9,15 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: grey;
+}
+
 .backgroundPhoto {
   width: 200%;
   height: auto;
@@ -419,7 +428,7 @@ label:hover {
 }
 
 #WorkContent15 .titleBlock {
-  background-image: url("../img/peculiarParticles/final1.PNG");
+  background-image: url("../img/cannonFodder/cannon (15).jpg");
 }
 
 #WorkContent16 .titleBlock {
@@ -510,4 +519,14 @@ nav :hover {
   grid-row: span 1;
   background-image: url("../img/aboutMeSection/aboutMe6.JPG");
   background-position: 0% 25%;
+}
+
+#contactSection {
+  margin: 15% 5% 5% 5%;
+  color: white;
+}
+#contactSection div {
+  background-color: grey;
+  padding: 5%;
+  border-radius: 50px;
 }
