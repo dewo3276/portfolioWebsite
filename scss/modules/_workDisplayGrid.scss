@@ -198,6 +198,9 @@ label:hover {
       }
     }
   }
+  .threeXthree{
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 #WorkContent11{
@@ -218,6 +221,7 @@ label:hover {
   }
   .threeXthree:nth-child(3){
     margin-top: -15%;
+    grid-template-rows: min-content 1fr;
   }
 }
 
@@ -235,12 +239,18 @@ label:hover {
   .titleBlock{
     background-image: url("../img/peculiarParticles/final1.PNG");
   }
+  .threeXthree{
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 
 #WorkContent15{
   .titleBlock{
     background-image: url("../img/cannonFodder/cannon (15).jpg");
+  }
+  .threeXthree{
+    grid-template-rows: min-content 1fr;
   }
 }
 

@@ -399,6 +399,9 @@ label:hover {
   border-radius: 15px;
   opacity: 0.75;
 }
+#WorkContent10 .threeXthree {
+  grid-template-rows: min-content 1fr;
+}
 
 #WorkContent11 .titleBlock {
   background-image: url("../img/spiceItUp/spice if up final.jpg");
@@ -413,6 +416,7 @@ label:hover {
 }
 #WorkContent12 .threeXthree:nth-child(3) {
   margin-top: -15%;
+  grid-template-rows: min-content 1fr;
 }
 
 #WorkContent13 .titleBlock {
@@ -426,9 +430,15 @@ label:hover {
 #WorkContent14 .titleBlock {
   background-image: url("../img/peculiarParticles/final1.PNG");
 }
+#WorkContent14 .threeXthree {
+  grid-template-rows: min-content 1fr;
+}
 
 #WorkContent15 .titleBlock {
   background-image: url("../img/cannonFodder/cannon (15).jpg");
+}
+#WorkContent15 .threeXthree {
+  grid-template-rows: min-content 1fr;
 }
 
 #WorkContent16 .titleBlock {
