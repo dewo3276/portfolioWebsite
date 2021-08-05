@@ -5,7 +5,7 @@
 }
 body {
   background: #38404F;
-  font-family: monstra-nuova;
+  font-family: monstra-nuova !important;
   overflow-x: hidden;
 }
 
@@ -445,11 +445,6 @@ label:hover {
   background-image: url("../img/babyYoda/babyYoda1.PNG");
 }
 
-@font-face {
-  font-family: mostra-nuova, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 nav {
   font-family: mostra-nuova;
   background-color: #282d38;
@@ -472,6 +467,7 @@ nav :hover {
 #aboutMeSection {
   margin-left: 5%;
   margin-right: 5%;
+  font-family: mostra-nuova;
 }
 #aboutMeSection h1 {
   text-align: center;
@@ -534,6 +530,7 @@ nav :hover {
 #contactSection {
   margin: 15% 5% 5% 5%;
   color: white;
+  font-family: mostra-nuova;
 }
 #contactSection div {
   background-color: grey;
