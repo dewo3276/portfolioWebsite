@@ -34,12 +34,12 @@
     }
 
     .one {
-      background-image: url("../img/aboutMeSection/aboutMe1.webp");
+      background-image: image("../img/aboutMeSection/aboutMe1.webp");
       background-position: center;
     }
 
     .two {
-      background-image: url("../img/aboutMeSection/aboutMe3.webp");
+      background-image: image("../img/aboutMeSection/aboutMe3.webp");
     }
 
     .tall {
@@ -51,20 +51,20 @@
     .large {
       grid-row: span 3;
       grid-column: span 3;
-      background-image: url("../img/aboutMeSection/aboutMe2.webp");
+      background-image: image("../img/aboutMeSection/aboutMe2.webp");
     }
 
     .wide {
       grid-column: span 3;
       grid-row: span 2;
-      background-image: url("../img/aboutMeSection/aboutMe5.webp");
+      background-image: image("../img/aboutMeSection/aboutMe5.webp");
       background-position: center;
     }
 
     .small {
       grid-column: span 1;
       grid-row: span 1;
-      background-image: url("../img/aboutMeSection/aboutMe6.webp");
+      background-image: image("../img/aboutMeSection/aboutMe6.webp");
       background-position: 0% 25% ;
     }
   }

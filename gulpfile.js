@@ -12,10 +12,10 @@ function style() {
 }
 
 gulp.task('compress-images', function() {
-  return gulp.src('img/zurgeCoin/*')
+  return gulp.src('img/pdtLetters/*')
     .pipe(imagemin({
       progressive: true, optimizationLevel:5}))
-    .pipe(gulp.dest('img/zurgeCoin'));
+    .pipe(gulp.dest('img/pdtLetters'));
 })
 
 gulp.task('convertImages', function() {

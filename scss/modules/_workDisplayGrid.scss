@@ -3,7 +3,7 @@
       font-size: 1.5em;
   }
   .titleBlock {
-    background-image: url("../img/skm/dragon demo.gif");
+    background-image: image("../img/skm/dragon demo.gif");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 85vh;
@@ -129,28 +129,28 @@ label:hover {
 
 #WorkContent2 {
   .titleBlock {
-    background-image: url("../img/pdtLetters/finished.webp");
+    background-image: image("../img/pdtLetters/finished.webp");
     background-position: center;
   }
 }
 
 #WorkContent3 {
   .titleBlock {
-    background-image: url("../img/penguinDevice/penguinFinal.webp");
+    background-image: image("../img/penguinDevice/penguinFinal.webp");
     background-position: center;
   }
 }
 
 #WorkContent4 {
   .titleBlock {
-    background-image: url("../img/hideAwayStairs/bccTable.gif");
+    background-image: image("../img/hideAwayStairs/bccTable.gif");
     color: black;
   }
 }
 
 #WorkContent5 {
   .titleBlock {
-    background-image: url("../img/capstoneClock/final1.webp");
+    background-image: image("../img/capstoneClock/final1.webp");
   }
   .oneAndone{
     position: relative;
@@ -163,31 +163,31 @@ label:hover {
 
 #WorkContent6 {
   .titleBlock {
-    background-image: url("../img/creepyCreature/caught 4.webp");
+    background-image: image("../img/creepyCreature/caught 4.webp");
   }
 }
 
 #WorkContent7 {
   .titleBlock {
-    background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
+    background-image: image("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
   }
 }
 
 #WorkContent8 {
   .titleBlock {
-    background-image: url("../img/customCoffeTable/final1.webp");
+    background-image: image("../img/customCoffeTable/final1.webp");
   }
 }
 
 #WorkContent9{
   .titleBlock{
-    background-image: url("../img/3dVisualizer/backgroundFrame.webp");
+    background-image: image("../img/3dVisualizer/backgroundFrame.webp");
   }
 }
 
 #WorkContent10{
   .titleBlock{
-    background-image: url("../img/fusionInfoGraphic/iteration4.webp");
+    background-image: image("../img/fusionInfoGraphic/iteration4.webp");
     div{
       color: black;
       h1, h3{
@@ -205,7 +205,7 @@ label:hover {
 
 #WorkContent11{
   .titleBlock{
-    background-image: url("../img/spiceItUp/spice if up final.webp");
+    background-image: image("../img/spiceItUp/spice if up final.webp");
   }
   .oneAndone{
     img{
@@ -217,7 +217,7 @@ label:hover {
 
 #WorkContent12{
   .titleBlock{
-    background-image: url("../img/courageTheCowardlyDog/courage final 2.webp");
+    background-image: image("../img/courageTheCowardlyDog/courage final 2.webp");
   }
   .threeXthree:nth-child(3){
     margin-top: -15%;
@@ -227,7 +227,7 @@ label:hover {
 
 #WorkContent13{
   .titleBlock{
-    background-image: url("../img/zurgeCoin/final-zurge.webp");
+    background-image: image("../img/zurgeCoin/final-zurge.webp");
   }
   div:nth-child(4){
     position: relative;
@@ -237,7 +237,7 @@ label:hover {
 
 #WorkContent14{
   .titleBlock{
-    background-image: url("../img/peculiarParticles/final1.webp");
+    background-image: image("../img/peculiarParticles/final1.webp");
   }
   .threeXthree{
     grid-template-rows: min-content 1fr;
@@ -247,7 +247,7 @@ label:hover {
 
 #WorkContent15{
   .titleBlock{
-    background-image: url("../img/cannonFodder/cannon (15).webp");
+    background-image: image("../img/cannonFodder/cannon (15).webp");
   }
   .threeXthree{
     grid-template-rows: min-content 1fr;
@@ -257,6 +257,6 @@ label:hover {
 
 #WorkContent16{
   .titleBlock{
-    background-image: url("../img/babyYoda/babyYoda1.webp");
+    background-image: image("../img/babyYoda/babyYoda1.webp");
   }
 }
