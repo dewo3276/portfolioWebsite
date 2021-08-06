@@ -35,7 +35,6 @@ function shrink(className, index) {
     .to('#WorkContent' + (index + 1), {opacity: 0, display: "none"},'-=10%')
     .to(className, {opacity: 1},'-=20%')
     .to(className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
-    .to(window, {scrollTo: pos, duration:.5})
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if(index!=i)

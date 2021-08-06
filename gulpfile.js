@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 function style() {
   return gulp.src('./scss/**/*.scss')
@@ -15,6 +16,12 @@ gulp.task('compress-images', function() {
     .pipe(imagemin({
       progressive: true, optimizationLevel:5}))
     .pipe(gulp.dest('img/zurgeCoin'));
+})
+
+gulp.task('convertImages', function() {
+  return gulp.src('img/zurgeCoin/*')
+  .pipe(webp())
+  .pipe(gulp.dest('img/zurgeCoin'));
 })
 
 function watch() {

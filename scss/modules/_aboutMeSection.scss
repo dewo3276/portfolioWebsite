@@ -34,38 +34,37 @@
     }
 
     .one {
-      background-image: url("../img/aboutMeSection/aboutMe1.png");
+      background-image: url("../img/aboutMeSection/aboutMe1.webp");
       background-position: center;
     }
 
     .two {
-      background-image: url("../img/aboutMeSection/aboutMe3.png");
+      background-image: url("../img/aboutMeSection/aboutMe3.webp");
     }
 
     .tall {
       grid-column: span 2;
       grid-row: span 3;
-      background-image: url("../img/aboutMeSection/aboutMe4.gif");
       background-position: top;
     }
 
     .large {
       grid-row: span 3;
       grid-column: span 3;
-      background-image: url("../img/aboutMeSection/aboutMe2.jpg");
+      background-image: url("../img/aboutMeSection/aboutMe2.webp");
     }
 
     .wide {
       grid-column: span 3;
       grid-row: span 2;
-      background-image: url("../img/aboutMeSection/aboutMe5.jpg");
+      background-image: url("../img/aboutMeSection/aboutMe5.webp");
       background-position: center;
     }
 
     .small {
       grid-column: span 1;
       grid-row: span 1;
-      background-image: url("../img/aboutMeSection/aboutMe6.JPG");
+      background-image: url("../img/aboutMeSection/aboutMe6.webp");
       background-position: 0% 25% ;
     }
   }
