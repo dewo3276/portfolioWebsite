@@ -3,6 +3,14 @@
   font-weight: 400;
   font-style: normal;
 }
+@media only screen and (max-width: 800px) {
+  .main {
+    width: 0.25%;
+  }
+  .main img {
+    width: 700px;
+  }
+}
 body {
   background: #38404F;
   font-family: monstra-nuova !important;
@@ -334,10 +342,6 @@ body {
   text-align: center;
 }
 .transitionalContent .video {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   margin-top: 5%;
 }
 

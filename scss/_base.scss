@@ -4,6 +4,15 @@
   font-style: normal;
 }
 
+@media only screen and (max-width: 800px) {
+  .main{
+    width: .25%;
+    img{
+      width: 700px;
+    }
+  }
+}
+
 body{
   background: $pageBackground;
   font-family: monstra-nuova !important;
