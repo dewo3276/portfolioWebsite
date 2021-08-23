@@ -16,8 +16,10 @@ function enlarge(className, type, index) {
     .to(window, {scrollTo: pos2, duration:.25})
     .to(className, {scaleX: "150%", scaleY: "150%", zIndex: 1, duration: 1})
     .to(className, {opacity: 0},'-=10%')
-    .to(window, {scrollTo: "#workHeader", duration:.5})
-    .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=5%');
+    .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=5%')
+    .to('#workDiv',{display: "none"});
+  var pos = document.getElementById('header').offsetTop;
+    gsap.to(window, {scrollTo: pos, duration:.5},'>');
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if (i != index) {
@@ -27,8 +29,9 @@ function enlarge(className, type, index) {
 }
 
 function shrink(className, index) {
-  var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop-(window.innerHeight*.1);
 
+  document.getElementById('workDiv').style.display="grid";
+    var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop-(window.innerHeight*.1);
   gsap.timeline()
     .to(window, {scrollTo: pos2, duration:.5})
     .to('#WorkContent' + (index + 1), {opacity: 0, display: "none"},'-=10%')

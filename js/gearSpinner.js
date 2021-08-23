@@ -19,7 +19,7 @@ function workGearSpin() {
     rotation: -180,
     ease: "back"
   });
-  var pos = document.getElementById('workSection').offsetTop;
+  var pos = document.getElementById('header').offsetTop-(window.innerHeight*.1);
   gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
 
