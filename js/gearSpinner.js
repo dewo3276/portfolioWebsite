@@ -20,7 +20,11 @@ function workGearSpin() {
     ease: "back"
   });
   var pos = document.getElementById('header').offsetTop-(window.innerHeight*.1);
-  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
+  gsap.timeline()
+  .to(window, {scrollTo: pos, delay: .5, duration: 1})
+  .to(".gearA, .gearC", {duration: .05, rotation: 0},"+=5%")
+  .to(".gearC", {duration: .05, rotation: 0})
+  .to(".gearW", {duration: .05, rotation: 0});
 }
 
 function contactGearSpin() {
@@ -41,7 +45,11 @@ function contactGearSpin() {
   });
 
   var pos = document.getElementById('contactSection').offsetTop;
-  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
+  gsap.timeline()
+  .to(window, {scrollTo: pos, delay: .5, duration: 1})
+  .to(".gearA, .gearC", {duration: .05, rotation: 0},"+=5%")
+  .to(".gearC", {duration: .05, rotation: 0})
+  .to(".gearW", {duration: .05, rotation: 0});
 }
 
 function aboutMeGearSpin() {
@@ -62,5 +70,9 @@ function aboutMeGearSpin() {
   });
 
   var pos = document.getElementById('aboutMeSection').offsetTop;
-  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
+  gsap.timeline()
+  .to(window, {scrollTo: pos, delay: .5, duration: 1})
+  .to(".gearA, .gearC", {duration: .05, rotation: 0},"+=5%")
+  .to(".gearC", {duration: .05, rotation: 0})
+  .to(".gearW", {duration: .05, rotation: 0});
 }

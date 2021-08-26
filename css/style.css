@@ -23,20 +23,17 @@ body {
   background: grey;
 }
 
-.backgroundPhoto {
-  width: 200%;
-  height: auto;
-}
-
 .main {
-  max-height: 100vh;
-  padding-bottom: 12%;
+  background-image: url("../img/coverImage3.webp");
+  min-height: 100vh;
+  padding-bottom: 5%;
   display: grid;
   position: relative;
-  grid-template-rows: repeat(4, 200px);
+  grid-template-rows: 10% 245px repeat(1, 1fr);
   grid-template-columns: 35% repeat(4, 1fr);
   z-index: 2;
   background-repeat: no-repeat;
+  background-size: 70%;
 }
 .main label {
   font-family: mostra-nuova;
@@ -58,18 +55,16 @@ body {
 
 .aboutMeGear {
   grid-column-start: 3;
-  grid-row-start: 1;
-  max-height: 245px;
-  position: relative;
-  left: -193px;
-  top: 25px;
-}
-.aboutMeGear img {
+  grid-row-start: 2;
   width: 245px;
+  height: 245px;
+  background-image: url("../img/aboutMeGear.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .aboutMeGear label {
-  bottom: -12.25px;
-  left: -196px;
+  top: 40%;
+  left: 20%;
 }
 .aboutMeGear :hover {
   cursor: pointer;
@@ -77,16 +72,17 @@ body {
 
 .workGear {
   grid-column-start: 2;
-  grid-row-start: 2;
-  max-height: 529.2px;
-}
-.workGear img {
+  grid-row-start: 3;
   width: 529.2px;
+  height: 529.2px;
+  background-image: url("../img/workGear.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .workGear label {
   font-size: 5em;
-  bottom: 320.7272727273px;
-  left: 135.6923076923px;
+  top: 40%;
+  left: 25%;
 }
 .workGear :hover {
   cursor: pointer;
@@ -94,19 +90,17 @@ body {
 
 .contactGear {
   grid-column-start: 3;
-  grid-row-start: 2;
-  max-height: 416.5px;
-  position: relative;
-  left: -40px;
-  top: 205px;
-}
-.contactGear img {
+  grid-row-start: 3;
+  height: 416.5px;
   width: 416.5px;
+  background-image: url("../img/contactGear.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .contactGear label {
   font-size: 3em;
-  bottom: 238px;
-  left: 128.1538461538px;
+  top: 42%;
+  left: 29%;
 }
 .contactGear :hover {
   cursor: pointer;

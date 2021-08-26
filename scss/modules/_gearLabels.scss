@@ -1,17 +1,16 @@
-.backgroundPhoto{
-  width: 200%;
-  height: auto;
-}
+$baseGearWidth: 245px;
 
 .main {
-  max-height: 100vh;
-  padding-bottom: 12%;
+  background-image: url("../img/coverImage3.webp");
+  min-height: 100vh;
+  padding-bottom: 5%;
   display: grid;
   position: relative;
-  grid-template-rows: repeat(4,200px);
+  grid-template-rows: 10% $baseGearWidth repeat(1,1fr);
   grid-template-columns: 35% repeat(4,1fr);
   z-index: 2;
   background-repeat: no-repeat;
+  background-size: 70%;
 
   label {
     font-family: mostra-nuova;
@@ -24,7 +23,6 @@
     text-decoration: none;
   }
 }
-$baseGearWidth: 245px;
 
 .main {
   div:hover {
@@ -38,19 +36,16 @@ $baseGearWidth: 245px;
 
 .aboutMeGear {
   grid-column-start: 3;
-  grid-row-start: 1;
-  max-height: $baseGearWidth;
-  position: relative;
-  left: -193px;
-  top: 25px;
-
-  img {
-    width: $baseGearWidth;
-  }
+  grid-row-start: 2;
+  width: $baseGearWidth;
+  height: $baseGearWidth;
+  background-image: url("../img/aboutMeGear.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   label {
-    bottom: -$baseGearWidth/20;
-    left: -$baseGearWidth/1.25;
+    top: 40%;
+    left: 20%;
   }
 
   :hover {
@@ -60,17 +55,17 @@ $baseGearWidth: 245px;
 
 .workGear {
   grid-column-start: 2;
-  grid-row-start: 2;
-  max-height: $baseGearWidth*2.16;
-
-  img {
-    width: $baseGearWidth*2.16;
-  }
+  grid-row-start: 3;
+  width: $baseGearWidth*2.16;
+  height: $baseGearWidth*2.16;
+  background-image: url("../img/workGear.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   label {
     font-size: 5em;
-    bottom: ($baseGearWidth*2.16)/1.65;
-    left: ($baseGearWidth*2.16)/3.9;
+    top: 40%;
+    left: 25%;
   }
 
   :hover {
@@ -80,20 +75,17 @@ $baseGearWidth: 245px;
 
 .contactGear {
   grid-column-start: 3;
-  grid-row-start: 2;
-  max-height: $baseGearWidth*1.7;
-  position: relative;
-  left: -40px;
-  top: 205px;
-
-  img {
-    width: $baseGearWidth*1.7;
-  }
+  grid-row-start: 3;
+  height: $baseGearWidth*1.7;
+  width: $baseGearWidth*1.7;
+  background-image: url("../img/contactGear.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   label {
     font-size: 3em;
-    bottom: ($baseGearWidth*1.7)/1.75;
-    left: ($baseGearWidth*1.7)/3.25;
+    top: 42%;
+    left: 29%;
   }
 
   :hover {
