@@ -72,8 +72,17 @@
     </div>
   </section>
 
-  <section id="workSection">
-    <h1 id="header" style="text-align: center; font-size: 3em;">My Work</h1>
+  <nav id="header">
+    <label id="nav1" onclick="navBarWork('1')" style="text-decoration: underline;">Creative Technology and Design</label>
+    <label id="nav2" onclick="navBarWork('2')">Theatrical Work</label>
+    <label id="nav3" onclick="navBarWork('3')">Resume</label>
+  </nav>
+
+  <section id="resume">
+    <iframe src="img/Woods_Destin_resume.pdf#toolbar=0" width="100%" height="700px"></iframe>
+  </section>
+
+  <section id="workSectionTheater">
     <div id="WorkContent1" class="transitionalContent">
       <div class="titleBlock">
         <label class="closingTime" onclick="shrink('.project1',0)">close</label>
@@ -100,6 +109,60 @@
         <img loading='lazy' src="img/skm/dragon8.webp" alt="">
       </div>
     </div>
+
+    <div id="WorkContent4" class="transitionalContent">
+      <div class="titleBlock">
+        <label class="closingTime" onclick="shrink('.project4',3)">close</label>
+        <div>
+          <h1>Broadway Christmas Carol</h1>
+          <h3>Scenic elements created for Broadway Christmas Carol</h3>
+        </div>
+      </div>
+      <div class="twoXtwo">
+        <p class="description">These hide away stairs provided an ease of access for actors in the production of Broadway Christmas Carol to dance on the tables for multiple musical numbers. These tables also functioned as many different set pieces
+          as they were designed to be mobile with a functioning wheel lift system. Trim was added after the initial construction was done and tests were conducted to ensure safety as well as functionality by the actors. To better conceal the ladder,
+          a hinged door held by magnets was added. After some failures with this system, these magnets were replaced as the tap dances that occurred on that table cause the doors to swing open at random intervals. There was also a problem with the
+          trim interfering with the rotation of the wheels, so cuts were made to allow for full spin of the wheels.</p>
+        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-8.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-15.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-59.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-146.webp" alt="">
+      </div>
+      <div class="twoXtwo">
+        <p>Design Photos</p>
+        <img loading='lazy' src="img/hideAwayStairs/design12.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/design2.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/design3.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/design14.webp" alt="">
+      </div>
+      <div class="twoXtwo">
+        <p>In Progress Welding Photos</p>
+        <img loading='lazy' src="img/hideAwayStairs/inProgress1.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/inProgress2.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/inProgress3.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/inProgress4.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/inProgress5.webp" alt="">
+        <img loading='lazy' src="img/hideAwayStairs/inProgress6.webp" alt="">
+      </div>
+    </div>
+
+    <div id="workDiv">
+      <div class="project1">
+        <label onclick="enlarge('.project1',0,0)">
+          She Kills Monsters
+        </label>
+      </div>
+
+      <div class="project4">
+        <label onclick="enlarge('.project4',1,3)">
+          Broadway Christmas Carol
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section id="workSection">
+
     <div id="WorkContent2" class="transitionalContent">
       <div class="titleBlock">
         <label class="closingTime" onclick="shrink('.project2',1)">close</label>
@@ -145,44 +208,8 @@
         <p>Code to operate penguin within Arduino IDE</p>
         <img loading='lazy' src="img/penguinDevice/penguinCode.webp" alt="">
       </div>
-
-
     </div>
-    <div id="WorkContent4" class="transitionalContent">
-      <div class="titleBlock">
-        <label class="closingTime" onclick="shrink('.project4',3)">close</label>
-        <div>
-          <h1>Broadway Christmas Carol</h1>
-          <h3>Scenic elements created for Broadway Christmas Carol</h3>
-        </div>
-      </div>
-      <div class="twoXtwo">
-        <p class="description">These hide away stairs provided an ease of access for actors in the production of Broadway Christmas Carol to dance on the tables for multiple musical numbers. These tables also functioned as many different set pieces
-          as they were designed to be mobile with a functioning wheel lift system. Trim was added after the initial construction was done and tests were conducted to ensure safety as well as functionality by the actors. To better conceal the ladder,
-          a hinged door held by magnets was added. After some failures with this system, these magnets were replaced as the tap dances that occurred on that table cause the doors to swing open at random intervals. There was also a problem with the
-          trim interfering with the rotation of the wheels, so cuts were made to allow for full spin of the wheels.</p>
-        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-8.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-15.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-59.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/BroadwayChristmasCarol-146.webp" alt="">
-      </div>
-      <div class="twoXtwo">
-        <p>Design Photos</p>
-        <img loading='lazy' src="img/hideAwayStairs/design12.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/design2.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/design3.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/design14.webp" alt="">
-      </div>
-      <div class="twoXtwo">
-        <p>In Progress Welding Photos</p>
-        <img loading='lazy' src="img/hideAwayStairs/inProgress1.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/inProgress2.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/inProgress3.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/inProgress4.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/inProgress5.webp" alt="">
-        <img loading='lazy' src="img/hideAwayStairs/inProgress6.webp" alt="">
-      </div>
-    </div>
+
     <div id="WorkContent5" class="transitionalContent">
       <div class="titleBlock">
         <label class="closingTime" onclick="shrink('.project5',4)">close</label>
@@ -472,11 +499,7 @@
       </div>
     </div>
     <div id="workDiv">
-      <div class="project1">
-        <label onclick="enlarge('.project1',0,0)">
-          She Kills Monsters
-        </label>
-      </div>
+
       <div class="project2">
         <label onclick="enlarge('.project2',1,1)">
           Phi Delta Theta Letters
@@ -485,9 +508,7 @@
       <div class="project3">
         <label onclick="enlarge('.project3',0,2)">Penguin I/O Box</label>
       </div>
-      <div class="project4">
-        <label onclick="enlarge('.project4',1,3)">Broadway Christmas Carol</label>
-      </div>
+
       <div class="project5">
         <label onclick="enlarge('.project5',0,4)">Self Destructing Clock</label>
       </div>

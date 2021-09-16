@@ -176,3 +176,13 @@
   }
 
 }
+#workSectionTheater{
+  @extend #workSection;
+  display: none;
+}
+
+#resume{
+  display: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
