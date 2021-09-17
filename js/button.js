@@ -19,7 +19,7 @@ function enlarge(className, type, index, WorkSectionType) {
     .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=5%')
     .to('#'+WorkSectionType,{display: "none"});
   var pos = document.getElementById('header').offsetTop;
-    gsap.to(window, {scrollTo: pos, duration:.5},'>');
+    gsap.to(window, {scrollTo: pos, duration:.5});
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if (i != index) {
