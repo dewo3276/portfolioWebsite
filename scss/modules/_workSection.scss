@@ -180,6 +180,9 @@
   @extend #workSection;
   display: none;
 }
+#workDivTheater{
+  @extend #workDiv;
+}
 
 #resume{
   display: none;

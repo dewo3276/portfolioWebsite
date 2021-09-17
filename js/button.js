@@ -1,6 +1,6 @@
 var projectsInFile = ['.project1', '.project2', '.project3', '.project4', '.project5', '.project6', '.project7', '.project8', '.project9', '.project10', '.project11', '.project12', '.project13', '.project14', '.project15', '.project16'];
 
-function enlarge(className, type, index) {
+function enlarge(className, type, index, WorkSectionType) {
   var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop-(window.innerHeight*.1);
 
   switch (type) {
@@ -17,7 +17,7 @@ function enlarge(className, type, index) {
     .to(className, {scaleX: "150%", scaleY: "150%", zIndex: 1, duration: 1})
     .to(className, {opacity: 0},'-=10%')
     .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=5%')
-    .to('#workDiv',{display: "none"});
+    .to('#'+WorkSectionType,{display: "none"});
   var pos = document.getElementById('header').offsetTop;
     gsap.to(window, {scrollTo: pos, duration:.5},'>');
 
@@ -28,9 +28,9 @@ function enlarge(className, type, index) {
   }
 }
 
-function shrink(className, index) {
+function shrink(className, index, WorkSectionType) {
 
-  document.getElementById('workDiv').style.display="grid";
+  document.getElementById(WorkSectionType).style.display="grid";
     var pos2 = document.getElementsByClassName(className.substring(1))[0].offsetTop-(window.innerHeight*.1);
   gsap.timeline()
     .to(window, {scrollTo: pos2, duration:.5})
