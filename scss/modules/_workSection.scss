@@ -175,6 +175,51 @@
     background-image: url("../img/babyYoda/babyYoda1.webp");
   }
 
+  .project17 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/hair/hair (2).webp");
+  }
+
+  .project17:hover {
+    background-image: url("../img/hair/hair (2).webp");
+  }
+
+  .project18 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project18:hover {
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project19 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project19:hover {
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project20 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project20:hover {
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project21 {
+    @extend .project1;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/babyYoda/babyYoda1.webp");
+  }
+
+  .project21:hover {
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+
 }
 #workSectionTheater{
   @extend #workSection;

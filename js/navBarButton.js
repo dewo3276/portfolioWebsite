@@ -1,5 +1,31 @@
 var navIds = ['nav1','nav2','nav3'];
+var projectsInFile = ['.project1', '.project2', '.project3', '.project4', '.project5', '.project6', '.project7', '.project8', '.project9', '.project10', '.project11', '.project12', '.project13', '.project14', '.project15', '.project16','.project17','.project18','.project19','.project20','.project21'];
 var previousSection = 1;
+var currentOpen = new isOpenedClass();
+
+function checkIfOpen(){
+  if(currentOpen.className!=0 && currentOpen.className !=undefined)
+  {
+    document.getElementById(currentOpen.WorkSectionType).style.display="grid";
+    gsap.timeline()
+      .to(window, {scrollTo: (document.getElementById('header').offsetTop-(window.innerHeight*.1)), duration:.5})
+      .to('#WorkContent' + (currentOpen.index+1), {opacity: 0, display: "none"},'-=50%')
+      .to('.closingTime', {opacity: 0, duration: .25},'<')
+      .to(currentOpen.className, {opacity: 1},'-=20%')
+      .to(currentOpen.className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
+    for (let i = 0; i < projectsInFile.length; i++) {
+      if(currentOpen.index!=i)
+      {
+        gsap.to(projectsInFile[i], {
+          opacity: 1,
+          delay: 1,
+          duration: 2
+        });
+      }
+    }
+    currentOpen.className=0;
+  }
+}
 
 function navigationContoller(id){
   var pos = document.getElementById(id).offsetTop;
@@ -17,6 +43,7 @@ function navBarWork(itterationNumber){
     document.getElementById(navIds[i]).style.textDecoration="none";
   }
   document.getElementById(navIds[itterationNumber-1]).style.textDecoration="underline";
+  checkIfOpen();
   switch (itterationNumber) {
     case '1':
         switch (previousSection) {

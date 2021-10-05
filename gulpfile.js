@@ -12,16 +12,16 @@ function style() {
 }
 
 gulp.task('compress-images', function() {
-  return gulp.src('img/pdtLetters/*')
+  return gulp.src('img/falStaff/*')
     .pipe(imagemin({
       progressive: true, optimizationLevel:5}))
-    .pipe(gulp.dest('img/pdtLetters'));
+    .pipe(gulp.dest('img/falStaff'));
 })
 
 gulp.task('convertImages', function() {
-  return gulp.src('img/zurgeCoin/*')
+  return gulp.src('img/falStaff/*')
   .pipe(webp())
-  .pipe(gulp.dest('img/zurgeCoin'));
+  .pipe(gulp.dest('img/falStaff'));
 })
 
 function watch() {

@@ -1,3 +1,21 @@
+.closingTime {
+  font-size: 2em;
+  background-color: grey;
+  padding: 5px;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 15px;
+  color: #d6d6d6;
+  position: fixed;
+  z-index: 2;
+  opacity: 0;
+}
+
+.closingTime:hover {
+  background-color: black;
+  color: white;
+}
+
 .transitionalContent {
   .description{
       font-size: 1.5em;
@@ -8,24 +26,6 @@
     background-size: cover;
     min-height: 85vh;
     margin: 0 2%;
-
-    .closingTime {
-      font-size: 2em;
-      background-color: grey;
-      padding: 5px;
-      bottom: 10%;
-      right: 10%;
-      border-radius: 15px;
-      color: #d6d6d6;
-      position: fixed;
-      z-index: 2;
-    }
-
-    .closingTime:hover {
-      background-color: black;
-      color: white;
-    }
-
     h1 {
       font-size: 3em;
     }
@@ -251,6 +251,36 @@ label:hover {
 
 
 #WorkContent16{
+  .titleBlock{
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+}
+
+#WorkContent17{
+  .titleBlock{
+    background-image: url("../img/hair/hair (2).webp");
+  }
+}
+
+#WorkContent18{
+  .titleBlock{
+    background-image: url("../img/babyYoda/hecuba (1).webp");
+  }
+}
+
+#WorkContent19{
+  .titleBlock{
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+}
+
+#WorkContent20{
+  .titleBlock{
+    background-image: url("../img/babyYoda/babyYoda1.webp");
+  }
+}
+
+#WorkContent21{
   .titleBlock{
     background-image: url("../img/babyYoda/babyYoda1.webp");
   }

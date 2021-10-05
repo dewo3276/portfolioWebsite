@@ -133,13 +133,13 @@ body {
 #workSection #workDiv div label, #workSection #workDivTheater div label, #workSectionTheater #workDiv div label, #workSectionTheater #workDivTheater div label {
   transform: none;
 }
-#workSection .project1, #workSectionTheater .project1, #workSection .project16, #workSectionTheater .project16, #workSection .project15, #workSectionTheater .project15, #workSection .project14, #workSectionTheater .project14, #workSection .project13, #workSectionTheater .project13, #workSection .project12, #workSectionTheater .project12, #workSection .project11, #workSectionTheater .project11, #workSection .project10, #workSectionTheater .project10, #workSection .project9, #workSectionTheater .project9, #workSection .project8, #workSectionTheater .project8, #workSection .project7, #workSectionTheater .project7, #workSection .project6, #workSectionTheater .project6, #workSection .project5, #workSectionTheater .project5, #workSection .project4, #workSectionTheater .project4, #workSection .project3, #workSectionTheater .project3, #workSection .project2, #workSectionTheater .project2 {
+#workSection .project1, #workSectionTheater .project1, #workSection .project21, #workSectionTheater .project21, #workSection .project20, #workSectionTheater .project20, #workSection .project19, #workSectionTheater .project19, #workSection .project18, #workSectionTheater .project18, #workSection .project17, #workSectionTheater .project17, #workSection .project16, #workSectionTheater .project16, #workSection .project15, #workSectionTheater .project15, #workSection .project14, #workSectionTheater .project14, #workSection .project13, #workSectionTheater .project13, #workSection .project12, #workSectionTheater .project12, #workSection .project11, #workSectionTheater .project11, #workSection .project10, #workSectionTheater .project10, #workSection .project9, #workSectionTheater .project9, #workSection .project8, #workSectionTheater .project8, #workSection .project7, #workSectionTheater .project7, #workSection .project6, #workSectionTheater .project6, #workSection .project5, #workSectionTheater .project5, #workSection .project4, #workSectionTheater .project4, #workSection .project3, #workSectionTheater .project3, #workSection .project2, #workSectionTheater .project2 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-#workSection .project1:hover, #workSectionTheater .project1:hover, #workSection .project16:hover, #workSectionTheater .project16:hover, #workSection .project15:hover, #workSectionTheater .project15:hover, #workSection .project14:hover, #workSectionTheater .project14:hover, #workSection .project13:hover, #workSectionTheater .project13:hover, #workSection .project12:hover, #workSectionTheater .project12:hover, #workSection .project11:hover, #workSectionTheater .project11:hover, #workSection .project10:hover, #workSectionTheater .project10:hover, #workSection .project9:hover, #workSectionTheater .project9:hover, #workSection .project8:hover, #workSectionTheater .project8:hover, #workSection .project7:hover, #workSectionTheater .project7:hover, #workSection .project6:hover, #workSectionTheater .project6:hover, #workSection .project5:hover, #workSectionTheater .project5:hover, #workSection .project4:hover, #workSectionTheater .project4:hover, #workSection .project3:hover, #workSectionTheater .project3:hover, #workSection .project2:hover, #workSectionTheater .project2:hover {
+#workSection .project1:hover, #workSectionTheater .project1:hover, #workSection .project21:hover, #workSectionTheater .project21:hover, #workSection .project20:hover, #workSectionTheater .project20:hover, #workSection .project19:hover, #workSectionTheater .project19:hover, #workSection .project18:hover, #workSectionTheater .project18:hover, #workSection .project17:hover, #workSectionTheater .project17:hover, #workSection .project16:hover, #workSectionTheater .project16:hover, #workSection .project15:hover, #workSectionTheater .project15:hover, #workSection .project14:hover, #workSectionTheater .project14:hover, #workSection .project13:hover, #workSectionTheater .project13:hover, #workSection .project12:hover, #workSectionTheater .project12:hover, #workSection .project11:hover, #workSectionTheater .project11:hover, #workSection .project10:hover, #workSectionTheater .project10:hover, #workSection .project9:hover, #workSectionTheater .project9:hover, #workSection .project8:hover, #workSectionTheater .project8:hover, #workSection .project7:hover, #workSectionTheater .project7:hover, #workSection .project6:hover, #workSectionTheater .project6:hover, #workSection .project5:hover, #workSectionTheater .project5:hover, #workSection .project4:hover, #workSectionTheater .project4:hover, #workSection .project3:hover, #workSectionTheater .project3:hover, #workSection .project2:hover, #workSectionTheater .project2:hover {
   background-image: url("../img/skm/dragon demo.gif");
 }
 #workSection .project2, #workSectionTheater .project2 {
@@ -232,6 +232,36 @@ body {
 #workSection .project16:hover, #workSectionTheater .project16:hover {
   background-image: url("../img/babyYoda/babyYoda1.webp");
 }
+#workSection .project17, #workSectionTheater .project17 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hair/hair (2).webp");
+}
+#workSection .project17:hover, #workSectionTheater .project17:hover {
+  background-image: url("../img/hair/hair (2).webp");
+}
+#workSection .project18, #workSectionTheater .project18 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project18:hover, #workSectionTheater .project18:hover {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project19, #workSectionTheater .project19 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project19:hover, #workSectionTheater .project19:hover {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project20, #workSectionTheater .project20 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project20:hover, #workSectionTheater .project20:hover {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project21, #workSectionTheater .project21 {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+}
+#workSection .project21:hover, #workSectionTheater .project21:hover {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
 
 #workSectionTheater {
   display: none;
@@ -241,6 +271,24 @@ body {
   display: none;
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.closingTime {
+  font-size: 2em;
+  background-color: grey;
+  padding: 5px;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 15px;
+  color: #d6d6d6;
+  position: fixed;
+  z-index: 2;
+  opacity: 0;
+}
+
+.closingTime:hover {
+  background-color: black;
+  color: white;
 }
 
 .transitionalContent {
@@ -259,21 +307,6 @@ body {
   background-size: cover;
   min-height: 85vh;
   margin: 0 2%;
-}
-.transitionalContent .titleBlock .closingTime {
-  font-size: 2em;
-  background-color: grey;
-  padding: 5px;
-  bottom: 10%;
-  right: 10%;
-  border-radius: 15px;
-  color: #d6d6d6;
-  position: fixed;
-  z-index: 2;
-}
-.transitionalContent .titleBlock .closingTime:hover {
-  background-color: black;
-  color: white;
 }
 .transitionalContent .titleBlock h1 {
   font-size: 3em;
@@ -446,6 +479,26 @@ label:hover {
 }
 
 #WorkContent16 .titleBlock {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
+
+#WorkContent17 .titleBlock {
+  background-image: url("../img/hair/hair (2).webp");
+}
+
+#WorkContent18 .titleBlock {
+  background-image: url("../img/babyYoda/hecuba (1).webp");
+}
+
+#WorkContent19 .titleBlock {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
+
+#WorkContent20 .titleBlock {
+  background-image: url("../img/babyYoda/babyYoda1.webp");
+}
+
+#WorkContent21 .titleBlock {
   background-image: url("../img/babyYoda/babyYoda1.webp");
 }
 
