@@ -12,16 +12,16 @@ function style() {
 }
 
 gulp.task('compress-images', function() {
-  return gulp.src('img/falStaff/*')
+  return gulp.src('img/intoTheWoods/*')
     .pipe(imagemin({
       progressive: true, optimizationLevel:5}))
-    .pipe(gulp.dest('img/falStaff'));
+    .pipe(gulp.dest('img/intoTheWoods'));
 })
 
 gulp.task('convertImages', function() {
-  return gulp.src('img/falStaff/*')
+  return gulp.src('img/intoTheWoods/*')
   .pipe(webp())
-  .pipe(gulp.dest('img/falStaff'));
+  .pipe(gulp.dest('img/intoTheWoods'));
 })
 
 function watch() {

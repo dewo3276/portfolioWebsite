@@ -56,6 +56,20 @@
     }
   }
 
+  .threexOne{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: min-content 1fr;
+    grid-gap: 2%;
+    img{
+      width: 100%;
+    }
+    p{
+      text-align: center;
+      grid-column: 1/4;
+    }
+  }
+
   .twoXtwo {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -89,6 +103,7 @@
     }
     margin-bottom: 2%;
   }
+
 
   .threeXtwo {
     display: grid;
@@ -264,24 +279,24 @@ label:hover {
 
 #WorkContent18{
   .titleBlock{
-    background-image: url("../img/babyYoda/hecuba (1).webp");
+    background-image: url("../img/hecuba/hecuba (2).webp");
   }
 }
 
 #WorkContent19{
   .titleBlock{
-    background-image: url("../img/babyYoda/babyYoda1.webp");
+    background-image: url("../img/intoTheWoods/IntoTheWoods-29.webp");
   }
 }
 
 #WorkContent20{
   .titleBlock{
-    background-image: url("../img/babyYoda/babyYoda1.webp");
+    background-image: url("../img/greatExpectations/greatExpectations (1).webp");
   }
 }
 
 #WorkContent21{
   .titleBlock{
-    background-image: url("../img/babyYoda/babyYoda1.webp");
+    background-image: url("../img/falStaff/fallStaff (4).webp");
   }
 }

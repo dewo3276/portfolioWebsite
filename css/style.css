@@ -106,6 +106,10 @@ body {
   cursor: pointer;
 }
 
+.closingTime {
+  font-family: mostra-nuova;
+}
+
 #workSection, #workSectionTheater {
   color: white;
   margin-left: 2%;
@@ -239,28 +243,28 @@ body {
   background-image: url("../img/hair/hair (2).webp");
 }
 #workSection .project18, #workSectionTheater .project18 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hecuba/hecuba (2).webp");
 }
 #workSection .project18:hover, #workSectionTheater .project18:hover {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/hecuba/hecuba (2).webp");
 }
 #workSection .project19, #workSectionTheater .project19 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/intoTheWoods/IntoTheWoods-29.webp");
 }
 #workSection .project19:hover, #workSectionTheater .project19:hover {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/intoTheWoods/IntoTheWoods-29.webp");
 }
 #workSection .project20, #workSectionTheater .project20 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/greatExpectations/greatExpectations (1).webp");
 }
 #workSection .project20:hover, #workSectionTheater .project20:hover {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/greatExpectations/greatExpectations (1).webp");
 }
 #workSection .project21, #workSectionTheater .project21 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/falStaff/fallStaff (4).webp");
 }
 #workSection .project21:hover, #workSectionTheater .project21:hover {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/falStaff/fallStaff (4).webp");
 }
 
 #workSectionTheater {
@@ -324,6 +328,19 @@ body {
   width: 100%;
 }
 .transitionalContent .threeXthree p {
+  text-align: center;
+  grid-column: 1/4;
+}
+.transitionalContent .threexOne {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content 1fr;
+  grid-gap: 2%;
+}
+.transitionalContent .threexOne img {
+  width: 100%;
+}
+.transitionalContent .threexOne p {
   text-align: center;
   grid-column: 1/4;
 }
@@ -487,19 +504,19 @@ label:hover {
 }
 
 #WorkContent18 .titleBlock {
-  background-image: url("../img/babyYoda/hecuba (1).webp");
+  background-image: url("../img/hecuba/hecuba (2).webp");
 }
 
 #WorkContent19 .titleBlock {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/intoTheWoods/IntoTheWoods-29.webp");
 }
 
 #WorkContent20 .titleBlock {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/greatExpectations/greatExpectations (1).webp");
 }
 
 #WorkContent21 .titleBlock {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: url("../img/falStaff/fallStaff (4).webp");
 }
 
 nav {
