@@ -23,6 +23,17 @@ body {
   background: grey;
 }
 
+.welcomeBanner {
+  font-family: mostra-nuova;
+  color: white;
+  position: relative;
+  font-size: 300%;
+  top: 75%;
+  left: 25%;
+  margin: 0px;
+  padding: 0px;
+}
+
 .main {
   background-image: url("../img/coverImage3.webp");
   min-height: 100vh;
@@ -273,8 +284,8 @@ body {
 
 #resume {
   display: none;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .closingTime {
