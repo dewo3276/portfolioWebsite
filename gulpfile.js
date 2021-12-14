@@ -12,16 +12,16 @@ function style() {
 }
 
 gulp.task('compress-images', function() {
-  return gulp.src('img/intoTheWoods/*')
+  return gulp.src('img/aboutMeSection/boatScreenshot.jpg')
     .pipe(imagemin({
       progressive: true, optimizationLevel:5}))
-    .pipe(gulp.dest('img/intoTheWoods'));
+    .pipe(gulp.dest('img/aboutMeSection'));
 })
 
 gulp.task('convertImages', function() {
-  return gulp.src('img/intoTheWoods/*')
+  return gulp.src('img/aboutMeSection/boatScreenshot.jpg')
   .pipe(webp())
-  .pipe(gulp.dest('img/intoTheWoods'));
+  .pipe(gulp.dest('img/aboutMeSection'));
 })
 
 function watch() {

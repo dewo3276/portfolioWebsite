@@ -31,11 +31,11 @@
     .medium {
       grid-column: span 2;
       grid-row: span 2;
+      background-position: center;
     }
 
     .one {
       background-image: url("../img/aboutMeSection/aboutMe1.webp");
-      background-position: center;
     }
 
     .two {
@@ -45,13 +45,17 @@
     .tall {
       grid-column: span 2;
       grid-row: span 3;
-      background-position: top;
+      background-image: url("../img/aboutMeSection/boatScreenshot.webp");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
     .large {
       grid-row: span 3;
       grid-column: span 3;
       background-image: url("../img/aboutMeSection/aboutMe2.webp");
+      background-position: center;
     }
 
     .wide {

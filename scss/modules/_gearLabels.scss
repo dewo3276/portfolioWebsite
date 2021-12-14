@@ -2,15 +2,14 @@ $baseGearWidth: 245px;
 
 .main {
   background-image: url("../img/coverImage3.webp");
-  min-height: 100vh;
-  padding-bottom: 5%;
   display: grid;
   position: relative;
-  grid-template-rows: 10% $baseGearWidth repeat(1,1fr);
+  grid-template-rows: 10% $baseGearWidth .5fr;
   grid-template-columns: 35% repeat(4,1fr);
   z-index: 2;
   background-repeat: no-repeat;
   background-size: 70%;
+  height: 115vh;
 
   label {
     font-family: mostra-nuova;

@@ -6,6 +6,18 @@
 @media only screen and (max-width: 800px) {
   html {
     min-width: 400%;
+    padding: 10px;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  h3 {
+    font-size: 2em;
+    margin-top: 1%;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin-top: 1%;
   }
 }
 body {
@@ -30,21 +42,20 @@ body {
   font-size: 300%;
   top: 75%;
   left: 25%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 5%;
 }
 
 .main {
   background-image: url("../img/coverImage3.webp");
-  min-height: 100vh;
-  padding-bottom: 5%;
   display: grid;
   position: relative;
-  grid-template-rows: 10% 245px repeat(1, 1fr);
+  grid-template-rows: 10% 245px 0.5fr;
   grid-template-columns: 35% repeat(4, 1fr);
   z-index: 2;
   background-repeat: no-repeat;
   background-size: 70%;
+  height: 115vh;
 }
 .main label {
   font-family: mostra-nuova;
@@ -591,10 +602,10 @@ nav :hover {
 #aboutMeSection div .medium {
   grid-column: span 2;
   grid-row: span 2;
+  background-position: center;
 }
 #aboutMeSection div .one {
   background-image: url("../img/aboutMeSection/aboutMe1.webp");
-  background-position: center;
 }
 #aboutMeSection div .two {
   background-image: url("../img/aboutMeSection/aboutMe3.webp");
@@ -602,12 +613,16 @@ nav :hover {
 #aboutMeSection div .tall {
   grid-column: span 2;
   grid-row: span 3;
-  background-position: top;
+  background-image: url("../img/aboutMeSection/boatScreenshot.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #aboutMeSection div .large {
   grid-row: span 3;
   grid-column: span 3;
   background-image: url("../img/aboutMeSection/aboutMe2.webp");
+  background-position: center;
 }
 #aboutMeSection div .wide {
   grid-column: span 3;
@@ -631,4 +646,12 @@ nav :hover {
   background-color: grey;
   padding: 5%;
   border-radius: 50px;
+}
+
+.email a {
+  padding: 5px;
+}
+.email a:hover {
+  background-color: black;
+  border-radius: 10px;
 }
