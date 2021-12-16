@@ -38,20 +38,31 @@ body {
 .welcomeBanner {
   font-family: mostra-nuova;
   color: white;
-  position: relative;
   font-size: 300%;
-  top: 75%;
-  left: 25%;
   margin: 0;
   padding: 5%;
+}
+
+.gearContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.gearContainer div {
+  background-position: center;
+}
+.gearContainer div:hover {
+  background-size: 102%;
+}
+.gearContainer div:hover label {
+  background-color: #939598;
 }
 
 .main {
   background-image: url("../img/coverImage3.webp");
   display: grid;
-  position: relative;
-  grid-template-rows: 10% 245px 0.5fr;
-  grid-template-columns: 35% repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -68,18 +79,11 @@ body {
   text-decoration: none;
 }
 
-.main div:hover {
-  transform: scale(1.02);
-}
-.main div:hover label {
-  background-color: #939598;
-}
-
 .aboutMeGear {
   grid-column-start: 3;
   grid-row-start: 2;
-  width: 245px;
-  height: 245px;
+  width: 29vh;
+  height: 29vh;
   background-image: url("../img/aboutMeGear.webp");
   background-repeat: no-repeat;
   background-size: contain;
@@ -95,8 +99,8 @@ body {
 .workGear {
   grid-column-start: 2;
   grid-row-start: 3;
-  width: 529.2px;
-  height: 529.2px;
+  width: 62.64vh;
+  height: 62.64vh;
   background-image: url("../img/workGear.webp");
   background-repeat: no-repeat;
   background-size: contain;
@@ -113,8 +117,8 @@ body {
 .contactGear {
   grid-column-start: 3;
   grid-row-start: 3;
-  height: 416.5px;
-  width: 416.5px;
+  height: 49.3vh;
+  width: 49.3vh;
   background-image: url("../img/contactGear.webp");
   background-repeat: no-repeat;
   background-size: contain;

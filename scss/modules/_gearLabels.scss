@@ -1,11 +1,26 @@
-$baseGearWidth: 245px;
+$baseGearWidth: 29vh;
+
+.gearContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  div{
+    background-position: center;
+  }
+
+  div:hover {
+    background-size: 102%;
+    label {
+      background-color: rgba(147, 149, 152, 1);
+    }
+  }
+}
 
 .main {
   background-image: url("../img/coverImage3.webp");
   display: grid;
-  position: relative;
-  grid-template-rows: 10% $baseGearWidth .5fr;
-  grid-template-columns: 35% repeat(4,1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -20,16 +35,6 @@ $baseGearWidth: 245px;
     color: $textLabel;
     position: relative;
     text-decoration: none;
-  }
-}
-
-.main {
-  div:hover {
-    transform: scale(1.02);
-
-    label {
-      background-color: rgba(147, 149, 152, 1);
-    }
   }
 }
 
