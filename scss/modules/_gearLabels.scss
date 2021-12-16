@@ -20,7 +20,7 @@ $baseGearWidth: 29vh;
   background-image: url("../img/coverImage3.webp");
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr .25fr;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: 70%;
