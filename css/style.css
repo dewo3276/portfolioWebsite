@@ -617,7 +617,7 @@ nav :hover {
 #aboutMeSection div .tall {
   grid-column: span 2;
   grid-row: span 3;
-  background-image: url("../img/aboutMeSection/boatScreenshot.webp");
+  background-image: url("../img/aboutMeSection/aboutMe7.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
