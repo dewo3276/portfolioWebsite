@@ -59,7 +59,7 @@ body {
 }
 
 .main {
-  background-image: url("../img/coverImage3.webp");
+  background-image: -webkit-image-set(url("../img/coverImage3.webp") 1x, url("../img/jpgs/coverImage3.png") 2x);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.25fr;
@@ -84,7 +84,7 @@ body {
   grid-row-start: 2;
   width: 29vh;
   height: 29vh;
-  background-image: url("../img/aboutMeGear.webp");
+  background-image: -webkit-image-set(url("../img/aboutMeGear.webp") 1x, url("../img/jpgs/aboutMeGear.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -101,7 +101,7 @@ body {
   grid-row-start: 3;
   width: 62.64vh;
   height: 62.64vh;
-  background-image: url("../img/workGear.webp");
+  background-image: -webkit-image-set(url("../img/workGear.webp") 1x, url("../img/jpgs/workGear.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -119,7 +119,7 @@ body {
   grid-row-start: 3;
   height: 49.3vh;
   width: 49.3vh;
-  background-image: url("../img/contactGear.webp");
+  background-image: -webkit-image-set(url("../img/contactGear.webp") 1x, url("../img/jpgs/contactGear.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -173,46 +173,46 @@ body {
   background-image: url("../img/skm/dragon demo.gif");
 }
 #workSection .project2, #workSectionTheater .project2 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/pdtLetters/finished.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/pdtLetters/finished.webp") 1x, url("../img/pdtLetters/jpgs/finished.jpg") 2x);
 }
 #workSection .project2:hover, #workSectionTheater .project2:hover {
-  background-image: url("../img/pdtLetters/finished.webp");
+  background-image: -webkit-image-set(url("../img/pdtLetters/finished.webp") 1x, url("../img/pdtLetters/jpgs/finished.jpg") 2x);
 }
 #workSection .project3, #workSectionTheater .project3 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/penguinDevice/penguinFinal.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/penguinDevice/penguinFinal.webp") 1x, url("../img/penguinDevice/jpgs/penguinFinal.jpg") 2x);
 }
 #workSection .project3:hover, #workSectionTheater .project3:hover {
-  background-image: url("../img/penguinDevice/penguinFinal.webp");
+  background-image: -webkit-image-set(url("../img/penguinDevice/penguinFinal.webp") 1x, url("../img/penguinDevice/jpgs/penguinFinal.jpg") 2x);
 }
 #workSection .project4, #workSectionTheater .project4 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hideAwayStairs/design3.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/hideAwayStairs/design3.webp") 1x, url("../img/hideAwayStairs/jpgs/design3.png") 2x);
 }
 #workSection .project4:hover, #workSectionTheater .project4:hover {
-  background-image: url("../img/hideAwayStairs/design3.webp");
+  background-image: -webkit-image-set(url("../img/hideAwayStairs/design3.webp") 1x, url("../img/hideAwayStairs/jpgs/design3.png") 2x);
 }
 #workSection .project5, #workSectionTheater .project5 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/capstoneClock/final1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/capstoneClock/final1.webp") 1x, url("../img/capstoneClock/jpgs/final1.jpg") 2x);
 }
 #workSection .project5:hover, #workSectionTheater .project5:hover {
-  background-image: url("../img/capstoneClock/final1.webp");
+  background-image: -webkit-image-set(url("../img/capstoneClock/final1.webp") 1x, url("../img/capstoneClock/jpgs/final1.jpg") 2x);
 }
 #workSection .project6, #workSectionTheater .project6 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/creepyCreature/caught 4.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/creepyCreature/caught 4.webp") 1x, url("../img/creepyCreature/jpgs/caught 4.png") 2x);
 }
 #workSection .project6:hover, #workSectionTheater .project6:hover {
-  background-image: url("../img/creepyCreature/caught 4.webp");
+  background-image: -webkit-image-set(url("../img/creepyCreature/caught 4.webp") 1x, url("../img/creepyCreature/jpgs/caught 4.png") 2x);
 }
 #workSection .project7, #workSectionTheater .project7 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp") 1x, url("../img/sherlockHolmesRenderings/jpgs/stag 1 behind bar still.jpg") 2x);
 }
 #workSection .project7:hover, #workSectionTheater .project7:hover {
-  background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
+  background-image: -webkit-image-set(url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp") 1x, url("../img/sherlockHolmesRenderings/jpgs/stag 1 behind bar still.jpg") 2x);
 }
 #workSection .project8, #workSectionTheater .project8 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/customCoffeTable/final1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/customCoffeTable/final1.webp") 1x, url("../img/customCoffeTable/jpgs/final1.jpg") 2x);
 }
 #workSection .project8:hover, #workSectionTheater .project8:hover {
-  background-image: url("../img/customCoffeTable/final1.webp");
+  background-image: -webkit-image-set(url("../img/customCoffeTable/final1.webp") 1x, url("../img/customCoffeTable/jpgs/final1.jpg") 2x);
 }
 #workSection .project9, #workSectionTheater .project9 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/3dVisualizer/Evisualizer.gif");
@@ -221,46 +221,46 @@ body {
   background-image: url("../img/3dVisualizer/Evisualizer.gif");
 }
 #workSection .project10, #workSectionTheater .project10 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/fusionInfoGraphic/iteration4.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/fusionInfoGraphic/iteration4.webp") 1x, url("../img/fusionInfoGraphic/jpgs/iteration4.jpg") 2x);
 }
 #workSection .project10:hover, #workSectionTheater .project10:hover {
-  background-image: url("../img/fusionInfoGraphic/iteration4.webp");
+  background-image: -webkit-image-set(url("../img/fusionInfoGraphic/iteration4.webp") 1x, url("../img/fusionInfoGraphic/jpgs/iteration4.jpg") 2x);
 }
 #workSection .project11, #workSectionTheater .project11 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/spiceItUp/spice if up final.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/spiceItUp/spice if up final.webp") 1x, url("../img/spiceItUp/jpgs/spice if up final.jpg") 2x);
 }
 #workSection .project11:hover, #workSectionTheater .project11:hover {
-  background-image: url("../img/spiceItUp/spice if up final.webp");
+  background-image: -webkit-image-set(url("../img/spiceItUp/spice if up final.webp") 1x, url("../img/spiceItUp/jpgs/spice if up final.jpg") 2x);
 }
 #workSection .project12, #workSectionTheater .project12 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/courageTheCowardlyDog/courage final 2.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/courageTheCowardlyDog/courage final 2.webp") 1x, url("../img/courageTheCowardlyDog/jpgs/courage final 2.png") 2x);
 }
 #workSection .project12:hover, #workSectionTheater .project12:hover {
-  background-image: url("../img/courageTheCowardlyDog/courage final 2.webp");
+  background-image: -webkit-image-set(url("../img/courageTheCowardlyDog/courage final 2.webp") 1x, url("../img/courageTheCowardlyDog/jpgs/courage final 2.png") 2x);
 }
 #workSection .project13, #workSectionTheater .project13 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/zurgeCoin/final-zurge.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/zurgeCoin/final-zurge.webp") 1x, url("../img/zurgeCoin/jpgs/final-zurge.png") 2x);
 }
 #workSection .project13:hover, #workSectionTheater .project13:hover {
-  background-image: url("../img/zurgeCoin/final-zurge.webp");
+  background-image: -webkit-image-set(url("../img/zurgeCoin/final-zurge.webp") 1x, url("../img/zurgeCoin/jpgs/final-zurge.png") 2x);
 }
 #workSection .project14, #workSectionTheater .project14 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/peculiarParticles/final1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/peculiarParticles/final1.webp") 1x, url("../img/peculiarParticles/jpgs/final1.PNG") 2x);
 }
 #workSection .project14:hover, #workSectionTheater .project14:hover {
-  background-image: url("../img/peculiarParticles/final1.webp");
+  background-image: -webkit-image-set(url("../img/peculiarParticles/final1.webp") 1x, url("../img/peculiarParticles/jpgs/final1.PNG") 2x);
 }
 #workSection .project15, #workSectionTheater .project15 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/cannonFodder/cannon (15).webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/cannonFodder/cannon (15).webp") 1x, url("../img/cannonFodder/jpgs/cannon (15).jpg") 2x);
 }
 #workSection .project15:hover, #workSectionTheater .project15:hover {
-  background-image: url("../img/cannonFodder/cannon (15).webp");
+  background-image: -webkit-image-set(url("../img/cannonFodder/cannon (15).webp") 1x, url("../img/cannonFodder/jpgs/cannon (15).jpg") 2x);
 }
 #workSection .project16, #workSectionTheater .project16 {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), -webkit-image-set(url("../img/babyYoda/babyYoda1.webp") 1x, url("../img/babyYoda/jpgs/babyYoda1.PNG") 2x);
 }
 #workSection .project16:hover, #workSectionTheater .project16:hover {
-  background-image: url("../img/babyYoda/babyYoda1.webp");
+  background-image: -webkit-image-set(url("../img/babyYoda/babyYoda1.webp") 1x, url("../img/babyYoda/jpgs/babyYoda1.PNG") 2x);
 }
 #workSection .project17, #workSectionTheater .project17 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hair/hair (2).webp");
@@ -426,12 +426,12 @@ label:hover {
 }
 
 #WorkContent2 .titleBlock {
-  background-image: url("../img/pdtLetters/finished.webp");
+  background-image: -webkit-image-set(url("../img/pdtLetters/finished.webp") 1x, url("../img/pdtLetters/jpgs/finished.jpg") 2x);
   background-position: center;
 }
 
 #WorkContent3 .titleBlock {
-  background-image: url("../img/penguinDevice/penguinFinal.webp");
+  background-image: -webkit-image-set(url("../img/penguinDevice/penguinFinal.webp") 1x, url("../img/penguinDevice/jpgs/penguinFinal.jpg") 2x);
   background-position: center;
 }
 
@@ -441,7 +441,7 @@ label:hover {
 }
 
 #WorkContent5 .titleBlock {
-  background-image: url("../img/capstoneClock/final1.webp");
+  background-image: -webkit-image-set(url("../img/capstoneClock/final1.webp") 1x, url("../img/capstoneClock/jpgs/final1.jpg") 2x);
 }
 #WorkContent5 .oneAndone {
   position: relative;
@@ -452,23 +452,23 @@ label:hover {
 }
 
 #WorkContent6 .titleBlock {
-  background-image: url("../img/creepyCreature/caught 4.webp");
+  background-image: -webkit-image-set(url("../img/creepyCreature/caught 4.webp") 1x, url("../img/creepyCreature/jpgs/caught 4.png") 2x);
 }
 
 #WorkContent7 .titleBlock {
-  background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
+  background-image: -webkit-image-set(url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp") 1x, url("../img/sherlockHolmesRenderings/jpgs/stag 1 behind bar still.jpg") 2x);
 }
 
 #WorkContent8 .titleBlock {
-  background-image: url("../img/customCoffeTable/final1.webp");
+  background-image: -webkit-image-set(url("../img/customCoffeTable/final1.webp") 1x, url("../img/customCoffeTable/jpgs/final1.JPG") 2x);
 }
 
 #WorkContent9 .titleBlock {
-  background-image: url("../img/3dVisualizer/backgroundFrame.webp");
+  background-image: -webkit-image-set(url("../img/3dVisualizer/backgroundFrame.webp") 1x, url("../img/3dVisualizer/jpgs/backgroundFrame.jpg") 2x);
 }
 
 #WorkContent10 .titleBlock {
-  background-image: url("../img/fusionInfoGraphic/iteration4.webp");
+  background-image: -webkit-image-set(url("../img/fusionInfoGraphic/iteration4.webp") 1x, url("../img/fusionInfoGraphic/jpgs/iteration4.jpg") 2x);
 }
 #WorkContent10 .titleBlock div {
   color: black;
@@ -484,7 +484,7 @@ label:hover {
 }
 
 #WorkContent11 .titleBlock {
-  background-image: url("../img/spiceItUp/spice if up final.webp");
+  background-image: -webkit-image-set(url("../img/spiceItUp/spice if up final.webp") 1x, url("../img/spiceItUp/jpgs/spice if up final.jpg") 2x);
 }
 #WorkContent11 .oneAndone img {
   width: 50%;
@@ -492,7 +492,7 @@ label:hover {
 }
 
 #WorkContent12 .titleBlock {
-  background-image: url("../img/courageTheCowardlyDog/courage final 2.webp");
+  background-image: -webkit-image-set(url("../img/courageTheCowardlyDog/courage final 2.webp") 1x, url("../img/courageTheCowardlyDog/jpgs/courage final 2.png") 2x);
 }
 #WorkContent12 .threeXthree:nth-child(3) {
   margin-top: -15%;
@@ -500,7 +500,7 @@ label:hover {
 }
 
 #WorkContent13 .titleBlock {
-  background-image: url("../img/zurgeCoin/final-zurge.webp");
+  background-image: -webkit-image-set(url("../img/zurgeCoin/final-zurge.webp") 1x, url("../img/zurgeCoin/jpgs/final-zurge.png") 2x);
 }
 #WorkContent13 div:nth-child(4) {
   position: relative;
@@ -508,6 +508,7 @@ label:hover {
 }
 
 #WorkContent14 .titleBlock {
+  background-image: -webkit-image-set(url("../img/peculiarParticles/final1.webp") 1x, url("../img/peculiarParticles/jpgs/final1.PNG") 2x);
   background-image: url("../img/peculiarParticles/final1.webp");
 }
 #WorkContent14 .threeXthree {
@@ -515,6 +516,7 @@ label:hover {
 }
 
 #WorkContent15 .titleBlock {
+  background-image: -webkit-image-set(url("../img/cannonFodder/cannon (15).webp") 1x, url("../img/cannonFodder/jpgs/cannon (15).jpg") 2x);
   background-image: url("../img/cannonFodder/cannon (15).webp");
 }
 #WorkContent15 .threeXthree {
@@ -522,6 +524,7 @@ label:hover {
 }
 
 #WorkContent16 .titleBlock {
+  background-image: -webkit-image-set(url("../img/babyYoda/babyYoda1.webp") 1x, url("../img/babyYoda/jpgs/babyYoda1.PNG") 2x);
   background-image: url("../img/babyYoda/babyYoda1.webp");
 }
 

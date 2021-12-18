@@ -139,14 +139,14 @@ label:hover {
 
 #WorkContent2 {
   .titleBlock {
-    background-image: url("../img/pdtLetters/finished.webp");
+    background-image: -webkit-image-set(url("../img/pdtLetters/finished.webp") 1x, url("../img/pdtLetters/jpgs/finished.jpg")2x);
     background-position: center;
   }
 }
 
 #WorkContent3 {
   .titleBlock {
-    background-image: url("../img/penguinDevice/penguinFinal.webp");
+    background-image: -webkit-image-set(url("../img/penguinDevice/penguinFinal.webp") 1x, url("../img/penguinDevice/jpgs/penguinFinal.jpg")2x);
     background-position: center;
   }
 }
@@ -160,7 +160,7 @@ label:hover {
 
 #WorkContent5 {
   .titleBlock {
-    background-image: url("../img/capstoneClock/final1.webp");
+    background-image: -webkit-image-set(url("../img/capstoneClock/final1.webp") 1x, url("../img/capstoneClock/jpgs/final1.jpg")2x);
   }
   .oneAndone{
     position: relative;
@@ -173,31 +173,31 @@ label:hover {
 
 #WorkContent6 {
   .titleBlock {
-    background-image: url("../img/creepyCreature/caught 4.webp");
+    background-image: -webkit-image-set(url("../img/creepyCreature/caught 4.webp") 1x, url("../img/creepyCreature/jpgs/caught 4.png")2x);
   }
 }
 
 #WorkContent7 {
   .titleBlock {
-    background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
+    background-image: -webkit-image-set(url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp") 1x, url("../img/sherlockHolmesRenderings/jpgs/stag 1 behind bar still.jpg")2x);
   }
 }
 
 #WorkContent8 {
   .titleBlock {
-    background-image: url("../img/customCoffeTable/final1.webp");
+    background-image: -webkit-image-set(url("../img/customCoffeTable/final1.webp") 1x, url("../img/customCoffeTable/jpgs/final1.JPG")2x);
   }
 }
 
 #WorkContent9{
   .titleBlock{
-    background-image: url("../img/3dVisualizer/backgroundFrame.webp");
+    background-image: -webkit-image-set(url("../img/3dVisualizer/backgroundFrame.webp") 1x, url("../img/3dVisualizer/jpgs/backgroundFrame.jpg")2x);
   }
 }
 
 #WorkContent10{
   .titleBlock{
-    background-image: url("../img/fusionInfoGraphic/iteration4.webp");
+    background-image: -webkit-image-set(url("../img/fusionInfoGraphic/iteration4.webp") 1x, url("../img/fusionInfoGraphic/jpgs/iteration4.jpg")2x);
     div{
       color: black;
       h1, h3{
@@ -215,7 +215,7 @@ label:hover {
 
 #WorkContent11{
   .titleBlock{
-    background-image: url("../img/spiceItUp/spice if up final.webp");
+    background-image: -webkit-image-set(url("../img/spiceItUp/spice if up final.webp") 1x, url("../img/spiceItUp/jpgs/spice if up final.jpg")2x);
   }
   .oneAndone{
     img{
@@ -227,7 +227,7 @@ label:hover {
 
 #WorkContent12{
   .titleBlock{
-    background-image: url("../img/courageTheCowardlyDog/courage final 2.webp");
+    background-image: -webkit-image-set(url("../img/courageTheCowardlyDog/courage final 2.webp") 1x, url("../img/courageTheCowardlyDog/jpgs/courage final 2.png")2x);
   }
   .threeXthree:nth-child(3){
     margin-top: -15%;
@@ -237,7 +237,7 @@ label:hover {
 
 #WorkContent13{
   .titleBlock{
-    background-image: url("../img/zurgeCoin/final-zurge.webp");
+    background-image: -webkit-image-set(url("../img/zurgeCoin/final-zurge.webp") 1x, url("../img/zurgeCoin/jpgs/final-zurge.png")2x);
   }
   div:nth-child(4){
     position: relative;
@@ -247,6 +247,7 @@ label:hover {
 
 #WorkContent14{
   .titleBlock{
+    background-image: -webkit-image-set(url("../img/peculiarParticles/final1.webp") 1x, url("../img/peculiarParticles/jpgs/final1.PNG")2x);
     background-image: url("../img/peculiarParticles/final1.webp");
   }
   .threeXthree{
@@ -257,6 +258,7 @@ label:hover {
 
 #WorkContent15{
   .titleBlock{
+    background-image: -webkit-image-set(url("../img/cannonFodder/cannon (15).webp") 1x, url("../img/cannonFodder/jpgs/cannon (15).jpg")2x);
     background-image: url("../img/cannonFodder/cannon (15).webp");
   }
   .threeXthree{
@@ -267,6 +269,7 @@ label:hover {
 
 #WorkContent16{
   .titleBlock{
+    background-image: -webkit-image-set(url("../img/babyYoda/babyYoda1.webp") 1x, url("../img/babyYoda/jpgs/babyYoda1.PNG")2x);
     background-image: url("../img/babyYoda/babyYoda1.webp");
   }
 }

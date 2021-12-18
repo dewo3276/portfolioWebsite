@@ -17,7 +17,7 @@ $baseGearWidth: 29vh;
 }
 
 .main {
-  background-image: url("../img/coverImage3.webp");
+  background-image: -webkit-image-set(url("../img/coverImage3.webp") 1x, url("../img/jpgs/coverImage3.png") 2x);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr .25fr;
@@ -43,7 +43,7 @@ $baseGearWidth: 29vh;
   grid-row-start: 2;
   width: $baseGearWidth;
   height: $baseGearWidth;
-  background-image: url("../img/aboutMeGear.webp");
+  background-image: -webkit-image-set(url("../img/aboutMeGear.webp") 1x, url("../img/jpgs/aboutMeGear.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -62,7 +62,7 @@ $baseGearWidth: 29vh;
   grid-row-start: 3;
   width: $baseGearWidth*2.16;
   height: $baseGearWidth*2.16;
-  background-image: url("../img/workGear.webp");
+  background-image: -webkit-image-set(url("../img/workGear.webp") 1x, url("../img/jpgs/workGear.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -82,7 +82,7 @@ $baseGearWidth: 29vh;
   grid-row-start: 3;
   height: $baseGearWidth*1.7;
   width: $baseGearWidth*1.7;
-  background-image: url("../img/contactGear.webp");
+  background-image: -webkit-image-set(url("../img/contactGear.webp") 1x, url("../img/jpgs/contactGear.png") 2x);
   background-repeat: no-repeat;
   background-size: contain;
 
