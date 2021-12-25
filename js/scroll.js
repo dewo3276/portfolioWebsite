@@ -10,17 +10,13 @@ ScrollTrigger.create({
   onLeave: function() {
       var element = document.getElementsByTagName("NAV")[0];
       element.style.display="flex";
-      gsap.to(element,{opacity: 1, delay: .25 ,duration: .5})
+      gsap.to(element,{opacity: 1, delay: .25 ,duration: .5});
 }
 });
 
 ScrollTrigger.create({
-  trigger: ".header",
-  start: function() {
-    var stuff= document.getElementById("header").offsetTop;
-    return stuff;
-  },
-  markers: "true",
+  trigger: "#header",
+  start: "50% 5%",
   onEnter: function() {
     var element2 = document.getElementById("header");
     var element = document.getElementsByTagName("NAV")[0];
@@ -36,3 +32,22 @@ ScrollTrigger.create({
     gsap.to(element2,{y:"0",duration:.75});
   }
 });
+
+ScrollTrigger.create({
+  trigger:"#CTDworkDiv",
+  start:"-2% top",
+  end:"bottom",
+  pin:true,
+  markers:true,
+  onUpdate: function({direction}) {
+    var workDivMovementElement = document.getElementById("CTDworkDiv");
+    switch (direction) {
+      case 1:
+      gsap.to(workDivMovementElement, {x:"-=108%", duration:.75});
+        break;
+      case -1:
+      gsap.to(workDivMovementElement, {x:"+=108%", duration:.75});
+        break;
+    }
+  }
+})

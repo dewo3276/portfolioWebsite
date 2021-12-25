@@ -14,7 +14,7 @@ function enlarge(className, type, index, WorkSectionType) {
   }
 
   gsap.timeline()
-    .to(className, {scaleX: "150%", scaleY: "150%", zIndex: 1, duration: .5},'<')
+    .to(className, {scaleX: "125%", scaleY: "125%", zIndex: 1, duration: .5},'<')
     .to(window, {scrollTo: pos2, duration:.5},'-=100%')
     .to(className, {opacity: 0},'-=25%')
     .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=15%')

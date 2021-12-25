@@ -9,11 +9,18 @@
 
   font-family: mostra-nuova;
 
-  #workDiv {
+  #CTDworkDiv{
     display: grid;
-    grid-auto-rows: 20vh;
+    grid-template-rows: 95vh;
+    grid-template-columns: repeat(5,95vw);
+    grid-column-gap: 10%;
+  }
+
+  .workDivs{
+    display: grid;
+    grid-auto-rows: 30vh;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 1%;
     padding-bottom: 20vh;
 
     div {
@@ -22,12 +29,6 @@
       font-size: 2em;
       grid-column-end: span 3;
 
-      h5 {
-        transform: none;
-        margin: 0;
-        padding: 0;
-        font-size: 0.75em;
-      }
       label{
         transform: none;
       }
@@ -241,7 +242,7 @@
   display: none;
 }
 #workDivTheater{
-  @extend #workDiv;
+  @extend #CTDworkDiv;
 }
 
 #resume{

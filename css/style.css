@@ -142,26 +142,26 @@ body {
   margin-right: 2%;
   font-family: mostra-nuova;
 }
-#workSection #workDiv, #workSection #workDivTheater, #workSectionTheater #workDiv, #workSectionTheater #workDivTheater {
+#workSection #CTDworkDiv, #workSection #workDivTheater, #workSectionTheater #CTDworkDiv, #workSectionTheater #workDivTheater {
   display: grid;
-  grid-auto-rows: 20vh;
+  grid-template-rows: 95vh;
+  grid-template-columns: repeat(5, 95vw);
+  grid-column-gap: 10%;
+}
+#workSection .workDivs, #workSectionTheater .workDivs {
+  display: grid;
+  grid-auto-rows: 30vh;
+  grid-row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1%;
   padding-bottom: 20vh;
 }
-#workSection #workDiv div, #workSection #workDivTheater div, #workSectionTheater #workDiv div, #workSectionTheater #workDivTheater div {
+#workSection .workDivs div, #workSectionTheater .workDivs div {
   padding-left: 5%;
   padding-top: 10%;
   font-size: 2em;
   grid-column-end: span 3;
 }
-#workSection #workDiv div h5, #workSection #workDivTheater div h5, #workSectionTheater #workDiv div h5, #workSectionTheater #workDivTheater div h5 {
-  transform: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0.75em;
-}
-#workSection #workDiv div label, #workSection #workDivTheater div label, #workSectionTheater #workDiv div label, #workSectionTheater #workDivTheater div label {
+#workSection .workDivs div label, #workSectionTheater .workDivs div label {
   transform: none;
 }
 #workSection .project1, #workSectionTheater .project1, #workSection .project21, #workSectionTheater .project21, #workSection .project20, #workSectionTheater .project20, #workSection .project19, #workSectionTheater .project19, #workSection .project18, #workSectionTheater .project18, #workSection .project17, #workSectionTheater .project17, #workSection .project16, #workSectionTheater .project16, #workSection .project15, #workSectionTheater .project15, #workSection .project14, #workSectionTheater .project14, #workSection .project13, #workSectionTheater .project13, #workSection .project12, #workSectionTheater .project12, #workSection .project11, #workSectionTheater .project11, #workSection .project10, #workSectionTheater .project10, #workSection .project9, #workSectionTheater .project9, #workSection .project8, #workSectionTheater .project8, #workSection .project7, #workSectionTheater .project7, #workSection .project6, #workSectionTheater .project6, #workSection .project5, #workSectionTheater .project5, #workSection .project4, #workSectionTheater .project4, #workSection .project3, #workSectionTheater .project3, #workSection .project2, #workSectionTheater .project2 {

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
@@ -35,7 +35,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JFM8KT29S"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-4JFM8KT29S');
@@ -51,7 +54,7 @@
     <label onclick="navigationContoller('contactSection')">Contact</label>
   </nav>
 
-  <!-- Add your site or application content here -->
+
   <section class="main">
     <p class="welcomeBanner">Hello! I'm Destin Woods: <i>web creator</i>, <i>part</i> and <i>product designer</i>, <i>fabricator</i>, and much more.</p>
     <div class="gearContainer">
@@ -241,46 +244,48 @@
     </div>
 
     <div id="workDivTheater">
-      <div class="project1">
-        <label onclick="enlarge('.project1',0,0,'workDivTheater')">
-          She Kills Monsters
-        </label>
+      <div class="workDivs" id="workDivTheater1">
+        <div class="project1">
+          <label onclick="enlarge('.project1',0,0,'workDivTheater')">
+            She Kills Monsters
+          </label>
+        </div>
+        <div class="project4">
+          <label onclick="enlarge('.project4',1,3,'workDivTheater')">
+            Broadway Christmas Carol
+          </label>
+        </div>
+        <div class="project17">
+          <label onclick="enlarge('.project17',0,16,'workDivTheater')">
+            Hair
+          </label>
+        </div>
       </div>
 
-      <div class="project4">
-        <label onclick="enlarge('.project4',1,3,'workDivTheater')">
-          Broadway Christmas Carol
-        </label>
+      <div class="workDivs" id="workDivTheater2">
+        <div class="project18">
+          <label onclick="enlarge('.project18',1,17,'workDivTheater')">
+            Hecuba
+          </label>
+        </div>
+        <div class="project19">
+          <label onclick="enlarge('.project19',0,18,'workDivTheater')">
+            Into the Woods
+          </label>
+        </div>
+        <div class="project20">
+          <label onclick="enlarge('.project20',1,19,'workDivTheater')">
+            Great Expectations
+          </label>
+        </div>
       </div>
 
-      <div class="project17">
-        <label onclick="enlarge('.project17',0,16,'workDivTheater')">
-          Hair
-        </label>
-      </div>
-
-      <div class="project18">
-        <label onclick="enlarge('.project18',1,17,'workDivTheater')">
-          Hecuba
-        </label>
-      </div>
-
-      <div class="project19">
-        <label onclick="enlarge('.project19',0,18,'workDivTheater')">
-          Into the Woods
-        </label>
-      </div>
-
-      <div class="project20">
-        <label onclick="enlarge('.project20',1,19,'workDivTheater')">
-          Great Expectations
-        </label>
-      </div>
-
-      <div class="project21">
-        <label onclick="enlarge('.project21',0,20,'workDivTheater')">
-          Fallstaff In Love
-        </label>
+      <div class="workDivs" id="workDivTheater3">
+        <div class="project21">
+          <label onclick="enlarge('.project21',0,20,'workDivTheater')">
+            Fallstaff In Love
+          </label>
+        </div>
       </div>
     </div>
   </section>
@@ -574,7 +579,7 @@
 
     <div id="WorkContent16" class="transitionalContent">
       <div class="titleBlock">
-        <h1>Baby Yoda</h1>
+        <h1 style="background-color: black; margin-right: 70%;">Baby Yoda</h1>
         <h3>An exercise in sculpting and replication</h3>
       </div>
       <div class="oneAndone">
@@ -582,52 +587,65 @@
         <img loading='lazy' src="img/babyYoda/babyYoda2.webp" alt="">
       </div>
     </div>
-    <div id="workDiv">
 
-      <div class="project2">
-        <label onclick="enlarge('.project2',0,1,'workDiv')">
-          Phi Delta Theta Letters
-        </label>
-      </div>
-      <div class="project3">
-        <label onclick="enlarge('.project3',1,2,'workDiv')">Penguin I/O Box</label>
+    <div id="CTDworkDiv">
+      <div class="workDivs" id="workDiv1">
+        <div class="project2">
+          <label onclick="enlarge('.project2',1,1,'CTDworkDiv')">
+            Phi Delta Theta Letters
+          </label>
+        </div>
+        <div class="project3">
+          <label onclick="enlarge('.project3',0,2,'CTDworkDiv')">Penguin I/O Box</label>
+        </div>
+        <div class="project5">
+          <label onclick="enlarge('.project5',1,4,'CTDworkDiv')">Self Destructing Clock</label>
+        </div>
       </div>
 
-      <div class="project5">
-        <label onclick="enlarge('.project5',0,4,'workDiv')">Self Destructing Clock</label>
+      <div class="workDivs" id="workDiv2">
+        <div class="project6">
+          <label onclick="enlarge('.project6',0,5,'CTDworkDiv')">Creepy Creature</label>
+        </div>
+        <div class="project7">
+          <label onclick="enlarge('.project7',1,6,'CTDworkDiv')">Sherlock Holmes renderings</label>
+        </div>
+        <div class="project8">
+          <label onclick="enlarge('.project8',0,7,'CTDworkDiv')">Coffee Table</label>
+        </div>
       </div>
-      <div class="project6">
-        <label onclick="enlarge('.project6',1,5,'workDiv')">Creepy Creature</label>
+
+      <div class="workDivs" id="workDiv3">
+        <div class="project9">
+          <label onclick="enlarge('.project9',1,8,'CTDworkDiv')">3D Visualizer</label>
+        </div>
+        <div class="project10">
+          <label onclick="enlarge('.project10',0,9,'CTDworkDiv')">Info Graphic</label>
+        </div>
+        <div class="project11">
+          <label onclick="enlarge('.project11',1,10,'CTDworkDiv')">Spice It Up</label>
+        </div>
       </div>
-      <div class="project7">
-        <label onclick="enlarge('.project7',0,6,'workDiv')">Sherlock Holmes renderings</label>
+
+      <div class="workDivs" id="workDiv4">
+        <div class="project12">
+          <label onclick="enlarge('.project12',0,11,'CTDworkDiv')">Courage the Cowardly Dog</label>
+        </div>
+        <div class="project13">
+          <label onclick="enlarge('.project13',1,12,'CTDworkDiv')">Zurge Coin</label>
+        </div>
+        <div class="project14">
+          <label onclick="enlarge('.project14',0,13,'CTDworkDiv')">Peculiar Partciles</label>
+        </div>
       </div>
-      <div class="project8">
-        <label onclick="enlarge('.project8',1,7,'workDiv')">Coffee Table</label>
-      </div>
-      <div class="project9">
-        <label onclick="enlarge('.project9',0,8,'workDiv')">3D Visualizer</label>
-      </div>
-      <div class="project10">
-        <label onclick="enlarge('.project10',1,9,'workDiv')">Info Graphic</label>
-      </div>
-      <div class="project11">
-        <label onclick="enlarge('.project11',0,10,'workDiv')">Spice It Up</label>
-      </div>
-      <div class="project12">
-        <label onclick="enlarge('.project12',1,11,'workDiv')">Courage the Cowardly Dog</label>
-      </div>
-      <div class="project13">
-        <label onclick="enlarge('.project13',0,12,'workDiv')">Zurge Coin</label>
-      </div>
-      <div class="project14">
-        <label onclick="enlarge('.project14',1,13,'workDiv')">Peculiar Partciles</label>
-      </div>
-      <div class="project15">
-        <label onclick="enlarge('.project15',0,14,'workDiv')">Cannon Fodder</label>
-      </div>
-      <div class="project16">
-        <label onclick="enlarge('.project16',1,15,'workDiv')">Baby Yoda</label>
+
+      <div class="workDivs" id="workDiv5">
+        <div class="project15">
+          <label onclick="enlarge('.project15',1,14,'CTDworkDiv')">Cannon Fodder</label>
+        </div>
+        <div class="project16">
+          <label onclick="enlarge('.project16',0,15,'CTDworkDiv')">Baby Yoda</label>
+        </div>
       </div>
     </div>
   </section>
