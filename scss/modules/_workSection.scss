@@ -1,4 +1,4 @@
-.closingTime{
+.closingTime {
   font-family: mostra-nuova;
 }
 
@@ -6,17 +6,16 @@
   color: white;
   margin-left: 2%;
   margin-right: 2%;
-
   font-family: mostra-nuova;
 
-  #CTDworkDiv{
+  #CTDworkDiv {
     display: grid;
     grid-template-rows: 95vh;
     grid-template-columns: repeat(5,95vw);
     grid-column-gap: 10%;
   }
 
-  .workDivs{
+  .workDivs {
     display: grid;
     grid-auto-rows: 30vh;
     grid-row-gap: 20px;
@@ -29,21 +28,37 @@
       font-size: 2em;
       grid-column-end: span 3;
 
-      label{
+      label {
         transform: none;
       }
     }
   }
+
+
+  .describingThing{
+    margin-left: 10%;
+    font-size: .5em;
+    display: none;
+  }
+
 
   .project1 {
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/skm/dragon demo.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .project1:hover {
     background-image: url("../img/skm/dragon demo.gif");
+    .describingThing{
+      display: block;
+    }
+    background-position: left;
+    background-size: contain;
+    background-color: grey;
   }
 
   .project2 {
@@ -235,17 +250,18 @@
   .project21:hover {
     background-image: url("../img/falStaff/fallStaff (4).webp");
   }
-
 }
-#workSectionTheater{
+
+#workSectionTheater {
   @extend #workSection;
   display: none;
 }
-#workDivTheater{
+
+#workDivTheater {
   @extend #CTDworkDiv;
 }
 
-#resume{
+#resume {
   display: none;
   margin-left: 10%;
   margin-right: 10%;

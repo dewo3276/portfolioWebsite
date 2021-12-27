@@ -33,21 +33,28 @@ ScrollTrigger.create({
   }
 });
 
-ScrollTrigger.create({
-  trigger:"#CTDworkDiv",
-  start:"-2% top",
-  end:"bottom",
-  pin:true,
-  markers:true,
-  onUpdate: function({direction}) {
-    var workDivMovementElement = document.getElementById("CTDworkDiv");
-    switch (direction) {
-      case 1:
-      gsap.to(workDivMovementElement, {x:"-=108%", duration:.75});
-        break;
-      case -1:
-      gsap.to(workDivMovementElement, {x:"+=108%", duration:.75});
-        break;
-    }
+gsap.to('#CTDworkDiv', {
+  xPercent: -547.5,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#CTDworkDiv",
+    snap: .2,
+    start:"top",
+    end:"bottom",
+    scrub: .15,
+    pin: true
+  }
+})
+
+gsap.to('#workDivTheater', {
+  xPercent: -300,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#CTDworkDiv",
+    snap: .33,
+    start:"top",
+    end:"bottom",
+    scrub: .15,
+    pin: true
   }
 })
