@@ -34,24 +34,11 @@ ScrollTrigger.create({
 });
 
 gsap.to('#CTDworkDiv', {
-  xPercent: -547.5,
+  xPercent: -100,
   ease: "none",
   scrollTrigger: {
     trigger: "#CTDworkDiv",
-    snap: .2,
-    start:"top",
-    end:"bottom",
-    scrub: .15,
-    pin: true
-  }
-})
-
-gsap.to('#workDivTheater', {
-  xPercent: -300,
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#CTDworkDiv",
-    snap: .33,
+    snap: 1/5,
     start:"top",
     end:"bottom",
     scrub: .15,

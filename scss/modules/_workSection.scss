@@ -9,10 +9,12 @@
   font-family: mostra-nuova;
 
   #CTDworkDiv {
-    display: grid;
-    grid-template-rows: 95vh;
-    grid-template-columns: repeat(5,95vw);
-    grid-column-gap: 10%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    width: 500%;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .workDivs {
@@ -21,6 +23,7 @@
     grid-row-gap: 20px;
     grid-template-columns: repeat(4,1fr);
     padding-bottom: 20vh;
+    min-width: 90vw;
 
     div {
       padding-left: 5%;
@@ -36,8 +39,9 @@
 
 
   .describingThing{
-    margin-left: 10%;
     font-size: .5em;
+    max-width: 50%;
+    margin-right: 10%;
     display: none;
   }
 
@@ -47,8 +51,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 
   .project1:hover {

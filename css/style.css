@@ -143,10 +143,12 @@ body {
   font-family: mostra-nuova;
 }
 #workSection #CTDworkDiv, #workSection #workDivTheater, #workSectionTheater #CTDworkDiv, #workSectionTheater #workDivTheater {
-  display: grid;
-  grid-template-rows: 95vh;
-  grid-template-columns: repeat(5, 95vw);
-  grid-column-gap: 10%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  width: 500%;
+  align-items: center;
+  justify-content: space-around;
 }
 #workSection .workDivs, #workSectionTheater .workDivs {
   display: grid;
@@ -154,6 +156,7 @@ body {
   grid-row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 20vh;
+  min-width: 90vw;
 }
 #workSection .workDivs div, #workSectionTheater .workDivs div {
   padding-left: 5%;
@@ -165,8 +168,9 @@ body {
   transform: none;
 }
 #workSection .describingThing, #workSectionTheater .describingThing {
-  margin-left: 10%;
   font-size: 0.5em;
+  max-width: 50%;
+  margin-right: 10%;
   display: none;
 }
 #workSection .project1, #workSectionTheater .project1, #workSection .project21, #workSectionTheater .project21, #workSection .project20, #workSectionTheater .project20, #workSection .project19, #workSectionTheater .project19, #workSection .project18, #workSectionTheater .project18, #workSection .project17, #workSectionTheater .project17, #workSection .project16, #workSectionTheater .project16, #workSection .project15, #workSectionTheater .project15, #workSection .project14, #workSectionTheater .project14, #workSection .project13, #workSectionTheater .project13, #workSection .project12, #workSectionTheater .project12, #workSection .project11, #workSectionTheater .project11, #workSection .project10, #workSectionTheater .project10, #workSection .project9, #workSectionTheater .project9, #workSection .project8, #workSectionTheater .project8, #workSection .project7, #workSectionTheater .project7, #workSection .project6, #workSectionTheater .project6, #workSection .project5, #workSectionTheater .project5, #workSection .project4, #workSectionTheater .project4, #workSection .project3, #workSectionTheater .project3, #workSection .project2, #workSectionTheater .project2 {
@@ -174,8 +178,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 #workSection .project1:hover, #workSectionTheater .project1:hover, #workSection .project21:hover, #workSectionTheater .project21:hover, #workSection .project20:hover, #workSectionTheater .project20:hover, #workSection .project19:hover, #workSectionTheater .project19:hover, #workSection .project18:hover, #workSectionTheater .project18:hover, #workSection .project17:hover, #workSectionTheater .project17:hover, #workSection .project16:hover, #workSectionTheater .project16:hover, #workSection .project15:hover, #workSectionTheater .project15:hover, #workSection .project14:hover, #workSectionTheater .project14:hover, #workSection .project13:hover, #workSectionTheater .project13:hover, #workSection .project12:hover, #workSectionTheater .project12:hover, #workSection .project11:hover, #workSectionTheater .project11:hover, #workSection .project10:hover, #workSectionTheater .project10:hover, #workSection .project9:hover, #workSectionTheater .project9:hover, #workSection .project8:hover, #workSectionTheater .project8:hover, #workSection .project7:hover, #workSectionTheater .project7:hover, #workSection .project6:hover, #workSectionTheater .project6:hover, #workSection .project5:hover, #workSectionTheater .project5:hover, #workSection .project4:hover, #workSectionTheater .project4:hover, #workSection .project3:hover, #workSectionTheater .project3:hover, #workSection .project2:hover, #workSectionTheater .project2:hover {
   background-image: url("../img/skm/dragon demo.gif");
@@ -338,6 +342,14 @@ body {
   position: fixed;
   z-index: 2;
   opacity: 0;
+}
+
+.workContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .closingTime:hover {
