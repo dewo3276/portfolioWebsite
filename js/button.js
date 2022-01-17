@@ -2,7 +2,6 @@ var projectsInFile = ['.project1', '.project2', '.project3', '.project4', '.proj
 var currentOpen = new isOpenedClass();
 
 function enlarge(className, type, index, WorkSectionType) {
-  var pos2 = document.getElementsByClassName(className.substring(1))[0].getBoundingClientRect().top + window.pageYOffset - (window.innerHeight*.1);
 
   switch (type) {
     case 0:
@@ -15,7 +14,6 @@ function enlarge(className, type, index, WorkSectionType) {
 
   gsap.timeline()
     .to(className, {scaleX: "125%", scaleY: "125%", zIndex: 1, duration: .5},'<')
-    .to(window, {scrollTo: pos2, duration:.5},'-=100%')
     .to(className, {opacity: 0},'-=25%')
     .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=15%')
     .to('#'+WorkSectionType,{display: "none"},'<')
@@ -37,9 +35,8 @@ function enlarge(className, type, index, WorkSectionType) {
 function shrink() {
 
   document.getElementById(currentOpen.WorkSectionType).style.display="grid";
-  var pos2 = document.getElementsByClassName(currentOpen.className.substring(1))[0].getBoundingClientRect().top + window.pageYOffset - (window.innerHeight*.1);
+
   gsap.timeline()
-    .to(window, {scrollTo: pos2, duration:.5})
     .to('#WorkContent' + (currentOpen.index + 1), {opacity: 0, display: "none"},'-=50%')
     .to(currentOpen.className, {opacity: 1},'-=20%')
     .to(currentOpen.className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})

@@ -14,32 +14,27 @@ ScrollTrigger.create({
 }
 });
 
-ScrollTrigger.create({
-  trigger: "#header",
-  start: "50% 5%",
-  onEnter: function() {
-    var element2 = document.getElementById("header");
-    var element = document.getElementsByTagName("NAV")[0];
-    element2.style.position="sticky";
-    gsap.to(element,{y:"-60",duration:.5});
-    gsap.to(element2,{y:"-15",duration:.5},"-=105%");
-  },
-  onLeaveBack: function () {
-    var element2 = document.getElementById("header");
-    var element = document.getElementsByTagName("NAV")[0];
-    gsap.to(element,{y:"0",duration:.5});
-    element2.style.position="relative";
-    gsap.to(element2,{y:"0",duration:.75});
-  }
-});
-
 gsap.to('#CTDworkDiv', {
-  xPercent: -547.5,
+  xPercent: -548,
   ease: "none",
   scrollTrigger: {
     trigger: "#CTDworkDiv",
-    snap: .2,
-    start:"top",
+    onEnter: function() {
+      var element2 = document.getElementById("header");
+      var element = document.getElementsByTagName("NAV")[0];
+      element2.style.position="sticky";
+      gsap.to(element,{y:"-60",duration:.5});
+      gsap.to(element2,{y:"-15",duration:.5},"-=105%");
+    },
+    onLeaveBack: function () {
+      var element2 = document.getElementById("header");
+      var element = document.getElementsByTagName("NAV")[0];
+      gsap.to(element,{y:"0",duration:.5});
+      element2.style.position="relative";
+      gsap.to(element2,{y:"0",duration:.75});
+    },
+    snap: 1/5,
+    start:"top 5%",
     end:"bottom",
     scrub: .15,
     pin: true
@@ -47,12 +42,26 @@ gsap.to('#CTDworkDiv', {
 })
 
 gsap.to('#workDivTheater', {
-  xPercent: -300,
+  xPercent: -548,
   ease: "none",
   scrollTrigger: {
-    trigger: "#CTDworkDiv",
-    snap: .33,
-    start:"top",
+    trigger: "#workDivTheater",
+    onEnter: function() {
+      var element2 = document.getElementById("header");
+      var element = document.getElementsByTagName("NAV")[0];
+      element2.style.position="sticky";
+      gsap.to(element,{y:"-60",duration:.5});
+      gsap.to(element2,{y:"-15",duration:.5},"-=105%");
+    },
+    onLeaveBack: function () {
+      var element2 = document.getElementById("header");
+      var element = document.getElementsByTagName("NAV")[0];
+      gsap.to(element,{y:"0",duration:.5});
+      element2.style.position="relative";
+      gsap.to(element2,{y:"0",duration:.75});
+    },
+    snap: 1/5,
+    start:"top 5%",
     end:"bottom",
     scrub: .15,
     pin: true

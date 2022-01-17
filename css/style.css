@@ -327,24 +327,6 @@ body {
   margin-right: 10%;
 }
 
-.closingTime {
-  font-size: 2em;
-  background-color: grey;
-  padding: 5px;
-  bottom: 10%;
-  right: 10%;
-  border-radius: 15px;
-  color: #d6d6d6;
-  position: fixed;
-  z-index: 2;
-  opacity: 0;
-}
-
-.closingTime:hover {
-  background-color: black;
-  color: white;
-}
-
 .transitionalContent {
   margin-left: 5%;
   margin-right: 5%;

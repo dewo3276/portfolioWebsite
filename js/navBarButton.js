@@ -10,7 +10,6 @@ function checkIfOpen(){
     gsap.timeline()
       .to(window, {scrollTo: (document.getElementById('header').offsetTop-(window.innerHeight*.1)), duration:.5})
       .to('#WorkContent' + (currentOpen.index+1), {opacity: 0, display: "none"},'-=50%')
-      .to('.closingTime', {opacity: 0, duration: .25},'<')
       .to(currentOpen.className, {opacity: 1},'-=20%')
       .to(currentOpen.className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
     for (let i = 0; i < projectsInFile.length; i++) {
