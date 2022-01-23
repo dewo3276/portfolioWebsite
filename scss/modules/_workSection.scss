@@ -3,12 +3,14 @@
 }
 
 #workSection {
-  color: white;
   margin-left: 2%;
   margin-right: 2%;
-  font-family: mostra-nuova;
+  font-family: acumin-pro;
+  background-color: $pageBackground2;
 
   #CTDworkDiv {
+    background-image: url("../img/portfolioLayout-16.svg");
+    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: 95vh;
     grid-template-columns: repeat(5,95vw);
@@ -17,6 +19,7 @@
 
   .workDivs {
     display: grid;
+    position: relative;
     grid-auto-rows: 30vh;
     grid-row-gap: 20px;
     grid-template-columns: repeat(4,1fr);

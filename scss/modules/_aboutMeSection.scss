@@ -1,75 +1,27 @@
 #aboutMeSection {
   margin-left: 5%;
   margin-right: 5%;
-  font-family: mostra-nuova;
-  h1 {
-    text-align: center;
-    font-size: 3em;
-    color: white;
-    grid-column: span 5;
-    margin: 0;
+  position: relative;
+  min-width: 110vw;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: acumin-pro-condensed;
+  img{
+    max-height: 75vh;
   }
-
-  p {
-    grid-column: span 5;
+  p{
+    margin: 7%;
+    max-width: 65vw;
     font-size: 1.5em;
-    color: white;
-    padding: 0.5% 5%;
-    height: min-content;
   }
-
-  div {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,min-content) repeat(6,1fr);
-    grid-gap: 20px;
-
-    div {
-      background-size: cover;
-    }
-
-    .medium {
-      grid-column: span 2;
-      grid-row: span 2;
-      background-position: center;
-    }
-
-    .one {
-      background-image: url("../img/aboutMeSection/aboutMe1.webp");
-    }
-
-    .two {
-      background-image: url("../img/aboutMeSection/aboutMe3.webp");
-    }
-
-    .tall {
-      grid-column: span 2;
-      grid-row: span 3;
-      background-image: url("../img/aboutMeSection/aboutMe7.webp");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-
-    .large {
-      grid-row: span 3;
-      grid-column: span 3;
-      background-image: url("../img/aboutMeSection/aboutMe2.webp");
-      background-position: center;
-    }
-
-    .wide {
-      grid-column: span 3;
-      grid-row: span 2;
-      background-image: url("../img/aboutMeSection/aboutMe5.webp");
-      background-position: center;
-    }
-
-    .small {
-      grid-column: span 1;
-      grid-row: span 1;
-      background-image: url("../img/aboutMeSection/aboutMe6.webp");
-      background-position: 0% 25% ;
-    }
+  background-color: $pageBackground2;
+  h1 {
+    text-align: left;
+    font-size: 3em;
+    padding-left: 5%;
+    padding-top: 5%;
   }
+  color: #88A8C9;
 }

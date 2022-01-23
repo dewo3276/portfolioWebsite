@@ -4,12 +4,14 @@ $baseGearWidth: 29vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  div{
+
+  div {
     background-position: center;
   }
 
   div:hover {
     background-size: 102%;
+
     label {
       background-color: rgba(147, 149, 152, 1);
     }
@@ -17,14 +19,36 @@ $baseGearWidth: 29vh;
 }
 
 .main {
-  background-image: url("../img/coverImage3.webp");
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr .25fr;
-  z-index: 2;
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 115vh;
+  display: flex;
+  flex-direction: row;
+
+  #pathArray {
+    min-width: 100%;
+  }
+
+  #path1 {
+  stroke-dasharray: 1000;
+}
+
+  #path2 {
+  stroke-dasharray: 500;
+}
+
+  #path3 {
+  stroke-dasharray: 700;
+}
+
+  #path4 {
+  stroke-dasharray: 900;
+}
+
+  #welcomeBanner {
+    font-family: acumin-pro;
+    margin: 0;
+    padding: 5%;
+    font-size: 10em;
+  }
+  min-height: 100vh;
 
   label {
     font-family: mostra-nuova;

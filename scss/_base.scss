@@ -4,6 +4,35 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: acumin-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: acumin-pro-condensed,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: acumin-pro-extra-condensed,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: acumin-pro-wide,sans-serif;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: acumin-pro-thin, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 @media only screen and (max-width: 800px) {
   html {
     min-width: 400%;
@@ -25,8 +54,9 @@
 
 body{
   background: $pageBackground;
-  font-family: monstra-nuova !important;
+  font-family: acumin-pro !important;
   overflow-x: hidden;
+  color: $textLabel;
 }
 
 ::-webkit-scrollbar{
@@ -35,12 +65,4 @@ body{
 ::-webkit-scrollbar-thumb{
   border-radius: 6px;
   background: grey;
-}
-
-.welcomeBanner{
-  font-family: mostra-nuova;
-  color: $textLabel;
-  font-size: 300%;
-  margin: 0;
-  padding: 5%;
 }
