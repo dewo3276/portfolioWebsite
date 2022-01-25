@@ -1,9 +1,11 @@
-$baseGearWidth: 29vh;
+/*$baseGearWidth: 29vh;
 
 .gearContainer {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  position: relative;
+  left: 10px;
 
   div {
     background-position: center;
@@ -16,14 +18,17 @@ $baseGearWidth: 29vh;
       background-color: rgba(147, 149, 152, 1);
     }
   }
-}
+}*/
+
 
 .main {
   display: flex;
   flex-direction: row;
 
   #pathArray {
-    min-width: 100%;
+    min-width: 200%;
+    position: relative;
+    z-index: 1;
   }
 
   #path1 {
@@ -46,10 +51,17 @@ $baseGearWidth: 29vh;
     font-family: acumin-pro;
     margin: 0;
     padding: 5%;
-    font-size: 10em;
+    p{
+      font-size: 1.5em;
+    }
+    h1{
+      font-size: 10em;
+    }
   }
   min-height: 100vh;
-
+  width: 50vw;
+}
+/*
   label {
     font-family: mostra-nuova;
     background: $labelBackground;
@@ -119,4 +131,4 @@ $baseGearWidth: 29vh;
   :hover {
     cursor: pointer;
   }
-}
+}*/

@@ -30,13 +30,27 @@ window.addEventListener('scroll', function() {
   let path2 = document.getElementById('path2');
   let path3 = document.getElementById('path3');
   let path4 = document.getElementById('path4');
-  if (value < 800) {
-    about.style.left = (value - 500) + value * -.45 + 'px';
+
+  let pathWork1 = document.getElementById('pathWork1');
+  let pathWork2 = document.getElementById('pathWork2');
+  let pathWork3 = document.getElementById('pathWork3');
+  let pathWork4 = document.getElementById('pathWork4');
+  let pathWork5 = document.getElementById('pathWork5');
+  let pathWork6 = document.getElementById('pathWork6');
+  let pathWork7 = document.getElementById('pathWork7');
+  let pathWork8 = document.getElementById('pathWork8');
+  if (window.innerWidth>800) {
+    about.style.left = (value - 1400) + value * .75 + 'px';
   }
-  path1.style.strokeDashoffset = value * -2 + 'px';
-  path2.style.strokeDashoffset = value * 2 + 'px';
-  path3.style.strokeDashoffset = value * 2 + 'px';
-  path4.style.strokeDashoffset = value * 2 + 'px';
+
+  else if (window.innerWidth<=800) {
+    about.style.left = (value - 1400) + value * .85 + 'px';
+  }
+
+  path1.style.strokeDashoffset = value * -5 + 'px';
+  path2.style.strokeDashoffset = value * 5 + 'px';
+  path3.style.strokeDashoffset = value * 5 + 'px';
+  path4.style.strokeDashoffset = value * 5 + 'px';
   if (value > 200 && value < 400) {
     gsap.to('#welcomeBanner', {
       transformOrigin: "0 0",
@@ -54,12 +68,22 @@ window.addEventListener('scroll', function() {
     gsap.to('#welcomeBanner', {
       opacity: value * (1 / value * .25)
     });
-    a
+
   } else {
     gsap.to('#welcomeBanner', {
       opacity: 0
     })
   }
+
+  pathWork1.style.strokeDashoffset = value * -5 + 'px';
+  pathWork2.style.strokeDashoffset = value * 5 + 'px';
+  pathWork3.style.strokeDashoffset = value * 5 + 'px';
+  pathWork4.style.strokeDashoffset = value * 5 + 'px';
+  pathWork5.style.strokeDashoffset = value * -5 + 'px';
+  pathWork6.style.strokeDashoffset = value * 5 + 'px';
+  pathWork7.style.strokeDashoffset = value * 5 + 'px';
+  pathWork8.style.strokeDashoffset = value * 5 + 'px';
+
 })
 
 gsap.to('#CTDworkDiv', {
@@ -71,7 +95,7 @@ gsap.to('#CTDworkDiv', {
       var element2 = document.getElementById("header");
       var element = document.getElementsByTagName("NAV")[0];
       element2.style.position="sticky";
-      gsap.to(element,{y:"-60",duration:.5});
+      gsap.to(element,{y:"-70",duration:.5});
       gsap.to(element2,{y:"-15",duration:.5},"-=105%");
     },
     onLeaveBack: function () {

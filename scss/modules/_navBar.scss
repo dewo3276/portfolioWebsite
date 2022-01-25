@@ -5,10 +5,12 @@ nav{
   opacity: 0;
   justify-content: flex-end;
   font-size: 3em;
-  min-width: 100%;
   position: fixed;
+  right: 0px;
+  min-width: 45vw;
   label{
-    margin-left: 5%;
+    margin-right: 5%;
+
   }
   :hover{
     transition-property: transform;
@@ -16,7 +18,7 @@ nav{
     transition-duration: .75;
     transform: scale(1.2);
   }
-  z-index: 2;
+  z-index: 3;
 }
 
 #header{
@@ -28,5 +30,5 @@ nav{
     top: 20px;
     margin-bottom: 40px;
     padding-bottom: 10px;
-    z-index: 1;
+    z-index: 3;
 }

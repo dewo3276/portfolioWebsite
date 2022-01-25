@@ -27,21 +27,39 @@
   font-weight: 100;
   font-style: normal;
 }
-@media only screen and (max-width: 800px) {
-  html {
-    min-width: 400%;
-    padding: 10px;
-  }
-}
-@media (min-aspect-ratio: 16/9) {
-  h3 {
-    font-size: 2em;
-    margin-top: 1%;
+@media only screen and (max-width: 900px) {
+  #pathArray {
+    position: absolute !important;
+    left: 10vw;
+    bottom: 0px;
   }
 
-  h2 {
-    font-size: 1.75em;
-    margin-top: 1%;
+  .main {
+    font-size: 0.75em;
+  }
+
+  #aboutMeSection {
+    font-size: 0.75em;
+    padding-left: 10% !important;
+  }
+  #aboutMeSection img {
+    width: 45%;
+  }
+
+  nav {
+    font-size: 1em !important;
+  }
+
+  .project1:hover, #workSection .project21:hover, #workSectionTheater .project21:hover, #workSection .project20:hover, #workSectionTheater .project20:hover, #workSection .project19:hover, #workSectionTheater .project19:hover, #workSection .project18:hover, #workSectionTheater .project18:hover, #workSection .project17:hover, #workSectionTheater .project17:hover, #workSection .project16:hover, #workSectionTheater .project16:hover, #workSection .project15:hover, #workSectionTheater .project15:hover, #workSection .project14:hover, #workSectionTheater .project14:hover, #workSection .project13:hover, #workSectionTheater .project13:hover, #workSection .project12:hover, #workSectionTheater .project12:hover, #workSection .project11:hover, #workSectionTheater .project11:hover, #workSection .project10:hover, #workSectionTheater .project10:hover, #workSection .project9:hover, #workSectionTheater .project9:hover, #workSection .project8:hover, #workSectionTheater .project8:hover, #workSection .project7:hover, #workSectionTheater .project7:hover, #workSection .project6:hover, #workSectionTheater .project6:hover, #workSection .project5:hover, #workSectionTheater .project5:hover, #workSection .project4:hover, #workSectionTheater .project4:hover, #workSection .project3:hover, #workSectionTheater .project3:hover, #workSection .project2:hover, #workSectionTheater .project2:hover {
+    background-size: cover !important;
+  }
+  .project1:hover .describingThing, #workSection .project21:hover .describingThing, #workSectionTheater .project21:hover .describingThing, #workSection .project20:hover .describingThing, #workSectionTheater .project20:hover .describingThing, #workSection .project19:hover .describingThing, #workSectionTheater .project19:hover .describingThing, #workSection .project18:hover .describingThing, #workSectionTheater .project18:hover .describingThing, #workSection .project17:hover .describingThing, #workSectionTheater .project17:hover .describingThing, #workSection .project16:hover .describingThing, #workSectionTheater .project16:hover .describingThing, #workSection .project15:hover .describingThing, #workSectionTheater .project15:hover .describingThing, #workSection .project14:hover .describingThing, #workSectionTheater .project14:hover .describingThing, #workSection .project13:hover .describingThing, #workSectionTheater .project13:hover .describingThing, #workSection .project12:hover .describingThing, #workSectionTheater .project12:hover .describingThing, #workSection .project11:hover .describingThing, #workSectionTheater .project11:hover .describingThing, #workSection .project10:hover .describingThing, #workSectionTheater .project10:hover .describingThing, #workSection .project9:hover .describingThing, #workSectionTheater .project9:hover .describingThing, #workSection .project8:hover .describingThing, #workSectionTheater .project8:hover .describingThing, #workSection .project7:hover .describingThing, #workSectionTheater .project7:hover .describingThing, #workSection .project6:hover .describingThing, #workSectionTheater .project6:hover .describingThing, #workSection .project5:hover .describingThing, #workSectionTheater .project5:hover .describingThing, #workSection .project4:hover .describingThing, #workSectionTheater .project4:hover .describingThing, #workSection .project3:hover .describingThing, #workSectionTheater .project3:hover .describingThing, #workSection .project2:hover .describingThing, #workSectionTheater .project2:hover .describingThing {
+    position: relative;
+    font-size: 0.5em;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px;
+    top: -10%;
   }
 }
 body {
@@ -57,31 +75,40 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 6px;
-  background: grey;
+  background: #ffe1ad;
 }
+
+/*$baseGearWidth: 29vh;
 
 .gearContainer {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-}
-.gearContainer div {
-  background-position: center;
-}
-.gearContainer div:hover {
-  background-size: 102%;
-}
-.gearContainer div:hover label {
-  background-color: #939598;
-}
+  position: relative;
+  left: 10px;
 
+  div {
+    background-position: center;
+  }
+
+  div:hover {
+    background-size: 102%;
+
+    label {
+      background-color: rgba(147, 149, 152, 1);
+    }
+  }
+}*/
 .main {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+  width: 50vw;
 }
 .main #pathArray {
-  min-width: 100%;
+  min-width: 200%;
+  position: relative;
+  z-index: 1;
 }
 .main #path1 {
   stroke-dasharray: 1000;
@@ -99,74 +126,123 @@ body {
   font-family: acumin-pro;
   margin: 0;
   padding: 5%;
+}
+.main #welcomeBanner p {
+  font-size: 1.5em;
+}
+.main #welcomeBanner h1 {
   font-size: 10em;
 }
-.main label {
-  font-family: mostra-nuova;
-  background: rgba(147, 149, 152, 0.75);
-  border-radius: 1.5em;
-  padding: 10px;
-  font-size: 2em;
-  color: #FFE1AD;
-  position: relative;
-  text-decoration: none;
+
+/*
+  label {
+    font-family: mostra-nuova;
+    background: $labelBackground;
+    border-radius: 1.5em;
+    padding: 10px;
+    font-size: 2em;
+    color: $textLabel;
+    position: relative;
+    text-decoration: none;
+  }
 }
 
 .aboutMeGear {
   grid-column-start: 3;
   grid-row-start: 2;
-  width: 29vh;
-  height: 29vh;
+  width: $baseGearWidth;
+  height: $baseGearWidth;
   background-image: url("../img/aboutMeGear.webp");
   background-repeat: no-repeat;
   background-size: contain;
-}
-.aboutMeGear label {
-  top: 40%;
-  left: 20%;
-}
-.aboutMeGear :hover {
-  cursor: pointer;
+
+  label {
+    top: 40%;
+    left: 20%;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .workGear {
   grid-column-start: 2;
   grid-row-start: 3;
-  width: 62.64vh;
-  height: 62.64vh;
+  width: $baseGearWidth*2.16;
+  height: $baseGearWidth*2.16;
   background-image: url("../img/workGear.webp");
   background-repeat: no-repeat;
   background-size: contain;
-}
-.workGear label {
-  font-size: 5em;
-  top: 40%;
-  left: 25%;
-}
-.workGear :hover {
-  cursor: pointer;
+
+  label {
+    font-size: 5em;
+    top: 40%;
+    left: 25%;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
 }
 
 .contactGear {
   grid-column-start: 3;
   grid-row-start: 3;
-  height: 49.3vh;
-  width: 49.3vh;
+  height: $baseGearWidth*1.7;
+  width: $baseGearWidth*1.7;
   background-image: url("../img/contactGear.webp");
   background-repeat: no-repeat;
   background-size: contain;
-}
-.contactGear label {
-  font-size: 3em;
-  top: 42%;
-  left: 29%;
-}
-.contactGear :hover {
-  cursor: pointer;
-}
 
+  label {
+    font-size: 3em;
+    top: 42%;
+    left: 29%;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+}*/
 .closingTime {
   font-family: mostra-nuova;
+}
+
+#svgWorkFlow {
+  position: absolute;
+}
+
+#pathWork1 {
+  stroke-dasharray: 500;
+}
+
+#pathWork2 {
+  stroke-dasharray: 500;
+}
+
+#pathWork3 {
+  stroke-dasharray: 500;
+}
+
+#pathWork4 {
+  stroke-dasharray: 500;
+}
+
+#pathWork5 {
+  stroke-dasharray: 500;
+}
+
+#pathWork6 {
+  stroke-dasharray: 500;
+}
+
+#pathWork7 {
+  stroke-dasharray: 500;
+}
+
+#pathWork8 {
+  stroke-dasharray: 500;
 }
 
 #workSection, #workSectionTheater {
@@ -176,8 +252,6 @@ body {
   background-color: #ffe1ad;
 }
 #workSection #CTDworkDiv, #workSection #workDivTheater, #workSectionTheater #CTDworkDiv, #workSectionTheater #workDivTheater {
-  background-image: url("../img/portfolioLayout-16.svg");
-  background-repeat: no-repeat;
   display: grid;
   grid-template-rows: 95vh;
   grid-template-columns: repeat(5, 95vw);
@@ -590,12 +664,13 @@ nav {
   opacity: 0;
   justify-content: flex-end;
   font-size: 3em;
-  min-width: 100%;
   position: fixed;
-  z-index: 2;
+  right: 0px;
+  min-width: 45vw;
+  z-index: 3;
 }
 nav label {
-  margin-left: 5%;
+  margin-right: 5%;
 }
 nav :hover {
   transition-property: transform;
@@ -613,7 +688,7 @@ nav :hover {
   top: 20px;
   margin-bottom: 40px;
   padding-bottom: 10px;
-  z-index: 1;
+  z-index: 3;
 }
 
 #aboutMeSection {
@@ -645,7 +720,7 @@ nav :hover {
 }
 
 #contactSection {
-  margin: 15% 5% 5% 5%;
+  margin: 5%;
   font-family: acumin-pro;
 }
 #contactSection div {

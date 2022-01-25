@@ -33,24 +33,37 @@
   font-style: normal;
 }
 
-@media only screen and (max-width: 800px) {
-  html {
-    min-width: 400%;
-    padding: 10px;
-  }
-}
-
-@media(min-aspect-ratio: 16/9)
-{
-  h3{
-    font-size: 2em;
-    margin-top: 1%;
-  }
-  h2{
-    font-size: 1.75em;
-    margin-top: 1%;
-  }
-}
+@media only screen and (max-width:900px){
+      #pathArray{
+        position: absolute !important;
+        left: 10vw;
+        bottom:0px;
+      }
+      .main{
+        font-size: .75em;
+      }
+      #aboutMeSection{
+        font-size: .75em;
+        img{
+          width: 45%;
+        }
+        padding-left: 10% !important;
+      }
+      nav{
+        font-size: 1em !important;
+      }
+      .project1:hover {
+        background-size: cover !important;
+        .describingThing{
+          position: relative;
+          font-size: .5em;
+          background-color: grey;
+          border-radius: 10px;
+          padding: 5px;
+          top: -10%;
+        }
+      }
+    }
 
 body{
   background: $pageBackground;
@@ -64,5 +77,5 @@ body{
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 6px;
-  background: grey;
+  background: $pageBackground2;
 }

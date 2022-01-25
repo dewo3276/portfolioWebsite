@@ -2,6 +2,42 @@
   font-family: mostra-nuova;
 }
 
+#svgWorkFlow{
+  position: absolute;
+}
+
+#pathWork1 {
+  stroke-dasharray: 500;
+}
+
+#pathWork2 {
+  stroke-dasharray: 500;
+}
+
+#pathWork3 {
+  stroke-dasharray: 500;
+}
+
+#pathWork4 {
+  stroke-dasharray: 500;
+}
+
+#pathWork5 {
+  stroke-dasharray: 500;
+}
+
+#pathWork6 {
+  stroke-dasharray: 500;
+}
+
+#pathWork7 {
+  stroke-dasharray: 500;
+}
+
+#pathWork8 {
+  stroke-dasharray: 500;
+}
+
 #workSection {
   margin-left: 2%;
   margin-right: 2%;
@@ -9,8 +45,6 @@
   background-color: $pageBackground2;
 
   #CTDworkDiv {
-    background-image: url("../img/portfolioLayout-16.svg");
-    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: 95vh;
     grid-template-columns: repeat(5,95vw);
@@ -37,13 +71,11 @@
     }
   }
 
-
-  .describingThing{
+  .describingThing {
     margin-left: 10%;
-    font-size: .5em;
+    font-size: 0.5em;
     display: none;
   }
-
 
   .project1 {
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/skm/dragon demo.gif");
@@ -56,7 +88,8 @@
 
   .project1:hover {
     background-image: url("../img/skm/dragon demo.gif");
-    .describingThing{
+
+    .describingThing {
       display: block;
     }
     background-position: left;
