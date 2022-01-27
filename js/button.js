@@ -17,7 +17,6 @@ function enlarge(className, index, WorkSectionType) {
     }
   }
   currentOpen.className=className;
-  currentOpen.type=type;
   currentOpen.index=index;
   currentOpen.WorkSectionType=WorkSectionType;
 }
