@@ -1,0 +1,64 @@
+#menuBar{
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $pageBackground2;
+  background-color: $pageBackground;
+  font-size: 2em;
+  label{
+    padding: 10px;
+  }
+  label:nth-child(1){
+    background-color: $worklabel;
+  }
+  label:nth-child(2){
+    background-color: $aboutMeLabel;
+  }
+  label:nth-child(3){
+    background-color: $contactLabel;
+  }
+  min-width: 100vw;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+
+  #pathArray {
+    min-width: 200%;
+    position: relative;
+    z-index: 1;
+  }
+
+  #path1 {
+  stroke-dasharray: 1000;
+}
+
+  #path2 {
+  stroke-dasharray: 500;
+}
+
+  #path3 {
+  stroke-dasharray: 700;
+}
+
+  #path4 {
+  stroke-dasharray: 900;
+}
+
+  #welcomeBanner {
+    font-family: acumin-pro;
+    margin: 0;
+    padding: 5%;
+    p{
+      font-size: 1.5em;
+    }
+    h1{
+      font-size: 10em;
+    }
+  }
+  min-height: 100vh;
+  width: 50vw;
+}

@@ -11,7 +11,7 @@ function checkIfOpen(){
       .to(window, {scrollTo: (document.getElementById('header').offsetTop-(window.innerHeight*.1)), duration:.5})
       .to('#WorkContent' + (currentOpen.index+1), {opacity: 0, display: "none"},'-=50%')
       .to(currentOpen.className, {opacity: 1},'-=20%')
-      .to(currentOpen.className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
+      .to(currentOpen.className, {scaleX: "100%", backgroundSize: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
     for (let i = 0; i < projectsInFile.length; i++) {
       if(currentOpen.index!=i)
       {
@@ -28,13 +28,45 @@ function checkIfOpen(){
 
 function navigationContoller(id){
   var pos = document.getElementById(id).offsetTop;
+  switch (id) {
+    case 'header':
+      var pos = document.getElementById(id).offsetTop-(window.innerHeight*.1);
+      var value = window.scrollY;
+      gsap.timeline()
+        .to('#labelContact',{transformOrigin:'0 0', rotation:90, duration:.5})
+        .to('#labelAbout',{transformOrigin:'0 0', rotation:90, duration:.5},'-=.35')
+        .to('#labelWork',{transformOrigin:'0 0', rotation:90, duration:.5},'-=.35')
+        .to(window, {scrollTo: pos, delay: .5, duration: Math.abs(pos-value)*.0005})
+        .to('#labelContact',{rotation:0},'<')
+        .to('#labelAbout',{rotation:0},'<')
+        .to('#labelWork',{rotation:0},'<')
+    break;
 
-  if(id=='header')
-  {
-    var pos = document.getElementById(id).offsetTop-(window.innerHeight*.1)
+    case 'aboutMeSection':
+      var pos = document.getElementById(id).offsetTop-(window.innerHeight*.15);
+      var value = window.scrollY;
+      gsap.timeline()
+        .to('#labelContact',{transformOrigin:'0 0', rotation:90, duration:.5})
+        .to('#labelAbout',{transformOrigin:'0 0', rotation:90, duration:.5},'-=.35')
+        .to('#labelWork',{transformOrigin:'0 0', rotation:90, duration:.5},'-=.35')
+
+  .to(window, {scrollTo: pos, delay: .5, duration: Math.abs(pos-value)*.0005})
+        .to('#labelContact',{rotation:0},'<')
+        .to('#labelAbout',{rotation:0},'<')
+        .to('#labelWork',{rotation:0},'<')
+    break;
+
+    case 'contactSection':
+    gsap.timeline()
+      .to('#labelContact',{transformOrigin:'0 0', rotation:90, duration:.5})
+      .to('#labelAbout',{transformOrigin:'0 0', rotation:90, duration:.5},'-=.35')
+      .to('#labelWork',{transformOrigin:'0 0', rotation:90, duration:.5},'-=.35')
+      .to(window, {scrollTo: pos, delay: .5, duration: Math.abs(pos-value)*.0005})
+      .to('#labelContact',{rotation:0},'<')
+      .to('#labelAbout',{rotation:0},'<')
+      .to('#labelWork',{rotation:0},'<')
+    break;
   }
-
-  gsap.to(window, {scrollTo: pos, delay: .5, duration: 1});
 }
 
 function navBarWork(itterationNumber){

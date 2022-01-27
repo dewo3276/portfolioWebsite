@@ -1,283 +1,63 @@
 .transitionalContent {
-  .description{
-      font-size: 1.5em;
+  position: fixed;
+  top: 5%;
+  bottom: 5%;
+  right: 2%;
+  left: 2%;
+  color: $pageBackground;
+  background-color: grey;
+  border: 20px solid white;
+  border-radius: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  img{
+    width: 100%;
   }
-  .titleBlock {
-    background-image: url("../img/skm/dragon demo.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 85vh;
-    margin: 0 2%;
-    h1 {
-      font-size: 3em;
+  .description{
+    h1{
+      margin: 0px;
     }
-
-    div {
-      padding: 40% 0 0 5%;
+    p{
+      margin: 0px;
+      font-size: 1.5em;
     }
+    text-align: center;
+    margin: 10px 10px 2px 10px;
+    position: absolute;
+    height: 25%;
+    bottom: 0%;
+    background-color: $pageBackground2;
+    z-index: 10;
+  }
+  .galleryContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
   }
   margin-left: 5%;
   margin-right: 5%;
   display: none;
   opacity: 0;
-  z-index: 2;
-
-  .threeXthree {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: min-content repeat(3,1fr);
-    grid-gap: 2%;
-
-    img {
-      width: 100%;
-    }
-
-    p {
-      text-align: center;
-      grid-column: 1/4;
-    }
+  z-index: 15;
   }
 
-  .threexOne{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: min-content 1fr;
-    grid-gap: 2%;
-    img{
-      width: 100%;
-    }
-    p{
-      text-align: center;
-      grid-column: 1/4;
-    }
+  .closeButton{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    right: 0;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    z-index: 15;
   }
 
-  .twoXtwo {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: min-content repeat(2,1fr);
-    grid-gap: 2%;
-
-    img {
-      width: 100%;
-    }
-
-    p {
-      text-align: center;
-      grid-column: 1/3;
-    }
-    margin-bottom: 2%;
+  .closeButton:hover{
+    transform: scale(1.25);
+    cursor: pointer;
   }
 
-  .twoXone {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: min-content 1fr;
-    grid-gap: 2%;
-
-    img {
-      width: 100%;
-    }
-
-    p {
-      text-align: center;
-      grid-column: 1/3;
-    }
-    margin-bottom: 2%;
+  #WorkContent2{
+    display: block !important;
+    opacity: 1 !important;
   }
-
-
-  .threeXtwo {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: min-content repeat(2,1fr);
-    grid-gap: 2%;
-
-    img {
-      width: 100%;
-    }
-
-    p {
-      text-align: center;
-      grid-column: 1/4;
-    }
-  }
-
-  .oneAndone{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-  .video{
-    margin-top: 5%;
-  }
-}
-
-label:hover {
-  cursor: pointer;
-}
-
-#WorkContent2 {
-  .titleBlock {
-    background-image: url("../img/pdtLetters/finished.webp");
-    background-position: center;
-  }
-}
-
-#WorkContent3 {
-  .titleBlock {
-    background-image: url("../img/penguinDevice/penguinFinal.webp");
-    background-position: center;
-  }
-}
-
-#WorkContent4 {
-  .titleBlock {
-    background-image: url("../img/hideAwayStairs/bccTable.gif");
-    
-  }
-}
-
-#WorkContent5 {
-  .titleBlock {
-    background-image: url("../img/capstoneClock/final1.webp");
-  }
-  .oneAndone{
-    position: relative;
-    top: -100px;
-    img{
-      padding: 8%;
-    }
-  }
-}
-
-#WorkContent6 {
-  .titleBlock {
-    background-image: url("../img/creepyCreature/caught 4.webp");
-  }
-}
-
-#WorkContent7 {
-  .titleBlock {
-    background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
-  }
-}
-
-#WorkContent8 {
-  .titleBlock {
-    background-image: url("../img/customCoffeTable/final1.webp");
-  }
-}
-
-#WorkContent9{
-  .titleBlock{
-    background-image: url("../img/3dVisualizer/backgroundFrame.webp");
-  }
-}
-
-#WorkContent10{
-  .titleBlock{
-    background-image: url("../img/fusionInfoGraphic/iteration4.webp");
-    div{
-      h1, h3{
-        background-color: grey;
-        max-width: 50%;
-        border-radius: 15px;
-        opacity: .75;
-      }
-    }
-  }
-  .threeXthree{
-    grid-template-rows: min-content 1fr;
-  }
-}
-
-#WorkContent11{
-  .titleBlock{
-    background-image: url("../img/spiceItUp/spice if up final.webp");
-  }
-  .oneAndone{
-    img{
-      width: 50%;
-      align-self: center;
-    }
-  }
-}
-
-#WorkContent12{
-  .titleBlock{
-    background-image: url("../img/courageTheCowardlyDog/courage final 2.webp");
-  }
-  .threeXthree:nth-child(3){
-    margin-top: -15%;
-    grid-template-rows: min-content 1fr;
-  }
-}
-
-#WorkContent13{
-  .titleBlock{
-    background-image: url("../img/zurgeCoin/final-zurge.webp");
-  }
-  div:nth-child(4){
-    position: relative;
-    margin-top:-50%;
-  }
-}
-
-#WorkContent14{
-  .titleBlock{
-    background-image: url("../img/peculiarParticles/final1.webp");
-  }
-  .threeXthree{
-    grid-template-rows: min-content 1fr;
-  }
-}
-
-
-#WorkContent15{
-  .titleBlock{
-    background-image: url("../img/cannonFodder/cannon (15).webp");
-  }
-  .threeXthree{
-    grid-template-rows: min-content 1fr;
-  }
-}
-
-
-#WorkContent16{
-  .titleBlock{
-    background-image: url("../img/babyYoda/babyYoda1.webp");
-  }
-}
-
-#WorkContent17{
-  .titleBlock{
-    background-image: url("../img/hair/hair (2).webp");
-  }
-}
-
-#WorkContent18{
-  .titleBlock{
-    background-image: url("../img/hecuba/hecuba (2).webp");
-  }
-}
-
-#WorkContent19{
-  .titleBlock{
-    background-image: url("../img/intoTheWoods/IntoTheWoods-29.webp");
-  }
-}
-
-#WorkContent20{
-  .titleBlock{
-    background-image: url("../img/greatExpectations/greatExpectations (1).webp");
-  }
-}
-
-#WorkContent21{
-  .titleBlock{
-    background-image: url("../img/falStaff/fallStaff (4).webp");
-  }
-}

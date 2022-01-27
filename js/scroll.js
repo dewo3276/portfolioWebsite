@@ -1,24 +1,14 @@
 ScrollTrigger.create({
-  trigger: ".main",
+  trigger: "#main",
   start: "10%",
   end: "bottom-=50%",
   onToggle: function() {
-    var element = document.getElementsByTagName("NAV")[0];
-    element.style.display = "none";
-    gsap.to(element, {
-      opacity: 0,
-      delay: .25,
-      duration: .5
-    })
+    var element = document.getElementById("menuBar");
+    element.style.fontSize="2em";
   },
   onLeave: function() {
-    var element = document.getElementsByTagName("NAV")[0];
-    element.style.display = "flex";
-    gsap.to(element, {
-      opacity: 1,
-      delay: .25,
-      duration: .5
-    });
+    var element = document.getElementById("menuBar");
+    element.style.fontSize="1.25em";
   }
 });
 
@@ -31,14 +21,23 @@ window.addEventListener('scroll', function() {
   let path3 = document.getElementById('path3');
   let path4 = document.getElementById('path4');
 
-  let pathWork1 = document.getElementById('pathWork1');
-  let pathWork2 = document.getElementById('pathWork2');
-  let pathWork3 = document.getElementById('pathWork3');
-  let pathWork4 = document.getElementById('pathWork4');
-  let pathWork5 = document.getElementById('pathWork5');
-  let pathWork6 = document.getElementById('pathWork6');
-  let pathWork7 = document.getElementById('pathWork7');
-  let pathWork8 = document.getElementById('pathWork8');
+  let pathWork1 = document.getElementsByClassName('pathWork1')[0];
+  let pathWork11 = document.getElementsByClassName('pathWork1')[1];
+  let pathWork2 = document.getElementsByClassName('pathWork2')[0];
+  let pathWork21 = document.getElementsByClassName('pathWork2')[1];
+  let pathWork3 = document.getElementsByClassName('pathWork3')[0];
+  let pathWork31 = document.getElementsByClassName('pathWork3')[1];
+  let pathWork4 = document.getElementsByClassName('pathWork4')[0];
+  let pathWork41 = document.getElementsByClassName('pathWork4')[1];
+  let pathWork5 = document.getElementsByClassName('pathWork5')[0];
+  let pathWork51 = document.getElementsByClassName('pathWork5')[1];
+  let pathWork6 = document.getElementsByClassName('pathWork6')[0];
+  let pathWork61 = document.getElementsByClassName('pathWork6')[1];
+  let pathWork7 = document.getElementsByClassName('pathWork7')[0];
+  let pathWork71 = document.getElementsByClassName('pathWork7')[1];
+  let pathWork8 = document.getElementsByClassName('pathWork8')[0];
+  let pathWork81 = document.getElementsByClassName('pathWork8')[1];
+
   if (window.innerWidth>800) {
     about.style.left = (value - 1400) + value * .75 + 'px';
   }
@@ -73,6 +72,7 @@ window.addEventListener('scroll', function() {
     gsap.to('#welcomeBanner', {
       opacity: 0
     })
+
   }
 
   pathWork1.style.strokeDashoffset = value * -5 + 'px';
@@ -84,6 +84,14 @@ window.addEventListener('scroll', function() {
   pathWork7.style.strokeDashoffset = value * 5 + 'px';
   pathWork8.style.strokeDashoffset = value * 5 + 'px';
 
+  pathWork11.style.strokeDashoffset = value * -5 + 'px';
+  pathWork21.style.strokeDashoffset = value * 5 + 'px';
+  pathWork31.style.strokeDashoffset = value * 5 + 'px';
+  pathWork41.style.strokeDashoffset = value * 5 + 'px';
+  pathWork51.style.strokeDashoffset = value * -5 + 'px';
+  pathWork61.style.strokeDashoffset = value * 5 + 'px';
+  pathWork71.style.strokeDashoffset = value * 5 + 'px';
+  pathWork81.style.strokeDashoffset = value * 5 + 'px';
 })
 
 gsap.to('#CTDworkDiv', {
@@ -93,22 +101,48 @@ gsap.to('#CTDworkDiv', {
     trigger: "#CTDworkDiv",
     onEnter: function() {
       var element2 = document.getElementById("header");
-      var element = document.getElementsByTagName("NAV")[0];
+      var element = document.getElementById("menuBar");
+      var element3 = document.getElementById("svgWorkFlow");
+      var element4 = document.getElementById("svgWorkFlow2");
+      element3.style.display="block";
+      element4.style.display="block";
       element2.style.position="sticky";
-      gsap.to(element,{y:"-70",duration:.5});
+      gsap.to(element,{y:"-200",duration:1});
       gsap.to(element2,{y:"-15",duration:.5},"-=105%");
     },
     onLeaveBack: function () {
       var element2 = document.getElementById("header");
-      var element = document.getElementsByTagName("NAV")[0];
-      gsap.to(element,{y:"0",duration:.5});
+      var element = document.getElementById("menuBar");
+      var element3 = document.getElementById("svgWorkFlow");
+      var element4 = document.getElementById("svgWorkFlow2");
+      gsap.to(element,{y:"0",duration:1});
       element2.style.position="relative";
+      element3.style.display="none";
+      element4.style.display="none";
       gsap.to(element2,{y:"0",duration:.75});
+    },
+    onLeave: function() {
+      var element2 = document.getElementById("header");
+      var element = document.getElementById("menuBar");
+      var element3 = document.getElementById("svgWorkFlow");
+      var element4 = document.getElementById("svgWorkFlow2");
+      gsap.to(element,{y:"0",duration:1});
+      element2.style.position="relative";
+      element3.style.display="none";
+      element4.style.display="none";
+      gsap.to(element2,{y:"0",duration:.75});
+    },
+    onEnterBack: function() {
+      var element3 = document.getElementById("svgWorkFlow");
+      var element4 = document.getElementById("svgWorkFlow2");
+      element3.style.display="block";
+      element4.style.display="block";
     },
     snap: 1/5,
     start:"top 5%",
     end:"bottom",
     scrub: .15,
-    pin: true
+    pin: true,
+    pinSpacer: "15%"
   }
 })

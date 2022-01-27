@@ -3,38 +3,46 @@
 }
 
 #svgWorkFlow{
-  position: absolute;
+  position: fixed;
+  top:10vh;
+  display: none;
 }
 
-#pathWork1 {
+#svgWorkFlow2{
+  position: fixed;
+  top:50vh;
+  display: none;
+}
+
+.pathWork1 {
   stroke-dasharray: 500;
 }
 
-#pathWork2 {
+.pathWork2 {
   stroke-dasharray: 500;
 }
 
-#pathWork3 {
+.pathWork3 {
   stroke-dasharray: 500;
 }
 
-#pathWork4 {
+.pathWork4 {
   stroke-dasharray: 500;
 }
 
-#pathWork5 {
+.pathWork5 {
   stroke-dasharray: 500;
 }
 
-#pathWork6 {
+.pathWork6 {
   stroke-dasharray: 500;
 }
 
-#pathWork7 {
+.pathWork7 {
   stroke-dasharray: 500;
 }
 
-#pathWork8 {
+.pathWork8 {
   stroke-dasharray: 500;
 }
 

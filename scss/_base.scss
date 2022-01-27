@@ -3,79 +3,93 @@
   font-weight: 400;
   font-style: normal;
 }
-
-@font-face{
+@font-face {
   font-family: acumin-pro,sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-@font-face{
+@font-face {
   font-family: acumin-pro-condensed,sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-@font-face{
+@font-face {
   font-family: acumin-pro-extra-condensed,sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-@font-face{
+@font-face {
   font-family: acumin-pro-wide,sans-serif;
   font-style: normal;
 }
-
-@font-face{
+@font-face {
   font-family: acumin-pro-thin, sans-serif;
   font-weight: 100;
   font-style: normal;
 }
+@media only screen and (max-width:900px) {
+  .description {
+    font-size: .5em;
+    height: 40% !important;
+  }
 
-@media only screen and (max-width:900px){
-      #pathArray{
-        position: absolute !important;
-        left: 10vw;
-        bottom:0px;
-      }
-      .main{
-        font-size: .75em;
-      }
-      #aboutMeSection{
-        font-size: .75em;
-        img{
-          width: 45%;
-        }
-        padding-left: 10% !important;
-      }
-      nav{
-        font-size: 1em !important;
-      }
-      .project1:hover {
-        background-size: cover !important;
-        .describingThing{
-          position: relative;
-          font-size: .5em;
-          background-color: grey;
-          border-radius: 10px;
-          padding: 5px;
-          top: -10%;
-        }
-      }
+  #pathArray {
+    position: absolute !important;
+    left: 10vw;
+    bottom: 0;
+  }
+
+  .main {
+    font-size: 0.75em;
+  }
+
+  #aboutMeSection {
+    font-size: 0.75em;
+
+    img {
+      width: 45%;
     }
+    padding-left: 10% !important;
+  }
 
-body{
+  #menuBar {
+    font-size: 1em !important;
+  }
+
+  nav {
+    font-size: 1em !important;
+  }
+
+  .project1:hover {
+    background-size: cover !important;
+
+    .describingThing {
+      position: relative;
+      font-size: 0.5em;
+      background-color: grey;
+      border-radius: 10px;
+      padding: 5px;
+      top: -10%;
+    }
+  }
+}
+
+body {
   background: $pageBackground;
   font-family: acumin-pro !important;
   overflow-x: hidden;
   color: $textLabel;
 }
 
-::-webkit-scrollbar{
+label:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
   width: 12px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background: $pageBackground2;
 }
