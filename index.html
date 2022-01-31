@@ -61,8 +61,8 @@
     </div>
     <svg id="pathArray" xmlns="http://www.w3.org/2000/svg" viewBox="150 -200 1536.68 836.04">
 
-      <path id="path1" d="M482.76,698.4v-287A273.59,273.59,0,0,1,756.5,137.64h297.42" style="fill:none;stroke:#ffe1ad;stroke-miterlimit:10;stroke-width:20px" />
-      <path id="path2" d="M1053.92,453.55H850.4a51.73,51.73,0,0,0-51.73,51.73V698.4" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
+      <path id="path1" d="M482.76,698.4v-287A273.59,273.59,0,0,1,756.5,137.64h297.42" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
+      <path id="path2" d="M1053.92,453.55H850.4a51.73,51.73,0,0,0-51.73,51.73V698.4" style="fill:none;stroke:#ffe1ad;stroke-miterlimit:10;stroke-width:20px" />
       <path id="path3" d="M1053.92,344.55H756.5a66.91,66.91,0,0,0-66.83,66.83v287" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
       <path id="path4" d="M1053.92,235.55H756.5A175.83,175.83,0,0,0,580.67,411.38v287" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
 
@@ -93,11 +93,32 @@
     <label id="nav3" onclick="navBarWork('3')">Resume</label>
   </nav>
 
-  <section id="resume">
-    <iframe src="img/Woods_Destin_resume.pdf#toolbar=0" width="100%" height="700px"></iframe>
-  </section>
+  <section id="workSection">
+    <svg id="svgWorkFlow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1536.68 836.04">
+      <defs>
+        <clipPath id="clip-path">
+          <rect y="-981.99" width="1536.68" height="836.04" style="fill:#ffe1ad" />
+        </clipPath>
+      </defs>
+      <g id="newColor">
+        <rect y="-981.99" width="1536.68" height="836.04" style="fill:#ffe1ad" />
+        <g style="clip-path:url(#clip-path)">
+          <path d="M-751.47-600.53H180.78A272.12,272.12,0,0,1,287.36-579a272.69,272.69,0,0,1,87,58.63,272.62,272.62,0,0,1,58.62,87,272.13,272.13,0,0,1,21.56,106.58V220.47" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
+          <path d="M138.61,220.47V-232.89a51.73,51.73,0,0,0-51.73-51.73H-751.47" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
+          <path d="M247.61,220.47V-326.79a66.91,66.91,0,0,0-66.83-66.83H-751.47" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
+          <path d="M356.61,220.47V-326.79A175.83,175.83,0,0,0,180.78-502.62H-751.47" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
+        </g>
+        <path class="pathWork1" d="M1536.26,772.84H1211.58A273.59,273.59,0,0,1,937.84,499.1V-.25" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
+        <path class="pathWork2" d="M1253.75-.25V405.2a51.73,51.73,0,0,0,51.73,51.73h230.78" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
+        <path class="pathWork3" d="M1144.75-.25V499.1a66.91,66.91,0,0,0,66.83,66.83h324.68" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
+        <path class="pathWork4" d="M1035.75-.25V499.1a175.84,175.84,0,0,0,175.83,175.83h324.68" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
+        <path class="pathWork5" d="M0,333.3H164A273.59,273.59,0,0,1,437.77,607.05V835.54" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
+        <path class="pathWork6" d="M121.86,835.54V700.94a51.72,51.72,0,0,0-51.73-51.72H0" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
+        <path class="pathWork7" d="M230.86,835.54V607.05A66.91,66.91,0,0,0,164,540.22H0" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
+        <path class="pathWork8" d="M339.86,835.54V607.05A175.83,175.83,0,0,0,164,431.22H0" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
+      </g>
+    </svg>
 
-  <section id="workSectionTheater">
     <div id="WorkContent1" class="transitionalContent">
       <div class="galleryContainer">
         <h1>She Kills Monsters</h1>
@@ -240,113 +261,6 @@
         <img src="img/falStaff/fallStaff (3).webp" alt="" loading="lazy">
       </div>
     </div>
-
-    <div id="workDivTheater">
-      <div class="workDivs" id="workDivTheater1">
-        <div class="project1">
-          <label onclick="enlarge('.project1',0,0,'workDivTheater')">
-            She Kills Monsters
-          </label>
-          <p class="describingThing">Wireframe dragon head puppet crafted out of aluminum, designed in Rhino, and wrapped in a wire mesh to adhere foam and paint.</p>
-        </div>
-        <div class="project4">
-          <label onclick="enlarge('.project4',1,3,'workDivTheater')">
-            Broadway Christmas Carol
-          </label>
-          <p class="describingThing">Table with hidden steel stairs that pull out on a track and rotate downard to create easy access to getting on top of the tables. Magnetized compartment to hide the access to the stairs and wheel base with
-            pushable footbar to retract and extend wheels.</p>
-        </div>
-        <div class="project17">
-          <label onclick="enlarge('.project17',0,16,'workDivTheater')">
-            Hair
-          </label>
-          <p class="describingThing">Steel bridge modified from stock of past shows. Stair units, plywood facade, and artificial turf added to portray central park.</p>
-        </div>
-      </div>
-
-      <div class="workDivs" id="workDivTheater2">
-        <div class="project18">
-          <label onclick="enlarge('.project18',1,17,'workDivTheater')">
-            Hecuba
-          </label>
-          <p class="describingThing">Logs hung from proscenium arch made from sonotube and carved foam wrapped in muslin. More sonotube created for "supporting" columns to represent a ship.</p>
-        </div>
-        <div class="project19">
-          <label onclick="enlarge('.project19',0,18,'workDivTheater')">
-            Into the Woods
-          </label>
-          <p class="describingThing">Steel jungle gym created from stock platforms and custom made platforms. Many hand cut and welded steel ladders, handrails, and stair units.</p>
-        </div>
-        <div class="project20">
-          <label onclick="enlarge('.project20',1,19,'workDivTheater')">
-            Great Expectations
-          </label>
-          <p class="describingThing">Stock platforms modified and given many levels through use of compression legs. Laser cut stencil used for painting brick pattern on the black box theater floor.</p>
-        </div>
-      </div>
-
-      <div class="workDivs" id="workDivTheater3">
-        <div class="project21">
-          <label onclick="enlarge('.project21',0,20,'workDivTheater')">
-            Fallstaff In Love
-          </label>
-          <p class="describingThing">Hollywood flats create walls painted with wood texture and a 1x4 framed fireplace faced with luan.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="workSection">
-    <svg id="svgWorkFlow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1536.68 836.04">
-      <defs>
-        <clipPath id="clip-path">
-          <rect y="-981.99" width="1536.68" height="836.04" style="fill:#ffe1ad" />
-        </clipPath>
-      </defs>
-      <g id="newColor">
-        <rect y="-981.99" width="1536.68" height="836.04" style="fill:#ffe1ad" />
-        <g style="clip-path:url(#clip-path)">
-          <path d="M-751.47-600.53H180.78A272.12,272.12,0,0,1,287.36-579a272.69,272.69,0,0,1,87,58.63,272.62,272.62,0,0,1,58.62,87,272.13,272.13,0,0,1,21.56,106.58V220.47" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
-          <path d="M138.61,220.47V-232.89a51.73,51.73,0,0,0-51.73-51.73H-751.47" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
-          <path d="M247.61,220.47V-326.79a66.91,66.91,0,0,0-66.83-66.83H-751.47" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
-          <path d="M356.61,220.47V-326.79A175.83,175.83,0,0,0,180.78-502.62H-751.47" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
-        </g>
-        <path class="pathWork1" d="M1536.26,772.84H1211.58A273.59,273.59,0,0,1,937.84,499.1V-.25" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork2" d="M1253.75-.25V405.2a51.73,51.73,0,0,0,51.73,51.73h230.78" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork3" d="M1144.75-.25V499.1a66.91,66.91,0,0,0,66.83,66.83h324.68" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork4" d="M1035.75-.25V499.1a175.84,175.84,0,0,0,175.83,175.83h324.68" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
-        <path class="pathWork5" d="M0,333.3H164A273.59,273.59,0,0,1,437.77,607.05V835.54" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork6" d="M121.86,835.54V700.94a51.72,51.72,0,0,0-51.73-51.72H0" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork7" d="M230.86,835.54V607.05A66.91,66.91,0,0,0,164,540.22H0" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork8" d="M339.86,835.54V607.05A175.83,175.83,0,0,0,164,431.22H0" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
-      </g>
-    </svg>
-    <svg id="svgWorkFlow2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1536.68 836.04">
-      <defs>
-        <clipPath id="clip-path">
-          <rect y="-981.99" width="1536.68" height="836.04" style="fill:#ffe1ad" />
-        </clipPath>
-      </defs>
-      <g id="newColor">
-        <rect y="-981.99" width="1536.68" height="836.04" style="fill:#ffe1ad" />
-        <g style="clip-path:url(#clip-path)">
-          <path d="M-751.47-600.53H180.78A272.12,272.12,0,0,1,287.36-579a272.69,272.69,0,0,1,87,58.63,272.62,272.62,0,0,1,58.62,87,272.13,272.13,0,0,1,21.56,106.58V220.47" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
-          <path d="M138.61,220.47V-232.89a51.73,51.73,0,0,0-51.73-51.73H-751.47" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
-          <path d="M247.61,220.47V-326.79a66.91,66.91,0,0,0-66.83-66.83H-751.47" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
-          <path d="M356.61,220.47V-326.79A175.83,175.83,0,0,0,180.78-502.62H-751.47" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
-        </g>
-        <path class="pathWork1" d="M1536.26,772.84H1211.58A273.59,273.59,0,0,1,937.84,499.1V-.25" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork2" d="M1253.75-.25V405.2a51.73,51.73,0,0,0,51.73,51.73h230.78" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork3" d="M1144.75-.25V499.1a66.91,66.91,0,0,0,66.83,66.83h324.68" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork4" d="M1035.75-.25V499.1a175.84,175.84,0,0,0,175.83,175.83h324.68" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
-        <path class="pathWork5" d="M0,333.3H164A273.59,273.59,0,0,1,437.77,607.05V835.54" style="fill:none;stroke:#88a8c9;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork6" d="M121.86,835.54V700.94a51.72,51.72,0,0,0-51.73-51.72H0" style="fill:none;stroke:#fab01a;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork7" d="M230.86,835.54V607.05A66.91,66.91,0,0,0,164,540.22H0" style="fill:none;stroke:#993120;stroke-miterlimit:10;stroke-width:20px" />
-        <path class="pathWork8" d="M339.86,835.54V607.05A175.83,175.83,0,0,0,164,431.22H0" style="fill:none;stroke:#586e82;stroke-linejoin:round;stroke-width:20px" />
-      </g>
-    </svg>
-
-
     <div id="WorkContent2" class="transitionalContent">
       <div class="description">
         <h1>Phi Delt Letters</h1>
@@ -372,7 +286,6 @@
         <img loading='lazy' src="img/pdtLetters/inProgress4.webp" alt="">
       </div>
     </div>
-
     <div id="WorkContent3" class="transitionalContent">
       <div class="description">
         <h1>Penguin I/O box</h1>
@@ -398,67 +311,72 @@
         <img loading='lazy' src="img/penguinDevice/penguinCode.webp" alt="">
       </div>
     </div>
-
     <div id="WorkContent5" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Self Destructing Clock</h1>
-        <h3>Capstone project</h3>
-      </div>
-      <div class="twoXone">
-        <p class="description">This project was created as my Capstone within the CTD program. The clock was a self-destructing art piece meant to give a qualitative aspect to time via quantitative means.<br>Through a google chrome extension that
+        <p>This project was created as my Capstone within the CTD program. The clock was a self-destructing art piece meant to give a qualitative aspect to time via quantitative means.<br>Through a google chrome extension that
           tracks zoom time and a wifi connected door monitoring system, the clock tracked when people left the virtual world for the real one and vice versa. The clock had two main functions: to spray paint itself any time the door tracker was pushed
           and to hit itself in 30 minute increments based on how long users stayed on zoom.</p>
+      </div>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/capstoneClock/final1.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/final2.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/final3.webp" alt="">
-      </div>
-      <div class="twoXone">
-        <p>Clock Functions</p>
         <img loading='lazy' src="img/capstoneClock/hammerFunction.gif" alt="">
         <img loading='lazy' src="img/capstoneClock/sprayPaintFunction.gif" alt="">
-      </div>
-      <div class="threeXtwo">
-        <p>Design itterations</p>
         <img loading='lazy' src="img/capstoneClock/File_000.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/File_003.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/File_006.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/middleGearItterations.webp" alt="">
-        <img loading='lazy' style="grid-column:2/4;" src="img/capstoneClock/middleGearItterations2.webp" alt="">
-      </div>
-      <div class="twoXone">
-        <p>Wiring Diagrams</p>
+        <img loading='lazy' src="img/capstoneClock/middleGearItterations2.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/uploadButtonDiagram_bb.webp" alt="">
         <img loading='lazy' src="img/capstoneClock/wiringDiagram_bb.webp" alt="">
       </div>
     </div>
     <div id="WorkContent6" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Creepy Creature</h1>
-        <h3>creepy creature crafted in Blender</h3>
+        <p>Crafted for a halloween asignement, this creature was built using blender sculpting techniques, given an armature, and programed to move through the scenery as well as a camera placed on a track with the monster.</p>
       </div>
-      <div class="twoXtwo">
-        <p class="description">Crafted for a halloween asignement, this creature was built using blender sculpting techniques, given an armature, and programed to move through the scenery as well as a camera placed on a track with the monster.</p>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <div class="video">
+          <lite-youtube videoid="eEJqA_qpkbQ"></lite-youtube>
+        </div>
+        <img loading='lazy' src="img/creepyCreature/caught 4.webp" alt="">
         <img loading='lazy' src="img/creepyCreature/caught 2.webp" alt="">
         <img loading='lazy' src="img/creepyCreature/caught 3.webp" alt="">
         <img loading='lazy' src="img/creepyCreature/caught 5.webp" alt="">
         <img loading='lazy' src="img/creepyCreature/caught.webp" alt="">
       </div>
-      <div class="video">
-        <lite-youtube videoid="eEJqA_qpkbQ"></lite-youtube>
-      </div>
     </div>
     <div id="WorkContent7" class="transitionalContent">
-      <div class="galleryContainer">
-        <h1>Sherlock Holmes renderings</h1>
-        <h3>renderings of some scenes from <i>Sherlock Holmes: a Game of Shadows</i></h3>
-      </div>
-      <div class="twoXone">
-        <p class="description">The following were scenes that were created using the Blender animation software. These scenes were modeled after the real set used in the second <i>Sherlock Holmes</i> movie. The assignment was used to demonstrate use
+      <div class="description">
+        <h1>Sherlock Holmes Rendering</h1>
+        <p>The following were scenes that were created using the Blender animation software. These scenes were modeled after the real set used in the second <i>Sherlock Holmes</i> movie. The assignment was used to demonstrate use
           of 3D modeling techniques and to practice camera movement through scenes.</p>
+      </div>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/sherlockHolmesRenderings/stag 1 behind bar still.webp" alt="">
         <img loading='lazy' src="img/sherlockHolmesRenderings/scene 1.gif" alt="">
         <img loading='lazy' src="img/sherlockHolmesRenderings/scene 2.gif" alt="">
-      </div>
-      <div class="threeXtwo">
-        <p>Final rendered scenes</p>
         <img loading='lazy' src="img/sherlockHolmesRenderings/hotel above 2 still.webp" alt="">
         <img loading='lazy' src="img/sherlockHolmesRenderings/hotel above still.webp" alt="">
         <img loading='lazy' src="img/sherlockHolmesRenderings/hotel still close.webp" alt="">
@@ -468,20 +386,23 @@
       </div>
     </div>
     <div id="WorkContent8" class="transitionalContent">
-      <div class="galleryContainer">
-        <h1>Coffee table</h1>
-        <h3>A custom coffee table created for personal use</h3>
-      </div>
-      <div class="twoXtwo">
+      <div class="description">
+        <h1>Coffee Table</h1>
         <p>This coffee table was constructed using the left over gears from my capstone project. Further plans are to utilize this coffee table and its ability to rotate the gears for a game that I am creating. The coffee table measures 18" high, 24"
           in width, and 48" in length.</p>
+      </div>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/customCoffeTable/final1.webp" alt="">
         <img loading='lazy' src="img/customCoffeTable/final4.webp" alt="">
         <img loading='lazy' src="img/customCoffeTable/final3.webp" alt="">
         <img loading='lazy' src="img/customCoffeTable/final2.webp" alt="">
         <img loading='lazy' src="img/customCoffeTable/final5.webp" alt="">
-      </div>
-      <div class="twoXtwo">
-        <p>In progress photos and design photos</p>
         <img loading='lazy' src="img/customCoffeTable/rendering1.webp" alt="">
         <img loading='lazy' src="img/customCoffeTable/rendering2.webp" alt="">
         <img loading='lazy' src="img/customCoffeTable/dimensionalRenderings1.webp" alt="">
@@ -489,17 +410,19 @@
       </div>
     </div>
     <div id="WorkContent9" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>3D Visualizer</h1>
-        <h3>Visualizer created using Blender animation software and demonstrating syncronization with music</h3>
-      </div>
-      <div class="video">
-        <p class="description">This animation was created using the free music library on youtube and syncing visualizations with it. Certain shapes were created using boolean different modifiers and hidding the objects that intersect them. This
+        <p>This animation was created using the free music library on youtube and syncing visualizations with it. Certain shapes were created using boolean different modifiers and hidding the objects that intersect them. This
           project demonstrated use of keyframes and acceleration within those frames. It also was a useful lesson in F-curve modification and learning more about modifiers that allow for camera movement on a track.</p>
-        <lite-youtube width="800" height="400" videoid="eeUueoVbVJw"></lite-youtube>
       </div>
-      <div class="threeXthree">
-        <p>in progress screenshots within blender software</p>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <lite-youtube width="800" height="400" videoid="eeUueoVbVJw"></lite-youtube>
         <img loading='lazy' src="img/3dVisualizer/box creation.webp" alt="">
         <img loading='lazy' src="img/3dVisualizer/rendering freestyle.webp" alt="">
         <img loading='lazy' src="img/3dVisualizer/loop tunnel 1.webp" alt="">
@@ -513,30 +436,39 @@
       </div>
     </div>
     <div id="WorkContent10" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Info Graphic</h1>
-        <h3>An info graphic created to explain the process of nuclear fusion</h3>
-      </div>
-      <div class="threeXthree">
-        <p class="description">This info graphic was an assignement to explain some complicated scientific phenomena in layman's terms. I was limited in the vocabulary used to only use the most common words possible. I was unrestricted in terms of
+        <p>This info graphic was an assignement to explain some complicated scientific phenomena in layman's terms. I was limited in the vocabulary used to only use the most common words possible. I was unrestricted in terms of
           design, so I chose to explain each of these pictures that I created demonstrating neutrons and protons interaction. I made the neutrons very bland and borind compared to the protons to differentiate them through color and feel.</p>
-        <img loading='lazy' src="img/fusionInfoGraphic/iteration1.webp" alt="">
-        <img loading='lazy' src="img/fusionInfoGraphic/iteration2.webp" alt="">
+      </div>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/fusionInfoGraphic/iteration4.webp" alt="">
         <img loading='lazy' src="img/fusionInfoGraphic/iteration3.webp" alt="">
+        <img loading='lazy' src="img/fusionInfoGraphic/iteration2.webp" alt="">
+        <img loading='lazy' src="img/fusionInfoGraphic/iteration1.webp" alt="">
       </div>
     </div>
     <div id="WorkContent11" class="transitionalContent">
-      <div class="galleryContainer">
-        <h1>Spice It Up</h1>
-        <h3>A recipe app created in IOS</h3>
-      </div>
-      <div class="oneAndone">
-        <p class="description">Spice It Up was a recipe finding app created as my very first app in IOS. It was created as a way to "spice up" any dinner plans that the user had. It would pull from some pre-determined website recipes that fit the
+      <div class="description">
+        <h1>Spice it Up</h1>
+        <p>Spice It Up was a recipe finding app created as my very first app in IOS. It was created as a way to "spice up" any dinner plans that the user had. It would pull from some pre-determined website recipes that fit the
           criteria for the filters the user put in place.</p>
-        <img loading='lazy' src="img/spiceItUp/spice it up.gif" alt="">
       </div>
-      <div class="threeXthree">
-        <p>design itterations</p>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/spiceItUp/spice if up final.webp" alt="">
+        <img loading='lazy' src="img/spiceItUp/spice it up.gif" alt="">
         <img loading='lazy' src="img/spiceItUp/option1.webp" alt="">
         <img loading='lazy' src="img/spiceItUp/option2.webp" alt="">
         <img loading='lazy' src="img/spiceItUp/option3.webp" alt="">
@@ -544,111 +476,114 @@
         <img loading='lazy' src="img/spiceItUp/option5.webp" alt="">
         <img loading='lazy' src="img/spiceItUp/option6.webp" alt="">
         <img loading='lazy' src="img/spiceItUp/option7.webp" alt="">
-      </div>
-      <div style="margin-top:10%;" class="oneAndone">
-        <p>functional diagram</p>
         <img loading='lazy' src="img/spiceItUp/functionalDiagram.webp" alt="">
       </div>
     </div>
     <div id="WorkContent12" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Courage the Cowardly Dog</h1>
-        <h3>A 3D replica of courage the cowardly dog</h3>
+        <p>This 3D modeling exercise was to take a 2D chracter and try to model it within 3D space. This was my first time using the sculpting commands within the Blender animation software.</p>
       </div>
-      <div class="threeXthree">
-        <p class="description">This 3D modeling exercise was to take a 2D chracter and try to model it within 3D space. This was my first time using the sculpting commands within the Blender animation software.</p>
-        <img loading='lazy' src="img/courageTheCowardlyDog/courage final 1.webp" alt="">
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
         <img loading='lazy' src="img/courageTheCowardlyDog/courage final 2.webp" alt="">
+        <img loading='lazy' src="img/courageTheCowardlyDog/courage final 1.webp" alt="">
         <img loading='lazy' src="img/courageTheCowardlyDog/courage final 4.webp" alt="">
         <img loading='lazy' src="img/courageTheCowardlyDog/courage final 5.webp" alt="">
         <img loading='lazy' src="img/courageTheCowardlyDog/courage final 6.webp" alt="">
-      </div>
-      <div class="threeXthree">
-        <p>In progress designs within Blender</p>
         <img loading='lazy' src="img/courageTheCowardlyDog/courage 1.webp" alt="">
         <img loading='lazy' src="img/courageTheCowardlyDog/courage 2.webp" alt="">
         <img loading='lazy' src="img/courageTheCowardlyDog/courage 3.webp" alt="">
       </div>
     </div>
     <div id="WorkContent13" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Zurge Coin</h1>
-        <h3>A game created for android os</h3>
-      </div>
-      <div class="video">
-        <p class="description">This game was created as a tilt reactive game. It was created as a strictly os based game so I could practice coding in kotlin rahter than using the Unity engine. The game was created by making all sorts of images,
+        <p>This game was created as a tilt reactive game. It was created as a strictly os based game so I could practice coding in kotlin rahter than using the Unity engine. The game was created by making all sorts of images,
           creating a switch statement that kept track of object collision, and a radomizer function that would show certain coins and blackholes for level differentiation.</p>
-        <lite-youtube width="800" height="400" videoid="9Op9skBttRc"></lite-youtube>
       </div>
-      <div class="threeXthree">
-        <p>first design itteration</p>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <lite-youtube width="800" height="400" videoid="9Op9skBttRc"></lite-youtube>
+        <img loading='lazy' src="img/zurgeCoin/final-zurge.webp" alt="">
         <img loading='lazy' src="img/zurgeCoin/space roller interactions-01.webp" alt="">
         <img loading='lazy' src="img/zurgeCoin/space roller interactions-02.webp" alt="">
         <img loading='lazy' src="img/zurgeCoin/space roller interactions-03.webp" alt="">
         <img loading='lazy' src="img/zurgeCoin/space roller interactions-04.webp" alt="">
         <img loading='lazy' src="img/zurgeCoin/space roller interactions-05.webp" alt="">
-      </div>
-      <div class="video">
-        <p>functional diagram</p>
-        <img loading='lazy' width="700" height="auto" src="img/zurgeCoin/space roller.webp" alt="">
+        <img loading='lazy' src="img/zurgeCoin/space roller.webp" alt="">
       </div>
     </div>
     <div id="WorkContent14" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Peculiar Partciles</h1>
-        <h3>An animation created to demonstrate skills with particle systems in Blender.</h3>
+        <p>This rendering was created using keyframes and a vortex system as well as some particle emissions. These emissions were mapped using vertex mapping.</p>
       </div>
-      <div class="oneAndone">
-        <p class="description">This rendering was created using keyframes and a vortex system as well as some particle emissions. These emissions were mapped using vertex mapping.</p>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/peculiarParticles/final1.webp" alt="">
         <img loading='lazy' src="img/peculiarParticles/harryPotterGlasses.gif" alt="">
-      </div>
-      <div class="threeXthree">
-        <p>screenshots of in progress work</p>
         <img loading='lazy' src="img/peculiarParticles/final2.webp" alt="">
         <img loading='lazy' src="img/peculiarParticles/glasses repair1.webp" alt="">
         <img loading='lazy' src="img/peculiarParticles/glasses repair 2.webp" alt="">
       </div>
     </div>
     <div id="WorkContent15" class="transitionalContent">
-      <div class="galleryContainer">
+      <div class="description">
         <h1>Cannon Fodder</h1>
-        <h3>A physical computing game</h3>
-      </div>
-      <div class="twoXone">
-        <p class="description">Cannon Fodder was created as a midterm project to demonstrate mastery over circuitry and coding within the arduino IDE. This project consisted of 2 potentiometers, 2 servo motors, 2 dc motors, a solenoid, neopixel
+        <p>Cannon Fodder was created as a midterm project to demonstrate mastery over circuitry and coding within the arduino IDE. This project consisted of 2 potentiometers, 2 servo motors, 2 dc motors, a solenoid, neopixel
           strips, and 4 limit swithces. The cannon itself was a movable piece that was able to tilt up and down and rotat side to side as well as fire a ping pong ball from it. The goal of the game was to land as many ping pong balls into the score
           board and get the most points. The scoreboard had a few functions that kept track of score as well as let the user know what their current score was.</p>
+      </div>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/cannonFodder/cannon (15).webp" alt="">
         <img loading='lazy' src="img/cannonFodder/cannonDemo.gif" alt="">
         <img loading='lazy' src="img/cannonFodder/scoreBoardDemo.gif" alt="">
-      </div>
-      <div class="video">
         <lite-youtube videoid="44vkpGx1s74"></lite-youtube>
         <lite-youtube videoid="CM2g_zZeBps"></lite-youtube>
-      </div>
-      <div class="twoXone">
-        <p>cannon and score board</p>
         <img loading='lazy' src="img/cannonFodder/cannonStill1.webp" alt="">
         <img loading='lazy' src="img/cannonFodder/cannon (16).webp" alt="">
-      </div>
-      <div class="twoXone">
-        <p>circuit diagram</p>
         <img loading='lazy' src="img/cannonFodder/cannon movement_schem.webp" alt="">
         <img loading='lazy' src="img/cannonFodder/score board_schem.webp" alt="">
-      </div>
-      <div class="threeXthree">
-        <p>functional renderings</p>
         <img loading='lazy' src="img/cannonFodder/stuff-2.0.JPG.webp" alt="">
         <img loading='lazy' src="img/cannonFodder/stuff.JPG.webp" alt="">
         <img loading='lazy' src="img/cannonFodder/box.webp" alt="">
       </div>
     </div>
     <div id="WorkContent16" class="transitionalContent">
-      <div class="galleryContainer">
-        <h1 style="background-color: black; margin-right: 70%;">Baby Yoda</h1>
-        <h3>An exercise in sculpting and replication</h3>
+      <div class="description">
+        <h1>Baby Yoda</h1>
+        <p>This was an exercise of creating baby yoda from scratch using just images for replication. This baby yoda is prepped to be 3D printed as well as given an armature and material coloring for a quick little animation.</p>
       </div>
-      <div class="oneAndone">
-        <p class="description">This was an exercise of creating baby yoda from scratch using just images for replication. This baby yoda is prepped to be 3D printed as well as given an armature and material coloring for a quick little animation.</p>
+      <div class="galleryContainer">
+        <svg class="closeButton" onclick="shrink()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+          <g>
+            <path style="fill:#030104;"
+              d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z" />
+          </g>
+        </svg>
+        <img loading='lazy' src="img/babyYoda/babyYoda1.webp" alt="">
         <img loading='lazy' src="img/babyYoda/babyYoda2.webp" alt="">
       </div>
     </div>
@@ -672,61 +607,115 @@
         </div>
       </div>
 
-      <div class="workDivs" id="workDiv2">
-        <div class="project6">
-          <label onclick="enlarge('.project6',5,'CTDworkDiv')">Creepy Creature</label>
-          <p class="describingThing">Blender animation project tailored for halloween to create a scene showcasing 3D modeling, sculpting, and rigging capabilities</p>
+        <div class="workDivs" id="workDiv2">
+          <div class="project6">
+            <label onclick="enlarge('.project6',5,'CTDworkDiv')">Creepy Creature</label>
+            <p class="describingThing">Blender animation project tailored for halloween to create a scene showcasing 3D modeling, sculpting, and rigging capabilities</p>
+          </div>
+          <div class="project7">
+            <label onclick="enlarge('.project7',6,'CTDworkDiv')">Sherlock Holmes renderings</label>
+            <p class="describingThing">Blender animation project to demonstrate scenic rendering, modeling, lighting, and camera movement</p>
+          </div>
+          <div class="project8">
+            <label onclick="enlarge('.project8',7,'CTDworkDiv')">Coffee Table</label>
+            <p class="describingThing">Table built from CNC cut gears and MIG welded steel frame with added functionality of motor and controller</p>
+          </div>
         </div>
-        <div class="project7">
-          <label onclick="enlarge('.project7',6,'CTDworkDiv')">Sherlock Holmes renderings</label>
-          <p class="describingThing">Blender animation project to demonstrate scenic rendering, modeling, lighting, and camera movement</p>
+
+        <div class="workDivs" id="workDiv3">
+          <div class="project9">
+            <label onclick="enlarge('.project9',8,'CTDworkDiv')">3D Visualizer</label>
+            <p class="describingThing">Blender animation project displaying use of keyframes, physics simulation, incorporation of sound, and complex modifiers</p>
+          </div>
+          <div class="project10">
+            <label onclick="enlarge('.project10',9,'CTDworkDiv')">Info Graphic</label>
+            <p class="describingThing">Illustrator created graphic depicting Fusion in layman's terms. This was a project on graphic design as well as creating easy to follow ideas that describe more complicated scientific processes</p>
+          </div>
+          <div class="project11">
+            <label onclick="enlarge('.project11',10,'CTDworkDiv')">Spice It Up</label>
+            <p class="describingThing">App created for IOS platform that shows knowledge of IOS specific design, classes, and overall understanding of XCode</p>
+          </div>
         </div>
-        <div class="project8">
-          <label onclick="enlarge('.project8',7,'CTDworkDiv')">Coffee Table</label>
-          <p class="describingThing">Table built from CNC cut gears and MIG welded steel frame with added functionality of motor and controller</p>
+
+        <div class="workDivs" id="workDiv4">
+          <div class="project12">
+            <label onclick="enlarge('.project12',11,'CTDworkDiv')">Courage the Cowardly Dog</label>
+            <p class="describingThing">Blender practice in sculpting and modeling chracters</p>
+          </div>
+          <div class="project13">
+            <label onclick="enlarge('.project13',12,'CTDworkDiv')">Zurge Coin</label>
+            <p class="describingThing">Game created in AndrodiStudio to demonstrate general understanding of app development using google platform.</p>
+          </div>
+          <div class="project14">
+            <label onclick="enlarge('.project14',13,'CTDworkDiv')">Peculiar Partciles</label>
+            <p class="describingThing">Blender created animation to practice particle physics simulations and use of forces within animation software as well as use of keyframes</p>
+          </div>
+        </div>
+
+        <div class="workDivs" id="workDiv5">
+          <div class="project15">
+            <label onclick="enlarge('.project15',14,'CTDworkDiv')">Cannon Fodder</label>
+            <p class="describingThing">Proof of concept for physical game using electrical components. Using laser cut, soldered, and 3D printed material, this cannon game was created leveraging knowledge of circuitry and Arduino IDE</p>
+          </div>
+          <div class="project16">
+            <label onclick="enlarge('.project16',15,'CTDworkDiv')">Baby Yoda</label>
+            <p class="describingThing">Chracter creation model to practice more sculpting and character generation within Blender</p>
+          </div>
         </div>
       </div>
 
-      <div class="workDivs" id="workDiv3">
-        <div class="project9">
-          <label onclick="enlarge('.project9',8,'CTDworkDiv')">3D Visualizer</label>
-          <p class="describingThing">Blender animation project displaying use of keyframes, physics simulation, incorporation of sound, and complex modifiers</p>
+    <div id="workDivTheater">
+      <div class="workDivs" id="workDivTheater1">
+        <div class="project1">
+          <label onclick="enlarge('.project1',0,0,'workDivTheater')">
+            She Kills Monsters
+          </label>
+          <p class="describingThing">Wireframe dragon head puppet crafted out of aluminum, designed in Rhino, and wrapped in a wire mesh to adhere foam and paint.</p>
         </div>
-        <div class="project10">
-          <label onclick="enlarge('.project10',9,'CTDworkDiv')">Info Graphic</label>
-          <p class="describingThing">Illustrator created graphic depicting Fusion in layman's terms. This was a project on graphic design as well as creating easy to follow ideas that describe more complicated scientific processes</p>
+        <div class="project4">
+          <label onclick="enlarge('.project4',1,3,'workDivTheater')">
+            Broadway Christmas Carol
+          </label>
+          <p class="describingThing">Table with hidden steel stairs that pull out on a track and rotate downard to create easy access to getting on top of the tables. Magnetized compartment to hide the access to the stairs and wheel base with
+            pushable footbar to retract and extend wheels.</p>
         </div>
-        <div class="project11">
-          <label onclick="enlarge('.project11',10,'CTDworkDiv')">Spice It Up</label>
-          <p class="describingThing">App created for IOS platform that shows knowledge of IOS specific design, classes, and overall understanding of XCode</p>
+        <div class="project17">
+          <label onclick="enlarge('.project17',0,16,'workDivTheater')">
+            Hair
+          </label>
+          <p class="describingThing">Steel bridge modified from stock of past shows. Stair units, plywood facade, and artificial turf added to portray central park.</p>
         </div>
-      </div>
 
-      <div class="workDivs" id="workDiv4">
-        <div class="project12">
-          <label onclick="enlarge('.project12',11,'CTDworkDiv')">Courage the Cowardly Dog</label>
-          <p class="describingThing">Blender practice in sculpting and modeling chracters</p>
+        <div class="project18">
+          <label onclick="enlarge('.project18',1,17,'workDivTheater')">
+            Hecuba
+          </label>
+          <p class="describingThing">Logs hung from proscenium arch made from sonotube and carved foam wrapped in muslin. More sonotube created for "supporting" columns to represent a ship.</p>
         </div>
-        <div class="project13">
-          <label onclick="enlarge('.project13',12,'CTDworkDiv')">Zurge Coin</label>
-          <p class="describingThing">Game created in AndrodiStudio to demonstrate general understanding of app development using google platform.</p>
+        <div class="project19">
+          <label onclick="enlarge('.project19',0,18,'workDivTheater')">
+            Into the Woods
+          </label>
+          <p class="describingThing">Steel jungle gym created from stock platforms and custom made platforms. Many hand cut and welded steel ladders, handrails, and stair units.</p>
         </div>
-        <div class="project14">
-          <label onclick="enlarge('.project14',13,'CTDworkDiv')">Peculiar Partciles</label>
-          <p class="describingThing">Blender created animation to practice particle physics simulations and use of forces within animation software as well as use of keyframes</p>
+        <div class="project20">
+          <label onclick="enlarge('.project20',1,19,'workDivTheater')">
+            Great Expectations
+          </label>
+          <p class="describingThing">Stock platforms modified and given many levels through use of compression legs. Laser cut stencil used for painting brick pattern on the black box theater floor.</p>
         </div>
-      </div>
 
-      <div class="workDivs" id="workDiv5">
-        <div class="project15">
-          <label onclick="enlarge('.project15',14,'CTDworkDiv')">Cannon Fodder</label>
-          <p class="describingThing">Proof of concept for physical game using electrical components. Using laser cut, soldered, and 3D printed material, this cannon game was created leveraging knowledge of circuitry and Arduino IDE</p>
-        </div>
-        <div class="project16">
-          <label onclick="enlarge('.project16',15,'CTDworkDiv')">Baby Yoda</label>
-          <p class="describingThing">Chracter creation model to practice more sculpting and character generation within Blender</p>
+        <div class="project21">
+          <label onclick="enlarge('.project21',0,20,'workDivTheater')">
+            Fallstaff In Love
+          </label>
+          <p class="describingThing">Hollywood flats create walls painted with wood texture and a 1x4 framed fireplace faced with luan.</p>
         </div>
       </div>
+    </div>
+
+    <div id="resume">
+      <iframe src="img/Woods_Destin_resume.pdf#toolbar=0" width="100%" height="700px"></iframe>
     </div>
   </section>
 

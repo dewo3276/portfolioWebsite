@@ -39,8 +39,8 @@
     bottom: 0;
   }
 
-  .main {
-    font-size: 0.75em;
+  #main {
+    font-size: 0.65em !important;
   }
 
   #aboutMeSection {
@@ -59,10 +59,10 @@
     font-size: 1em !important;
   }
 
-  .project1:hover, #workSection .project21:hover, #workSectionTheater .project21:hover, #workSection .project20:hover, #workSectionTheater .project20:hover, #workSection .project19:hover, #workSectionTheater .project19:hover, #workSection .project18:hover, #workSectionTheater .project18:hover, #workSection .project17:hover, #workSectionTheater .project17:hover, #workSection .project16:hover, #workSectionTheater .project16:hover, #workSection .project15:hover, #workSectionTheater .project15:hover, #workSection .project14:hover, #workSectionTheater .project14:hover, #workSection .project13:hover, #workSectionTheater .project13:hover, #workSection .project12:hover, #workSectionTheater .project12:hover, #workSection .project11:hover, #workSectionTheater .project11:hover, #workSection .project10:hover, #workSectionTheater .project10:hover, #workSection .project9:hover, #workSectionTheater .project9:hover, #workSection .project8:hover, #workSectionTheater .project8:hover, #workSection .project7:hover, #workSectionTheater .project7:hover, #workSection .project6:hover, #workSectionTheater .project6:hover, #workSection .project5:hover, #workSectionTheater .project5:hover, #workSection .project4:hover, #workSectionTheater .project4:hover, #workSection .project3:hover, #workSectionTheater .project3:hover, #workSection .project2:hover, #workSectionTheater .project2:hover {
+  .project1:hover, #workSection .project21:hover, #workSection .project20:hover, #workSection .project19:hover, #workSection .project18:hover, #workSection .project17:hover, #workSection .project16:hover, #workSection .project15:hover, #workSection .project14:hover, #workSection .project13:hover, #workSection .project12:hover, #workSection .project11:hover, #workSection .project10:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
     background-size: cover !important;
   }
-  .project1:hover .describingThing, #workSection .project21:hover .describingThing, #workSectionTheater .project21:hover .describingThing, #workSection .project20:hover .describingThing, #workSectionTheater .project20:hover .describingThing, #workSection .project19:hover .describingThing, #workSectionTheater .project19:hover .describingThing, #workSection .project18:hover .describingThing, #workSectionTheater .project18:hover .describingThing, #workSection .project17:hover .describingThing, #workSectionTheater .project17:hover .describingThing, #workSection .project16:hover .describingThing, #workSectionTheater .project16:hover .describingThing, #workSection .project15:hover .describingThing, #workSectionTheater .project15:hover .describingThing, #workSection .project14:hover .describingThing, #workSectionTheater .project14:hover .describingThing, #workSection .project13:hover .describingThing, #workSectionTheater .project13:hover .describingThing, #workSection .project12:hover .describingThing, #workSectionTheater .project12:hover .describingThing, #workSection .project11:hover .describingThing, #workSectionTheater .project11:hover .describingThing, #workSection .project10:hover .describingThing, #workSectionTheater .project10:hover .describingThing, #workSection .project9:hover .describingThing, #workSectionTheater .project9:hover .describingThing, #workSection .project8:hover .describingThing, #workSectionTheater .project8:hover .describingThing, #workSection .project7:hover .describingThing, #workSectionTheater .project7:hover .describingThing, #workSection .project6:hover .describingThing, #workSectionTheater .project6:hover .describingThing, #workSection .project5:hover .describingThing, #workSectionTheater .project5:hover .describingThing, #workSection .project4:hover .describingThing, #workSectionTheater .project4:hover .describingThing, #workSection .project3:hover .describingThing, #workSectionTheater .project3:hover .describingThing, #workSection .project2:hover .describingThing, #workSectionTheater .project2:hover .describingThing {
+  .project1:hover .describingThing, #workSection .project21:hover .describingThing, #workSection .project20:hover .describingThing, #workSection .project19:hover .describingThing, #workSection .project18:hover .describingThing, #workSection .project17:hover .describingThing, #workSection .project16:hover .describingThing, #workSection .project15:hover .describingThing, #workSection .project14:hover .describingThing, #workSection .project13:hover .describingThing, #workSection .project12:hover .describingThing, #workSection .project11:hover .describingThing, #workSection .project10:hover .describingThing, #workSection .project9:hover .describingThing, #workSection .project8:hover .describingThing, #workSection .project7:hover .describingThing, #workSection .project6:hover .describingThing, #workSection .project5:hover .describingThing, #workSection .project4:hover .describingThing, #workSection .project3:hover .describingThing, #workSection .project2:hover .describingThing {
     position: relative;
     font-size: 0.5em;
     background-color: grey;
@@ -148,21 +148,12 @@ label:hover {
 }
 #main #welcomeBanner h1 {
   font-size: 10em;
-}
-
-.closingTime {
-  font-family: mostra-nuova;
+  margin-bottom: 0px;
 }
 
 #svgWorkFlow {
   position: fixed;
   top: 10vh;
-  display: none;
-}
-
-#svgWorkFlow2 {
-  position: fixed;
-  top: 50vh;
   display: none;
 }
 
@@ -198,41 +189,45 @@ label:hover {
   stroke-dasharray: 500;
 }
 
-#workSection, #workSectionTheater {
+#workSection {
   margin-left: 2%;
   margin-right: 2%;
   font-family: acumin-pro;
   background-color: #ffe1ad;
 }
-#workSection #CTDworkDiv, #workSection #workDivTheater, #workSectionTheater #CTDworkDiv, #workSectionTheater #workDivTheater {
+#workSection #CTDworkDiv {
   display: grid;
-  grid-template-rows: 95vh;
-  grid-template-columns: repeat(5, 95vw);
-  grid-column-gap: 10%;
+  grid-auto-rows: 1fr;
 }
-#workSection .workDivs, #workSectionTheater .workDivs {
+#workSection .workDivs:nth-child(odd) div:nth-child(even) {
+  grid-column-start: 2;
+}
+#workSection .workDivs:nth-child(even) div:nth-child(odd) {
+  grid-column-start: 2;
+}
+#workSection .workDivs {
   display: grid;
   position: relative;
   grid-auto-rows: 30vh;
   grid-row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
-  padding-bottom: 20vh;
+  padding-top: 20px;
 }
-#workSection .workDivs div, #workSectionTheater .workDivs div {
+#workSection .workDivs div {
   padding-left: 5%;
   padding-top: 10%;
   font-size: 2em;
   grid-column-end: span 3;
 }
-#workSection .workDivs div label, #workSectionTheater .workDivs div label {
+#workSection .workDivs div label {
   transform: none;
 }
-#workSection .describingThing, #workSectionTheater .describingThing {
+#workSection .describingThing {
   margin-left: 10%;
   font-size: 0.5em;
   display: none;
 }
-#workSection .project1, #workSectionTheater .project1, #workSection .project21, #workSectionTheater .project21, #workSection .project20, #workSectionTheater .project20, #workSection .project19, #workSectionTheater .project19, #workSection .project18, #workSectionTheater .project18, #workSection .project17, #workSectionTheater .project17, #workSection .project16, #workSectionTheater .project16, #workSection .project15, #workSectionTheater .project15, #workSection .project14, #workSectionTheater .project14, #workSection .project13, #workSectionTheater .project13, #workSection .project12, #workSectionTheater .project12, #workSection .project11, #workSectionTheater .project11, #workSection .project10, #workSectionTheater .project10, #workSection .project9, #workSectionTheater .project9, #workSection .project8, #workSectionTheater .project8, #workSection .project7, #workSectionTheater .project7, #workSection .project6, #workSectionTheater .project6, #workSection .project5, #workSectionTheater .project5, #workSection .project4, #workSectionTheater .project4, #workSection .project3, #workSectionTheater .project3, #workSection .project2, #workSectionTheater .project2 {
+#workSection .project1, #workSection .project21, #workSection .project20, #workSection .project19, #workSection .project18, #workSection .project17, #workSection .project16, #workSection .project15, #workSection .project14, #workSection .project13, #workSection .project12, #workSection .project11, #workSection .project10, #workSection .project9, #workSection .project8, #workSection .project7, #workSection .project6, #workSection .project5, #workSection .project4, #workSection .project3, #workSection .project2 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/skm/dragon demo.gif");
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,148 +235,139 @@ label:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#workSection .project1:hover, #workSectionTheater .project1:hover, #workSection .project21:hover, #workSectionTheater .project21:hover, #workSection .project20:hover, #workSectionTheater .project20:hover, #workSection .project19:hover, #workSectionTheater .project19:hover, #workSection .project18:hover, #workSectionTheater .project18:hover, #workSection .project17:hover, #workSectionTheater .project17:hover, #workSection .project16:hover, #workSectionTheater .project16:hover, #workSection .project15:hover, #workSectionTheater .project15:hover, #workSection .project14:hover, #workSectionTheater .project14:hover, #workSection .project13:hover, #workSectionTheater .project13:hover, #workSection .project12:hover, #workSectionTheater .project12:hover, #workSection .project11:hover, #workSectionTheater .project11:hover, #workSection .project10:hover, #workSectionTheater .project10:hover, #workSection .project9:hover, #workSectionTheater .project9:hover, #workSection .project8:hover, #workSectionTheater .project8:hover, #workSection .project7:hover, #workSectionTheater .project7:hover, #workSection .project6:hover, #workSectionTheater .project6:hover, #workSection .project5:hover, #workSectionTheater .project5:hover, #workSection .project4:hover, #workSectionTheater .project4:hover, #workSection .project3:hover, #workSectionTheater .project3:hover, #workSection .project2:hover, #workSectionTheater .project2:hover {
+#workSection .project1:hover, #workSection .project21:hover, #workSection .project20:hover, #workSection .project19:hover, #workSection .project18:hover, #workSection .project17:hover, #workSection .project16:hover, #workSection .project15:hover, #workSection .project14:hover, #workSection .project13:hover, #workSection .project12:hover, #workSection .project11:hover, #workSection .project10:hover, #workSection .project9:hover, #workSection .project8:hover, #workSection .project7:hover, #workSection .project6:hover, #workSection .project5:hover, #workSection .project4:hover, #workSection .project3:hover, #workSection .project2:hover {
   background-image: url("../img/skm/dragon demo.gif");
   background-position: left;
   background-size: contain;
   background-color: grey;
 }
-#workSection .project1:hover .describingThing, #workSectionTheater .project1:hover .describingThing, #workSection .project21:hover .describingThing, #workSectionTheater .project21:hover .describingThing, #workSection .project20:hover .describingThing, #workSectionTheater .project20:hover .describingThing, #workSection .project19:hover .describingThing, #workSectionTheater .project19:hover .describingThing, #workSection .project18:hover .describingThing, #workSectionTheater .project18:hover .describingThing, #workSection .project17:hover .describingThing, #workSectionTheater .project17:hover .describingThing, #workSection .project16:hover .describingThing, #workSectionTheater .project16:hover .describingThing, #workSection .project15:hover .describingThing, #workSectionTheater .project15:hover .describingThing, #workSection .project14:hover .describingThing, #workSectionTheater .project14:hover .describingThing, #workSection .project13:hover .describingThing, #workSectionTheater .project13:hover .describingThing, #workSection .project12:hover .describingThing, #workSectionTheater .project12:hover .describingThing, #workSection .project11:hover .describingThing, #workSectionTheater .project11:hover .describingThing, #workSection .project10:hover .describingThing, #workSectionTheater .project10:hover .describingThing, #workSection .project9:hover .describingThing, #workSectionTheater .project9:hover .describingThing, #workSection .project8:hover .describingThing, #workSectionTheater .project8:hover .describingThing, #workSection .project7:hover .describingThing, #workSectionTheater .project7:hover .describingThing, #workSection .project6:hover .describingThing, #workSectionTheater .project6:hover .describingThing, #workSection .project5:hover .describingThing, #workSectionTheater .project5:hover .describingThing, #workSection .project4:hover .describingThing, #workSectionTheater .project4:hover .describingThing, #workSection .project3:hover .describingThing, #workSectionTheater .project3:hover .describingThing, #workSection .project2:hover .describingThing, #workSectionTheater .project2:hover .describingThing {
+#workSection .project1:hover .describingThing, #workSection .project21:hover .describingThing, #workSection .project20:hover .describingThing, #workSection .project19:hover .describingThing, #workSection .project18:hover .describingThing, #workSection .project17:hover .describingThing, #workSection .project16:hover .describingThing, #workSection .project15:hover .describingThing, #workSection .project14:hover .describingThing, #workSection .project13:hover .describingThing, #workSection .project12:hover .describingThing, #workSection .project11:hover .describingThing, #workSection .project10:hover .describingThing, #workSection .project9:hover .describingThing, #workSection .project8:hover .describingThing, #workSection .project7:hover .describingThing, #workSection .project6:hover .describingThing, #workSection .project5:hover .describingThing, #workSection .project4:hover .describingThing, #workSection .project3:hover .describingThing, #workSection .project2:hover .describingThing {
   display: block;
 }
-#workSection .project2, #workSectionTheater .project2 {
-  grid-column-start: 2;
+#workSection .project2 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/pdtLetters/finished.webp");
 }
-#workSection .project2:hover, #workSectionTheater .project2:hover {
+#workSection .project2:hover {
   background-image: url("../img/pdtLetters/finished.webp");
 }
-#workSection .project3, #workSectionTheater .project3 {
+#workSection .project3 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/penguinDevice/penguinFinal.webp");
 }
-#workSection .project3:hover, #workSectionTheater .project3:hover {
+#workSection .project3:hover {
   background-image: url("../img/penguinDevice/penguinFinal.webp");
 }
-#workSection .project4, #workSectionTheater .project4 {
-  grid-column-start: 2;
+#workSection .project4 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hideAwayStairs/design3.webp");
 }
-#workSection .project4:hover, #workSectionTheater .project4:hover {
+#workSection .project4:hover {
   background-image: url("../img/hideAwayStairs/design3.webp");
 }
-#workSection .project5, #workSectionTheater .project5 {
-  grid-column-start: 2;
+#workSection .project5 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/capstoneClock/final1.webp");
 }
-#workSection .project5:hover, #workSectionTheater .project5:hover {
+#workSection .project5:hover {
   background-image: url("../img/capstoneClock/final1.webp");
 }
-#workSection .project6, #workSectionTheater .project6 {
+#workSection .project6 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/creepyCreature/caught 4.webp");
 }
-#workSection .project6:hover, #workSectionTheater .project6:hover {
+#workSection .project6:hover {
   background-image: url("../img/creepyCreature/caught 4.webp");
 }
-#workSection .project7, #workSectionTheater .project7 {
-  grid-column-start: 2;
+#workSection .project7 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
 }
-#workSection .project7:hover, #workSectionTheater .project7:hover {
+#workSection .project7:hover {
   background-image: url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
 }
-#workSection .project8, #workSectionTheater .project8 {
+#workSection .project8 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/customCoffeTable/final1.webp");
 }
-#workSection .project8:hover, #workSectionTheater .project8:hover {
+#workSection .project8:hover {
   background-image: url("../img/customCoffeTable/final1.webp");
 }
-#workSection .project9, #workSectionTheater .project9 {
-  grid-column-start: 2;
+#workSection .project9 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/3dVisualizer/Evisualizer.gif");
 }
-#workSection .project9:hover, #workSectionTheater .project9:hover {
+#workSection .project9:hover {
   background-image: url("../img/3dVisualizer/Evisualizer.gif");
 }
-#workSection .project10, #workSectionTheater .project10 {
+#workSection .project10 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/fusionInfoGraphic/iteration4.webp");
 }
-#workSection .project10:hover, #workSectionTheater .project10:hover {
+#workSection .project10:hover {
   background-image: url("../img/fusionInfoGraphic/iteration4.webp");
 }
-#workSection .project11, #workSectionTheater .project11 {
-  grid-column-start: 2;
+#workSection .project11 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/spiceItUp/spice if up final.webp");
 }
-#workSection .project11:hover, #workSectionTheater .project11:hover {
+#workSection .project11:hover {
   background-image: url("../img/spiceItUp/spice if up final.webp");
 }
-#workSection .project12, #workSectionTheater .project12 {
+#workSection .project12 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/courageTheCowardlyDog/courage final 2.webp");
 }
-#workSection .project12:hover, #workSectionTheater .project12:hover {
+#workSection .project12:hover {
   background-image: url("../img/courageTheCowardlyDog/courage final 2.webp");
 }
-#workSection .project13, #workSectionTheater .project13 {
-  grid-column-start: 2;
+#workSection .project13 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/zurgeCoin/final-zurge.webp");
 }
-#workSection .project13:hover, #workSectionTheater .project13:hover {
+#workSection .project13:hover {
   background-image: url("../img/zurgeCoin/final-zurge.webp");
 }
-#workSection .project14, #workSectionTheater .project14 {
+#workSection .project14 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/peculiarParticles/final1.webp");
 }
-#workSection .project14:hover, #workSectionTheater .project14:hover {
+#workSection .project14:hover {
   background-image: url("../img/peculiarParticles/final1.webp");
 }
-#workSection .project15, #workSectionTheater .project15 {
-  grid-column-start: 2;
+#workSection .project15 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/cannonFodder/cannon (15).webp");
 }
-#workSection .project15:hover, #workSectionTheater .project15:hover {
+#workSection .project15:hover {
   background-image: url("../img/cannonFodder/cannon (15).webp");
 }
-#workSection .project16, #workSectionTheater .project16 {
+#workSection .project16 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/babyYoda/babyYoda1.webp");
 }
-#workSection .project16:hover, #workSectionTheater .project16:hover {
+#workSection .project16:hover {
   background-image: url("../img/babyYoda/babyYoda1.webp");
 }
-#workSection .project17, #workSectionTheater .project17 {
+#workSection .project17 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hair/hair (2).webp");
 }
-#workSection .project17:hover, #workSectionTheater .project17:hover {
+#workSection .project17:hover {
   background-image: url("../img/hair/hair (2).webp");
 }
-#workSection .project18, #workSectionTheater .project18 {
-  grid-column-start: 2;
+#workSection .project18 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/hecuba/hecuba (2).webp");
 }
-#workSection .project18:hover, #workSectionTheater .project18:hover {
+#workSection .project18:hover {
   background-image: url("../img/hecuba/hecuba (2).webp");
 }
-#workSection .project19, #workSectionTheater .project19 {
+#workSection .project19 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/intoTheWoods/IntoTheWoods-29.webp");
 }
-#workSection .project19:hover, #workSectionTheater .project19:hover {
+#workSection .project19:hover {
   background-image: url("../img/intoTheWoods/IntoTheWoods-29.webp");
 }
-#workSection .project20, #workSectionTheater .project20 {
-  grid-column-start: 2;
+#workSection .project20 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/greatExpectations/greatExpectations (1).webp");
 }
-#workSection .project20:hover, #workSectionTheater .project20:hover {
+#workSection .project20:hover {
   background-image: url("../img/greatExpectations/greatExpectations (1).webp");
 }
-#workSection .project21, #workSectionTheater .project21 {
+#workSection .project21 {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(163, 189, 196, 0.75)), url("../img/falStaff/fallStaff (4).webp");
 }
-#workSection .project21:hover, #workSectionTheater .project21:hover {
+#workSection .project21:hover {
   background-image: url("../img/falStaff/fallStaff (4).webp");
 }
 
-#workSectionTheater {
+#workDivTheater {
   display: none;
+  grid-auto-rows: 1fr;
 }
 
 #resume {
@@ -410,6 +396,8 @@ label:hover {
 }
 .transitionalContent img {
   width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .transitionalContent .description {
   text-align: center;

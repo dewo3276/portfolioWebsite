@@ -1,16 +1,6 @@
-.closingTime {
-  font-family: mostra-nuova;
-}
-
 #svgWorkFlow{
   position: fixed;
   top:10vh;
-  display: none;
-}
-
-#svgWorkFlow2{
-  position: fixed;
-  top:50vh;
   display: none;
 }
 
@@ -54,9 +44,19 @@
 
   #CTDworkDiv {
     display: grid;
-    grid-template-rows: 95vh;
-    grid-template-columns: repeat(5,95vw);
-    grid-column-gap: 10%;
+    grid-auto-rows: 1fr;
+  }
+
+  .workDivs:nth-child(odd){
+    div:nth-child(even){
+      grid-column-start: 2;
+    }
+  }
+
+  .workDivs:nth-child(even){
+    div:nth-child(odd){
+      grid-column-start: 2;
+    }
   }
 
   .workDivs {
@@ -65,7 +65,7 @@
     grid-auto-rows: 30vh;
     grid-row-gap: 20px;
     grid-template-columns: repeat(4,1fr);
-    padding-bottom: 20vh;
+    padding-top: 20px;
 
     div {
       padding-left: 5%;
@@ -107,7 +107,7 @@
 
   .project2 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/pdtLetters/finished.webp");
   }
 
@@ -126,7 +126,7 @@
 
   .project4 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/hideAwayStairs/design3.webp");
   }
 
@@ -136,7 +136,7 @@
 
   .project5 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/capstoneClock/final1.webp");
   }
 
@@ -155,7 +155,7 @@
 
   .project7 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)),url("../img/sherlockHolmesRenderings/stag 1 behind bar still.webp");
   }
 
@@ -174,7 +174,7 @@
 
   .project9 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/3dVisualizer/Evisualizer.gif");
   }
 
@@ -193,7 +193,7 @@
 
   .project11 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/spiceItUp/spice if up final.webp");
   }
 
@@ -212,7 +212,7 @@
 
   .project13 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/zurgeCoin/final-zurge.webp");
   }
 
@@ -231,7 +231,7 @@
 
   .project15 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/cannonFodder/cannon (15).webp");
   }
 
@@ -259,7 +259,7 @@
 
   .project18 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/hecuba/hecuba (2).webp");
   }
 
@@ -278,7 +278,7 @@
 
   .project20 {
     @extend .project1;
-    grid-column-start: 2;
+
     background-image: linear-gradient(to bottom, rgba(255,255,255,.25), rgba(163, 189, 196, .75)), url("../img/greatExpectations/greatExpectations (1).webp");
   }
 
@@ -296,13 +296,9 @@
   }
 }
 
-#workSectionTheater {
-  @extend #workSection;
-  display: none;
-}
-
 #workDivTheater {
-  @extend #CTDworkDiv;
+  display: none;
+  grid-auto-rows: 1fr;
 }
 
 #resume {

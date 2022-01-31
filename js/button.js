@@ -7,9 +7,6 @@ function enlarge(className, index, WorkSectionType) {
     .to(className, {scaleX: "125%", scaleY: "125%", zIndex: 1, duration: .5})
     .to(className, {opacity: 0},'-=25%')
     .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=15%')
-    .to('#'+WorkSectionType,{display: "none"},'<')
-  var pos = document.getElementById('header').offsetTop;
-    gsap.to(window, {scrollTo: pos, duration:.5},'-=40%');
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if (i != index) {

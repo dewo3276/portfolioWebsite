@@ -84,18 +84,18 @@ function navBarWork(itterationNumber){
 
           case 2:
             gsap.timeline()
-              .to('#workSectionTheater', {x: "100%", opacity: 0, display: "none", duration: .5})
-              .from('#workSection', {x:"-100%", duration: .5})
-              .to('#workSection', {opacity: 1, display: "block", duration: .5},'-=100%')
-              .to('#workSectionTheater', {clearProps: "x", clearProps:"y"})
+              .to('#workDivTheater', {x: "100%", opacity: 0, display: "none", duration: .5})
+              .from('#CTDworkDiv', {x:"-100%", duration: .5})
+              .to('#CTDworkDiv', {opacity: 1, display: "grid", duration: .5},'-=100%')
+              .to('#workDivTheater', {clearProps: "x", clearProps:"y"})
               previousSection=1;
             break;
 
           case 3:
             gsap.timeline()
               .to('#resume',{x: "100%",opacity: 0, display: "none", duration: .5})
-              .from('#workSection', {x:"-100%", duration: .5})
-              .to('#workSection', {opacity: 1, display: "block", duration: .5},'-=100%')
+              .from('#CTDworkDiv', {x:"-100%", duration: .5})
+              .to('#CTDworkDiv', {opacity: 1, display: "grid", duration: .5},'-=100%')
               .to('#resume', {clearProps: "x", clearProps:"y"})
               previousSection=1;
             break;
@@ -106,10 +106,10 @@ function navBarWork(itterationNumber){
       switch (previousSection) {
         case 1:
         gsap.timeline()
-          .to('#workSection', {x: "-100%", opacity: 0, display: "none", duration: .5})
-          .from('#workSectionTheater', {y:"100%", duration: .5})
-          .to('#workSectionTheater', {opacity: 1, display: "block", duration: .5},"-=100%")
-          .to('#workSection', {clearProps: "x", clearProps:"y"})
+          .to('#CTDworkDiv', {x: "-100%", opacity: 0, display: "none", duration: .5})
+          .from('#workDivTheater', {y:"100%", duration: .5})
+          .to('#workDivTheater', {opacity: 1, display: "grid", duration: .5},"-=100%")
+          .to('#CTDworkDiv', {clearProps: "x", clearProps:"y"})
           previousSection=2;
           break;
 
@@ -120,8 +120,8 @@ function navBarWork(itterationNumber){
         case 3:
           gsap.timeline()
             .to('#resume',{x: "100%", opacity: 0, display: "none", duration: .5})
-            .from('#workSectionTheater', {y:"100%", duration: .5})
-            .to('#workSectionTheater', {opacity: 1, display: "block", duration: .5},"-=100%")
+            .from('#workDivTheater', {y:"100%", duration: .5})
+            .to('#workDivTheater', {opacity: 1, display: "grid", duration: .5},"-=100%")
             .to('#resume', {clearProps: "x", clearProps:"y"})
             previousSection=2;
           break;
@@ -132,19 +132,19 @@ function navBarWork(itterationNumber){
       switch (previousSection) {
         case 1:
           gsap.timeline()
-            .to('#workSection', {x: "-100%", opacity: 0, display: "none", duration: .5})
+            .to('#CTDworkDiv', {x: "-100%", opacity: 0, display: "none", duration: .5})
             .from('#resume', {x:"100%", duration: .5})
             .to('#resume', {opacity: 1, display: "block", duration: .5},"-=100%")
-            .to('#workSection', {clearProps: "x", clearProps:"y"})
+            .to('#CTDworkDiv', {clearProps: "x", clearProps:"y"})
             previousSection=3;
           break;
 
         case 2:
           gsap.timeline()
-            .to('#workSectionTheater', {y: "100%",opacity: 0, display: "none", duration: .5})
+            .to('#workDivTheater', {y: "100%",opacity: 0, display: "none", duration: .5})
             .from('#resume', {x:"100%", duration: .5})
             .to('#resume', {opacity: 1, display: "block", duration: .5},"-=100%")
-            .to('#workSectionTheater', {clearProps: "x", clearProps:"y"})
+            .to('#workDivTheater', {clearProps: "x", clearProps:"y"})
             previousSection=3;
           break;
 
