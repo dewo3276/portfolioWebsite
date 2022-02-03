@@ -29,8 +29,14 @@
 }
 @media only screen and (max-width:900px) {
   .description {
-    font-size: .5em;
+    font-size: .75em;
     height: 40% !important;
+  }
+
+  .galleryContainer{
+    img{
+      width:50%;
+    }
   }
 
   #pathArray {
@@ -92,4 +98,16 @@ label:hover {
 ::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background: $pageBackground2;
+}
+
+#overlay{
+  background-color: black;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: -1000%;
+  z-index: 5;
+  opacity: 0;
+  display: none;
 }

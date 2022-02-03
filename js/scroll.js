@@ -119,11 +119,9 @@ gsap.to('#workSection', {
     onLeave: function() {
       var element2 = document.getElementById("header");
       var element = document.getElementById("menuBar");
-      var element3 = document.getElementById("svgWorkFlow");
 
       gsap.to(element,{y:"0",duration:1});
       element2.style.position="relative";
-      element3.style.display="none";
 
       gsap.to(element2,{y:"0",duration:.75});
     },
@@ -137,5 +135,19 @@ gsap.to('#workSection', {
     },
     start:"top 5%",
     end:"bottom bottom"
+  }
+})
+
+gsap.to('#contactSection',{
+  scrollTrigger:{
+    trigger: "#contactSection",
+    onEnter: function() {
+        document.getElementById("svgWorkFlow").style.opacity="0";
+    },
+    onLeaveBack: function() {
+        document.getElementById("svgWorkFlow").style.opacity="1";
+    },
+    start: "top bottom",
+    end: "bottom"
   }
 })

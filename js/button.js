@@ -7,6 +7,7 @@ function enlarge(className, index, WorkSectionType) {
     .to(className, {scaleX: "125%", scaleY: "125%", zIndex: 1, duration: .5})
     .to(className, {opacity: 0},'-=25%')
     .to('#WorkContent' + (index + 1), {display: "block", opacity: 1, duration: 1},'-=15%')
+    .to('#overlay', {display: "block", opacity: .75, duration: .75},'-=75%')
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if (i != index) {
@@ -16,6 +17,7 @@ function enlarge(className, index, WorkSectionType) {
   currentOpen.className=className;
   currentOpen.index=index;
   currentOpen.WorkSectionType=WorkSectionType;
+  document.body.style.overflowY="hidden";
 }
 
 function shrink() {
@@ -26,6 +28,7 @@ function shrink() {
     .to('#WorkContent' + (currentOpen.index + 1), {opacity: 0, display: "none"},'-=50%')
     .to(currentOpen.className, {opacity: 1},'-=20%')
     .to(currentOpen.className, {scaleX: "100%", scaleY: "100%", backgroundColor: "none", zIndex: 0, duration: .2})
+    .to('#overlay', {display: "none", opacity: 0, duration: .75},'-=75%')
 
   for (let i = 0; i < projectsInFile.length; i++) {
     if(currentOpen.index!=i)
@@ -38,4 +41,5 @@ function shrink() {
     }
   }
   currentOpen.className=0;
+  document.body.style.overflowY="visible";
 }
